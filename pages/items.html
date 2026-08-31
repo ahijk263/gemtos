@@ -1,0 +1,1797 @@
+```html
+<!-- ========================================== -->
+<!-- ITEMS PAGE -->
+<!-- ========================================== -->
+
+<div id="tab-items" class="tab-content">
+
+    <!-- ITEM CATEGORY MENU -->
+    <div class="sub-btn-group">
+
+        <button class="sub-btn" onclick="openItemSub(event, 'item-helmet')" id="defaultItemSub">
+            Mũ (Helmet)
+        </button>
+
+        <button class="sub-btn" onclick="openItemSub(event, 'item-artifact')">
+            Cổ vật (Artifact)
+        </button>
+
+        <button class="sub-btn" onclick="openItemSub(event, 'item-collar')">
+            Vòng cổ (Collar)
+        </button>
+
+        <button class="sub-btn" onclick="openItemSub(event, 'item-frontlegs')">
+            Chân trước
+        </button>
+
+        <button class="sub-btn" onclick="openItemSub(event, 'item-rearlegs')">
+            Chân sau
+        </button>
+
+        <button class="sub-btn" onclick="openItemSub(event, 'item-armor')">
+            Giáp (Armor)
+        </button>
+
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- HELMET -->
+    <!-- ========================================== -->
+
+    <div id="item-helmet" class="item-sub">
+
+        <h2>Trang bị vị trí: Helmet (Mũ)</h2>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th width="15%">Tên Item</th>
+                        <th width="12%">Hệ (Type)</th>
+                        <th width="35%">Chỉ số cơ bản</th>
+                        <th width="38%">Dòng Cường Hóa (Reinforcement Tiers)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- OMINOUS GROVE -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Ominous Grove
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-poison">
+                                Độc
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Max Health: 5,720 + 19 * Health</div>
+                            <div>- Fire resistance: 20%</div>
+                            <div>- Poison mastery: 20%</div>
+                            <div>- Electric resistance: 30%</div>
+                            <div>- Physical resistance: 20%</div>
+                            <div>- 15% chance to cast Venom Level 13 on attack</div>
+                            <div>- Accursing Bite: Damage +46% * Skill Level</div>
+                            <div>- Poisonous Cloud: Cooldown -6s</div>
+                            <div>- Rage: Health boost +1.6% * Skill Level</div>
+                            <div>- 10% chance to cast Speed Boost Level 1 on hit received</div>
+                            <div>- Accursing Bite: Cooldown -5s</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Electric resistance +19%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Physical resistance +10%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                2.5% chance to cast speed boost lvl 1 on hit received
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Accursing bite cooldown -5s
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- ECHOING CROWN -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Echoing Crown
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-light">
+                                Điện
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Max Health: 6,250 + 24 * Health</div>
+                            <div>- Fire resistance: 26.7%</div>
+                            <div>- Electric mastery: 18%</div>
+                            <div>- Electric resistance: 26.7%</div>
+                            <div>- Physical resistance: 20%</div>
+                            <div>- 15% chance to cast Shock Nova Level 13 on hit received</div>
+                            <div>- Electric Trap: Damage +55% * Skill Level</div>
+                            <div>- Rage: Health boost +2.3% * Skill Level</div>
+                            <div>- Thunderstorm: Cooldown -6s</div>
+                            <div>- Thunderstorm: Number of hits +2</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Thunderstorm: Cooldown -2s
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Electric resistance +8%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Physical resistance 80%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Thunderstorm: Number of hits +2
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- ADAMANT PROTECTOR -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Adamant Protector
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-fire">
+                                Lửa
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Max Health: 6,100 + 21 * Health</div>
+                            <div>- Fire resistance: 26.7%</div>
+                            <div>- Fire mastery: 23%</div>
+                            <div>- Electric resistance: 26.7%</div>
+                            <div>- Physical resistance: 20%</div>
+                            <div>- 10% chance to cast Meteors Level 13 on attack</div>
+                            <div>- Explosion Trap: Damage +38.5% * Skill Level</div>
+                            <div>- Rage: Health boost +15%</div>
+                            <div>- Fiery Ring: Damage/s +23%</div>
+                            <div>- Root Prison: Cooldown -5s</div>
+                            <div>- Firewall: Duration +1s * Skill Level</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Electric resistance +6.5%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Fire Ring: Damage/s +5% * skill level
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Physical resistance 10%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Firewall: Duration +1s, Root Prison: Cooldown -5s
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- POLAR VORTEX -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Polar Vortex
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-ice">
+                                Băng
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Max Health: 5,700 + 21 * Health</div>
+                            <div>- Fire resistance: 30%</div>
+                            <div>- Cold mastery: 19%</div>
+                            <div>- Electric resistance: 20%</div>
+                            <div>- Physical resistance: 20%</div>
+                            <div>- 12% chance to cast Frost Nova Level 13 on hit received</div>
+                            <div>- Freezing Breath: Handicap +12%</div>
+                            <div>- Hail: Cooldown -9s</div>
+                            <div>- Freezing Area Trap: Cooldown -3s</div>
+                            <div>- Rage: Health boost +2% * Skill Level</div>
+                            <div>- Freezing Breath: Cooldown -6.1s</div>
+                            <div>- Freezing Area Trap: Damage +46% * Skill Level</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Freezing Breath: Cooldown -2.5s
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Electric resistance 11%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Freezing Area Trap: Damage +23% * Skill level
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Physical resistance +20%
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- ARTIFACT -->
+    <!-- ========================================== -->
+
+    <div id="item-artifact" class="item-sub">
+
+        <h2>Trang bị vị trí: Artifact (Cổ vật)</h2>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th width="15%">Tên Item</th>
+                        <th width="12%">Hệ (Type)</th>
+                        <th width="35%">Chỉ số cơ bản</th>
+                        <th width="38%">Dòng Cường Hóa (Reinforcement Tiers)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- CALAMITOUS EMERALD -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Calamitous Emerald
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-poison">
+                                Độc
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Damage: 266 + 0.88 * Attack</div>
+                            <div>- Cold resistance: 26.7%</div>
+                            <div>- Physical resistance: 20%</div>
+                            <div>- Max Health: 3,200 + 20 * Health</div>
+                            <div>- Poison resistance: 26.7%</div>
+                            <div>- 15% chance to cast Venomous Skin Level 13 on hit received</div>
+                            <div>- Swamp: Handicap +12.1%</div>
+                            <div>- Poisonous Jump: Effect duration +2.5s</div>
+                            <div>- Rage: Health boost +10%</div>
+                            <div>- Poison Trap: Damage +38% * Skill Level</div>
+                            <div>- Poisonous Cloud: Damage/s +10% * Skill Level</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Max Health 800 + 4 * Health
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Poison Trap: Damage +15% * Skill Level
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Poison resistance +8.3%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Poisonous Cloud: Damage/s +10% * Skill Level
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- STORMY TOPAZ -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Stormy Topaz
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-light">
+                                Điện
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Damage: 274 + 0.92 * Attack</div>
+                            <div>- Cold resistance: 30%</div>
+                            <div>- Physical resistance: 20%</div>
+                            <div>- Max Health: 3,700 + 20 * Health</div>
+                            <div>- Poison resistance: 20%</div>
+                            <div>- 12% chance to cast Electrified Level 13 on hit received</div>
+                            <div>- Electroshock: Damage +400%</div>
+                            <div>- Rage: Health boost +15%</div>
+                            <div>- Thunder: Damage +56% * Skill Level</div>
+                            <div>- Thunder: Cooldown -5s</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Max Health 740 + 4 * Health
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Poison resistance +2%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Thunder: Damage +20% * Skill Level
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Thunder: Cooldown -5s
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- FIENDISH MAGMA -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Fiendish Magma
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-fire">
+                                Lửa
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Damage: 272 + 1 * Attack</div>
+                            <div>- Cold resistance: 20%</div>
+                            <div>- Physical resistance: 20%</div>
+                            <div>- Poison resistance: 30%</div>
+                            <div>- Max Health: 3,500 + 13 * Health</div>
+                            <div>- 12% chance to cast Root Prison Level 10 on attack</div>
+                            <div>- Explosion Trap: Damage +38% * Skill Level</div>
+                            <div>- Rage: Health boost +2.7% * Skill Level</div>
+                            <div>- Root Prison: Cooldown -7s</div>
+                            <div>- Fiery Ring: Duration +2s</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Poison resistance +22%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Root Prison: Cooldown -1s
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Max Health 750 + 4 * Health
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Fiery Ring: Duration +2s
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- FRIGID SAPPHIRE -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Frigid Sapphire
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-ice">
+                                Băng
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Damage: 310 + 0.92 * Attack</div>
+                            <div>- Cold resistance: 26.7%</div>
+                            <div>- Physical resistance: 20%</div>
+                            <div>- Poison resistance: 26.7%</div>
+                            <div>- Max Health: 4,200 + 10 * Health</div>
+                            <div>- Freezing Breath: Cooldown -7.2s</div>
+                            <div>- Hail: Damage +18.4% * Skill Level</div>
+                            <div>- Freezing Area Trap: Damage +64% * Skill Level</div>
+                            <div>- Frozen Claw Jump: Cooldown -9.3s</div>
+                            <div>- Rage: Health boost +21%</div>
+                            <div>- Hail: Handicap +10%</div>
+                            <div>- Frozen Claw Jump: Damage +300%</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Poison resistance +4.6%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Max Health 800 + 2.2 * Health
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Frozen Claw Jump: Damage +75% and Hail: Handicap +10%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Freezing Wall: Damage/s +150%
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- COLLAR -->
+    <!-- ========================================== -->
+
+    <div id="item-collar" class="item-sub">
+
+        <h2>Trang bị vị trí: Collar (Vòng cổ)</h2>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th width="15%">Tên Item</th>
+                        <th width="12%">Hệ (Type)</th>
+                        <th width="35%">Chỉ số cơ bản</th>
+                        <th width="38%">Dòng Cường Hóa (Reinforcement Tiers)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- BALEFUL IVY -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Baleful Ivy
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-poison">
+                                Độc
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Max Health: 5,350 + 20 * Health</div>
+                            <div>- Fire resistance: 20%</div>
+                            <div>- Electric resistance: 30%</div>
+                            <div>- Damage: 200 + 0.7 * Attack</div>
+                            <div>- Physical resistance: 20%</div>
+                            <div>- Poison Trap: Cooldown -3s</div>
+                            <div>- Poisonous Cloud: Damage/s +20% * Skill Level</div>
+                            <div>- Rage: Speed boost +20%</div>
+                            <div>- Poisonous Jump: Cooldown -4s</div>
+                            <div>- Poison Trap: Effect duration +0.2s * Skill Level</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Damage 20 + 0.15 * Attack
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Poisonous Jump: Cooldown -1s
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Physical resistance +5%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Poison Trap: Effect duration +0.2s * Skill Level
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- ELECTRIC TURMOIL -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Electric Turmoil
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-light">
+                                Điện
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Max Health: 5,110 + 22 * Health</div>
+                            <div>- Fire resistance: 26.7%</div>
+                            <div>- Electric resistance: 26.7%</div>
+                            <div>- Physical resistance: 20%</div>
+                            <div>- Damage: 250 + 0.67 * Attack</div>
+                            <div>- Thunder: Cooldown -4.9s</div>
+                            <div>- Thunderstorm: Damage +18% * Skill Level</div>
+                            <div>- Rage: Speed boost +3.5% * Skill Level</div>
+                            <div>- 5% chance to cast Critical Boost Level 1 on attack</div>
+                            <div>- Thunderstorm: Cooldown -6s</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Physical resistance +6%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Damage 25 + 0.13 * Attack
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                +2% chance to cast Critical Boost Level 1 on attack
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Thunderstorm: Cooldown -6s
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- QUELLED HELLFIRE -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Quelled Hellfire
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-fire">
+                                Lửa
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Max Health: 5,400 + 20 * Health</div>
+                            <div>- Fire resistance: 26.7%</div>
+                            <div>- Electric resistance: 26.7%</div>
+                            <div>- Physical resistance: 20%</div>
+                            <div>- Damage: 180 + 0.63 * Attack</div>
+                            <div>- Firewall: Damage/s +15.5% * Skill Level</div>
+                            <div>- Root Prison: Cooldown -6s</div>
+                            <div>- Rage: Speed boost +50%</div>
+                            <div>- 5% chance to cast Firewall Level 10 on attack</div>
+                            <div>- Explosion Trap: Cooldown -5s</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Physical resistance +5%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Damage 18 + 0.14 * Attack
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                +2% chance to cast Firewall Level 4 on attack
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Explosion Trap: Cooldown -5s
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- FROZEN WISDOM -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Frozen Wisdom
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-ice">
+                                Băng
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Max Health: 6,525 + 22 * Health</div>
+                            <div>- Fire resistance: 30%</div>
+                            <div>- Electric resistance: 20%</div>
+                            <div>- Physical resistance: 20%</div>
+                            <div>- Damage: 234 + 0.5 * Attack</div>
+                            <div>- 15% chance to cast Icy Spikes Level 13 on attack</div>
+                            <div>- Hail: Effect duration +2s</div>
+                            <div>- Freezing Area Trap: Effect duration +2s</div>
+                            <div>- Frozen Claw Jump: Cooldown -9.7s</div>
+                            <div>- Rage: Speed boost +40%</div>
+                            <div>- Freezing Breath: Damage/s +9.5% * Skill Level</div>
+                            <div>- Freezing Wall: Duration +3s</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Physical resistance +7%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Damage +47 + 0.1 * Attack
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Freezing Breath: Damage/s +4% * Skill Level
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Freezing Wall: Duration +3s
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- FRONT LEGS -->
+    <!-- ========================================== -->
+
+    <div id="item-frontlegs" class="item-sub">
+
+        <h2>Trang bị vị trí: Front Legs (Chân trước)</h2>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th width="15%">Tên Item</th>
+                        <th width="12%">Hệ (Type)</th>
+                        <th width="35%">Chỉ số cơ bản</th>
+                        <th width="38%">Dòng Cường Hóa (Reinforcement Tiers)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- THORNY STRIKE -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Thorny Strike
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-poison">
+                                Độc
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Damage: 285 + 0.83 * Attack</div>
+                            <div>- Cold resistance: 26.7%</div>
+                            <div>- Poison resistance: 26.7%</div>
+                            <div>- Attack speed: 0.26</div>
+                            <div>- Reduces shock duration by 60%</div>
+                            <div>- Movement speed: 0.4</div>
+                            <div>- Poison mastery: 10%</div>
+                            <div>- Poisonous Jump: Cooldown -5s</div>
+                            <div>- Poison Trap: Damage/s +15% * Skill Level</div>
+                            <div>- Poisonous Jump: Damage/s +10% * Skill Level</div>
+                            <div>- Accursing Bite: Damage +46% * Skill Level</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Movement speed +0.4
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Poisonous Damage/s +39%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Accursing Bite: Damage +195%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Poison mastery +10%
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- HURRICANE HIT -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Hurricane Hit
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-light">
+                                Điện
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Damage: 230 + 0.96 * Attack</div>
+                            <div>- Cold resistance: 30%</div>
+                            <div>- Poison resistance: 20%</div>
+                            <div>- Attack speed: 0.2</div>
+                            <div>- Movement speed: 0.41</div>
+                            <div>- Electric mastery: 10%</div>
+                            <div>- Electric Trap: Damage +54% * Skill Level</div>
+                            <div>- Thunder: Cooldown -5s</div>
+                            <div>- Thunder: Damage +46% * Skill Level</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Thunder: Cooldown -1s
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Thunder: Damage +13% * Skill Level
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Movement speed +0.41
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Electric mastery +10%
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- WINGS OF PHOENIX -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Wings of Phoenix
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-fire">
+                                Lửa
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Damage: 265 + 1.08 * Attack</div>
+                            <div>- Cold resistance: 20%</div>
+                            <div>- Poison resistance: 30%</div>
+                            <div>- Attack speed: 0.3</div>
+                            <div>- Reduces poison duration by 25%</div>
+                            <div>- Movement speed: 0.36</div>
+                            <div>- Fire mastery: 20%</div>
+                            <div>- Firewall: Cooldown -5s</div>
+                            <div>- Firewall: Damage/s +15.5% * Skill Level</div>
+                            <div>- Root Prison: Effect duration +1s</div>
+                            <div>- 20% chance to cast Fire Nova Level 12 on hit received</div>
+                            <div>- Rage: Damage boost +1.5% * Skill Level</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                5% chance to cast Fire Nova Level 3 on hit received
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Movement speed +0.36
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Fire mastery +5%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Rage: Damage boost +19.5%
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- NUMBING TOUCH -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Numbing Touch
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-ice">
+                                Băng
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Damage: 274 + 1.02 * Attack</div>
+                            <div>- Cold resistance: 26.7%</div>
+                            <div>- Poison resistance: 26.7%</div>
+                            <div>- Attack speed: 0.24</div>
+                            <div>- Movement speed: 0.37</div>
+                            <div>- Cold mastery: 11%</div>
+                            <div>- Freezing Breath: Duration +3s</div>
+                            <div>- Hail: Cooldown -10.9s</div>
+                            <div>- Frozen Claw Jump: Damage +32.3% * Skill Level</div>
+                            <div>- Freezing Wall: Damage/s +230%</div>
+                            <div>- 20% chance to cast Frost Bite Level 12 on attack</div>
+                            <div>- Frozen Claw Jump: Effect duration +2s</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                +5% chance to cast Frost Bite Level 3 on attack
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Movement speed +0.37
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Cold mastery +5%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Hail: Damage +100% and Frozen Claw Jump: Effect duration +2s
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- REAR LEGS -->
+    <!-- ========================================== -->
+
+    <div id="item-rearlegs" class="item-sub">
+
+        <h2>Trang bị vị trí: Rear Legs (Chân sau)</h2>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th width="15%">Tên Item</th>
+                        <th width="12%">Hệ (Type)</th>
+                        <th width="35%">Chỉ số cơ bản</th>
+                        <th width="38%">Dòng Cường Hóa (Reinforcement Tiers)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- VENOM SPIKES -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Venom Spikes
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-poison">
+                                Độc
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Damage: 274 + 0.95 * Attack</div>
+                            <div>- Electric resistance: 30%</div>
+                            <div>- Movement speed: 0.39</div>
+                            <div>- Attack speed: 0.14</div>
+                            <div>- Poison mastery: 20%</div>
+                            <div>- Fire resistance: 20%</div>
+                            <div>- Poisonous Cloud: Damage/s +8.5% * Skill Level</div>
+                            <div>- Accursing Bite: Damage +46% * Skill Level</div>
+                            <div>- Rage: Cooldown -5s</div>
+                            <div>- Poisonous Cloud: Cooldown -7.1s</div>
+                            <div>- 10% chance to cast Swamp Level 13 on hit received</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Poison mastery +20%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Poisonous Cloud: Cooldown -2s
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Fire resistance +20%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                +10% chance to cast Swamp Level 13 on hit received
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- LIGHTNING GUARDS -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Lightning Guards
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-light">
+                                Điện
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Damage: 294 + 0.87 * Attack</div>
+                            <div>- Electric/Fire resistance: 26.7%</div>
+                            <div>- Movement speed: 0.4</div>
+                            <div>- Attack speed: 0.15</div>
+                            <div>- Electric mastery: 18%</div>
+                            <div>- Fire resistance: 26.7%</div>
+                            <div>- Thunderstorm: Cooldown -6s</div>
+                            <div>- Rage: Cooldown -5s</div>
+                            <div>- Thunderstorm: Damage +15% * Skill Level</div>
+                            <div>- Thunderstorm: Number of hits +2</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Thunderstorm: Damage +5% * Skill Level
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Electric mastery +10%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Fire resistance +5.8%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Thunderstorm: Number of hits +2
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- FLAMING IRONS -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Flaming Irons
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-fire">
+                                Lửa
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Damage: 282 + 0.96 * Attack</div>
+                            <div>- Electric/Fire resistance: 26.7%</div>
+                            <div>- Movement speed: 0.45</div>
+                            <div>- Attack speed: 0.2</div>
+                            <div>- Fire mastery: 15%</div>
+                            <div>- Fire resistance: 26.7%</div>
+                            <div>- Fiery Ring: Cooldown -8s</div>
+                            <div>- Rage: Cooldown -5s</div>
+                            <div>- Explosion Trap: Damage +38% * Skill Level</div>
+                            <div>- Firewall: Damage/s +14% * Skill Level</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Fire mastery +3%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Explosion Trap: 104%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Fire resistance +14%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Firewall: Damage/s +14% * Skill Level
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- BLIZZARD CLAWS -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Blizzard Claws
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-ice">
+                                Băng
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Damage: 242 + 0.85 * Attack</div>
+                            <div>- Electric resistance: 20%</div>
+                            <div>- Movement speed: 0.42</div>
+                            <div>- Attack speed: 0.16</div>
+                            <div>- Fire resistance: 30%</div>
+                            <div>- Cold mastery: 15%</div>
+                            <div>- Freezing Wall: Cooldown -10.5s</div>
+                            <div>- Frozen Claw Jump: Damage +47% * Skill Level</div>
+                            <div>- Rage: Cooldown -5s</div>
+                            <div>- Hail: Number of hits +4</div>
+                            <div>- Freezing Breath: Damage/s +12% * Skill Level</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Fire resistance +14%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Cold mastery +8%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Hail: Number of hits +1
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Freezing Breath: Damage/s +12% * Skill Level
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- ARMOR -->
+    <!-- ========================================== -->
+
+    <div id="item-armor" class="item-sub">
+
+        <h2>Trang bị vị trí: Armor (Giáp thân)</h2>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th width="15%">Tên Item</th>
+                        <th width="12%">Hệ (Type)</th>
+                        <th width="35%">Chỉ số cơ bản</th>
+                        <th width="38%">Dòng Cường Hóa (Reinforcement Tiers)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- FOREST'S PRIDE -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Forest's Pride
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-poison">
+                                Độc
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Max Health: 5,200 + 21 * Health</div>
+                            <div>- Poison/Cold resistance: 26.7%</div>
+                            <div>- Physical resistance: 20%</div>
+                            <div>- Poisonous Jump: Damage +34% * Skill Level</div>
+                            <div>- Swamp: Cooldown -10s</div>
+                            <div>- Rage: Attack speed boost +25%</div>
+                            <div>- 9% chance to cast Poison Nova Level 12 on hit received</div>
+                            <div>- Rage: Effect duration +0.3s * Skill Level</div>
+                            <div>- Poisonous Cloud: Cooldown -6s</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                +3% chance to cast Poison Nova Level 3 on hit received
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Cold resistance +10.4%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Rage: Effect duration +1.3s
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Poisonous Cloud: Cooldown -6s
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- THUNDERBRINGER -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Thunderbringer
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-light">
+                                Điện
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Max Health: 5,665 + 21 * Health</div>
+                            <div>- Poison/Physical resistance: 20%</div>
+                            <div>- Cold resistance: 30%</div>
+                            <div>- Electric Trap: Cooldown -3s</div>
+                            <div>- Thunderstorm: Cooldown -6s</div>
+                            <div>- Rage: Attack speed boost +3% * Skill Level</div>
+                            <div>- Electroshock: Damage +400%</div>
+                            <div>- Rage: Effect duration +0.3s * Skill Level</div>
+                            <div>- 2% chance to cast Electroshock Level 6 on attack</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Cold resistance +15%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Electroshock: Damage +100%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Rage: Effect duration +1.3s
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                +2% chance to cast Electroshock Level 6 on attack
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- CONFLAGRATION -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Conflagration
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-fire">
+                                Lửa
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Max Health: 5,150 + 19 * Health</div>
+                            <div>- Poison resistance: 30%</div>
+                            <div>- Physical/Cold resistance: 20%</div>
+                            <div>- Fiery Ring: Damage/s +20% * Skill Level</div>
+                            <div>- Root Prison: Cooldown -9s</div>
+                            <div>- Firewall: Cooldown -5s</div>
+                            <div>- Rage: Attack speed boost +3.5% * Skill Level</div>
+                            <div>- Fiery Ring: Damage/s -7s</div>
+                            <div>- Rage: Effect duration +0.3s * Skill Level</div>
+                            <div>- Firewall: Damage/s +10% * Skill Level</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Fiery Ring: Cooldown -2s
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Cold resistance +20%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                Rage: Effect duration +1.3s
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Firewall: Damage/s +10% * Skill Level
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- HEART OF WINTER -->
+                    <tr>
+
+                        <td>
+                            <span class="legend-title">
+                                Heart of Winter
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="type-ice">
+                                Băng
+                            </span>
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>- Max Health: 7,340 + 24 * Health</div>
+                            <div>- Poison/Cold resistance: 26.7%</div>
+                            <div>- Physical resistance: 20%</div>
+                            <div>- Freezing Breath: Damage/s +18.4% * Skill Level</div>
+                            <div>- Freezing Area Trap: Handicap +10%</div>
+                            <div>- Freezing Wall: Damage/s +23% * Skill Level</div>
+                            <div>- Rage: Attack speed boost +3% * Skill Level</div>
+                            <div>- Hail: Damage +12% * Skill Level</div>
+                            <div>- 8% chance to cast Hurricane Level 13 on hit received</div>
+                            <div>- Rage: Effect duration +0.3s * Skill Level</div>
+
+                        </td>
+
+                        <td class="item-stats">
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.1 (Tier 1):
+                                </span>
+                                Hail: Damage +3.5% * Skill Level
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.4 (Tier 2):
+                                </span>
+                                Cold resistance +13.4%
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.7 (Tier 3):
+                                </span>
+                                +3.5% chance to cast Hurricane Level 7 on hit received
+                            </div>
+
+                            <div>
+                                <span class="tier-title">
+                                    Lv.10 (Tier 4):
+                                </span>
+                                Rage: Effect duration +0.3s * Skill Level
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+```

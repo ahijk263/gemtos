@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    ```
+    <title>GAMETO - MADEBYDI</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    ```
+
+</head>
+
+<body>
+
+    ```
+    <!-- ========================================== -->
+    <!-- TOP CONTROLS -->
+    <!-- ========================================== -->
+    <div class="top-controls">
+        <button class="ctrl-btn" onclick="toggleSettings()">
+            ⚙️ Cài đặt
+        </button>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- FLOATING THEME TOGGLE BUTTON -->
+    <!-- ========================================== -->
+    <button class="floating-theme-btn" id="floatingThemeBtn" onclick="toggleTheme()" title="Chuyển đổi Sáng/Tối">
+        🌙
+    </button>
+
+
+    <!-- ========================================== -->
+    <!-- SETTINGS MODAL -->
+    <!-- ========================================== -->
+    <div id="settingsModal" class="modal-overlay" onclick="closeSettings(event)">
+
+        <div class="modal-content" onclick="event.stopPropagation()">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h3>⚙️ Cài đặt hệ thống</h3>
+
+                <button class="close-btn" onclick="toggleSettings()">
+                    &times;
+                </button>
+            </div>
+
+
+            <!-- Database Editing -->
+            <div class="setting-item">
+
+                <span class="setting-label">
+                    Chỉnh sửa cơ sở dữ liệu
+                </span>
+
+                <div style="display:flex; gap:8px; width:100%;">
+
+                    <button class="ctrl-btn" id="editToggleBtn" onclick="toggleEditMode()">
+                        ✏️ Chỉnh sửa
+                    </button>
+
+                    <button class="ctrl-btn" id="resetBtn" onclick="resetData()" style="display:none;">
+                        🔄 Khôi phục
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Font Selection -->
+            <div class="setting-item">
+
+                <span class="setting-label">
+                    Phông chữ hiển thị
+                </span>
+
+                <select class="filter-select" id="fontSelect" onchange="changeFont()">
+
+                    <option value="'Rajdhani', sans-serif">
+                        Rajdhani (Gaming mặc định)
+                    </option>
+
+                    <option value="'Orbitron', sans-serif">
+                        Orbitron
+                    </option>
+
+                    <option value="'Inter', sans-serif">
+                        Inter
+                    </option>
+
+                    <option value="'Roboto', sans-serif">
+                        Roboto
+                    </option>
+
+                    <option value="'Open Sans', sans-serif">
+                        Open Sans
+                    </option>
+
+                    <option value="'Poppins', sans-serif">
+                        Poppins
+                    </option>
+
+                    <option value="'Montserrat', sans-serif">
+                        Montserrat
+                    </option>
+
+                    <option value="'Fira Code', monospace">
+                        Fira Code (Lập trình)
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- WEBSITE TITLE -->
+    <!-- ========================================== -->
+    <h1>GAMETO - MADEBYDI</h1>
+
+
+    <!-- ========================================== -->
+    <!-- MAIN MENU -->
+    <!-- ========================================== -->
+    <div class="btn-group">
+
+        <button class="btn" onclick="openTab(event, 'tab-skills')" id="defaultOpen">
+            Kỹ năng (Skills)
+        </button>
+
+        <button class="btn" onclick="openTab(event, 'tab-items')">
+            Trang bị (Items)
+        </button>
+
+        <button class="btn" onclick="openTab(event, 'tab-runes')">
+            Bộ lọc Ngọc (Runes)
+        </button>
+
+        <button class="btn" onclick="openTab(event, 'tab-runeskills')">
+            Công thức (Rune Skills)
+        </button>
+
+        <button class="btn" onclick="openTab(event, 'tab-documents')">
+            Tài liệu
+        </button>
+
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- PAGE CONTENT -->
+    <!-- Các file trong /pages sẽ được load vào đây -->
+    <!-- ========================================== -->
+    <div id="page-container"></div>
+
+
+    <!-- ========================================== -->
+    <!-- MAIN JAVASCRIPT -->
+    <!-- ========================================== -->
+    <script src="js/main.js"></script>
+    ```
+
+</body>
+
+</html>
