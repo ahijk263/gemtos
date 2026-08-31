@@ -243,7 +243,7 @@ async function openTab(evt, tabName) {
     tabcontent = document.getElementsByClassName("tab-content");
     for (i = 0; i < tabcontent.length; i++) tabcontent[i].style.display = "none";
     tablinks = document.getElementsByClassName("btn");
-    for (i = 0; i < tablinks.length; i++) tablinks[i].className = tablinks[i].className.replace(" active", "");
+    for (i = 0; i < tablinks.length; i++) tablinks[i].classList.remove("active");
 
     if (!document.getElementById(tabName)) {
         await loadPageSection(tabName);
@@ -251,7 +251,9 @@ async function openTab(evt, tabName) {
 
     const targetTab = document.getElementById(tabName);
     if (targetTab) targetTab.style.display = "block";
-    if (evt && evt.currentTarget) evt.currentTarget.className += " active";
+    // prefer the event's currentTarget, fallback to data-tab selector
+    const activeBtn = (evt && evt.currentTarget) ? evt.currentTarget : document.querySelector(`.btn[data-tab="${tabName}"]`);
+    if (activeBtn) activeBtn.classList.add("active");
 
     // If Items tab opened, ensure default sub 'Helmet' is activated
     if (tabName === "tab-items") {
