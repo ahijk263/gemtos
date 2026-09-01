@@ -247,14 +247,14 @@ window.addEventListener("DOMContentLoaded", async () => {
     }
 
     const savedTheme = localStorage.getItem("game_theme_clean");
-    const floatBtn = document.getElementById("floatingThemeBtn");
+    const themeBtn = document.getElementById("themeToggleBtn");
 
     if (savedTheme === "light") {
         document.body.classList.add("light-mode");
-        if (floatBtn) floatBtn.innerHTML = "🌙";
+        if (themeBtn) themeBtn.innerHTML = "☀️";
     } else {
         document.body.classList.remove("light-mode");
-        if (floatBtn) floatBtn.innerHTML = "☀️";
+        if (themeBtn) themeBtn.innerHTML = "🌙";
     }
 
     const defaultTab = document.getElementById("defaultOpen");
@@ -286,15 +286,15 @@ window.addEventListener("DOMContentLoaded", async () => {
 // --- CHUYỂN ĐỔI DARK / LIGHT THEME ---
 function toggleTheme() {
     const body = document.body;
-    const floatBtn = document.getElementById("floatingThemeBtn");
+    const themeBtn = document.getElementById("themeToggleBtn");
     body.classList.toggle("light-mode");
 
     if (body.classList.contains("light-mode")) {
         localStorage.setItem("game_theme_clean", "light");
-        if (floatBtn) floatBtn.innerHTML = "🌙";
+        if (themeBtn) themeBtn.innerHTML = "☀️";
     } else {
         localStorage.setItem("game_theme_clean", "dark");
-        if (floatBtn) floatBtn.innerHTML = "☀️";
+        if (themeBtn) themeBtn.innerHTML = "🌙";
     }
     // Re-ensure currently active tab and its sub-tab remain visible after theme switch.
     try {

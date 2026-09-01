@@ -24,18 +24,14 @@
     <!-- TOP CONTROLS -->
     <!-- ========================================== -->
     <div class="top-controls">
+        <button class="ctrl-btn" id="themeToggleBtn" onclick="toggleTheme()" title="Chuyển đổi Sáng/Tối">
+            🌙
+        </button>
+
         <button class="ctrl-btn" onclick="toggleSettings()">
             ⚙️ Cài đặt
         </button>
     </div>
-
-
-    <!-- ========================================== -->
-    <!-- FLOATING THEME TOGGLE BUTTON -->
-    <!-- ========================================== -->
-    <button class="floating-theme-btn" id="floatingThemeBtn" onclick="toggleTheme()" title="Chuyển đổi Sáng/Tối">
-        🌙
-    </button>
 
 
     <!-- ========================================== -->
@@ -52,28 +48,6 @@
                 <button class="close-btn" onclick="toggleSettings()">
                     &times;
                 </button>
-            </div>
-
-
-            <!-- Database Editing -->
-            <div class="setting-item">
-
-                <span class="setting-label">
-                    Chỉnh sửa cơ sở dữ liệu
-                </span>
-
-                <div style="display:flex; gap:8px; width:100%;">
-
-                    <button class="ctrl-btn" id="editToggleBtn" onclick="toggleEditMode()">
-                        ✏️ Chỉnh sửa
-                    </button>
-
-                    <button class="ctrl-btn" id="resetBtn" onclick="resetData()" style="display:none;">
-                        🔄 Khôi phục
-                    </button>
-
-                </div>
-
             </div>
 
 
