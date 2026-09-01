@@ -44,7 +44,8 @@ function toggleEditMode() {
             items: document.getElementById("tab-items") ? sanitizeTabHtml("tab-items", document.getElementById("tab-items").innerHTML) : "",
             runes: document.getElementById("tab-runes") ? sanitizeTabHtml("tab-runes", document.getElementById("tab-runes").innerHTML) : "",
             runeskills: document.getElementById("tab-runeskills") ? sanitizeTabHtml("tab-runeskills", document.getElementById("tab-runeskills").innerHTML) : "",
-            documents: document.getElementById("tab-documents") ? sanitizeTabHtml("tab-documents", document.getElementById("tab-documents").innerHTML) : ""
+            documents: document.getElementById("tab-documents") ? sanitizeTabHtml("tab-documents", document.getElementById("tab-documents").innerHTML) : "",
+            attributes: document.getElementById("tab-attributes") ? sanitizeTabHtml("tab-attributes", document.getElementById("tab-attributes").innerHTML) : ""
         };
         localStorage.setItem("game_custom_data_v18", JSON.stringify(dataToSave));
         alert("Đã lưu nội dung chỉnh sửa thành công!");
@@ -70,7 +71,8 @@ const PAGE_FILES = {
     "tab-items": "items",
     "tab-runes": "runes",
     "tab-runeskills": "rune-skills",
-    "tab-documents": "documents"
+    "tab-documents": "documents",
+    "tab-attributes": "attributes"
 };
 
 const loadedPages = new Set();
@@ -213,6 +215,9 @@ async function loadPageSection(tabId) {
         container.appendChild(section);
         if (tabId === "tab-runeskills") {
             await loadRuneSkillsData();
+        }
+        if (tabId === "tab-attributes") {
+            await loadAttributesData();
         }
         loadedPages.add(tabId);
         return section;
@@ -543,3 +548,73 @@ function applyRuneSkillFilter() {
         row.style.display = (matchType && matchShape) ? "" : "none";
     });
 }
+
+// --- ATTRIBUTES DATA LOADING ---
+let attributesData = [];
+
+async function loadAttributesData() {
+    const container = document.getElementById("attributes-table-container");
+    if (!container) return;
+
+    try {
+        const response = await fetch("data/attributes_data.json");
+        if (!response.ok) {
+            throw new Error(`Không tải được dữ liệu attributes (${response.status})`);
+        }
+
+        attributesData = await response.json();
+        displayAttributesTable(attributesData);
+    } catch (error) {
+        console.error("Lỗi khi tải dữ liệu attributes:", error);
+        container.innerHTML = "<p style='color: var(--danger);'>Lỗi tải dữ liệu chỉ số!</p>";
+    }
+}
+
+function displayAttributesTable(data) {
+    const container = document.getElementById("attributes-table-container");
+    if (!container) return;
+
+    let html = `
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background: var(--table-header); border-bottom: 2px solid var(--border-color);">
+                    <th style="padding: 12px; text-align: left; color: var(--text-main); font-weight: 700;">Level</th>
+                    <th style="padding: 12px; text-align: right; color: var(--text-main); font-weight: 700;">Coin</th>
+                </tr>
+            </thead>
+            <tbody>
+    `;
+
+    data.forEach((row, index) => {
+        const bgColor = index % 2 === 0 ? "transparent" : "var(--table-hover)";
+        html += `
+            <tr class="attributes-row" data-level="${row.lvl}" style="background: ${bgColor}; border-bottom: 1px solid var(--border-color);">
+                <td style="padding: 12px; text-align: left; color: var(--text-main);">${row.lvl}</td>
+                <td style="padding: 12px; text-align: right; color: var(--accent-primary); font-weight: 600;">${row.coin}</td>
+            </tr>
+        `;
+    });
+
+    html += `
+            </tbody>
+        </table>
+    `;
+
+    container.innerHTML = html;
+}
+
+function filterAttributesRange() {
+    const filterValue = document.getElementById("filterAttrRange").value;
+    const rows = document.querySelectorAll(".attributes-row");
+
+    if (filterValue === "all") {
+        rows.forEach(row => row.style.display = "");
+    } else {
+        const [minLevel, maxLevel] = filterValue.split("-").map(Number);
+        rows.forEach(row => {
+            const level = parseInt(row.getAttribute("data-level"));
+            row.style.display = (level >= minLevel && level <= maxLevel) ? "" : "none";
+        });
+    }
+}
+

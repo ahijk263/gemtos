@@ -1,0 +1,29 @@
+<!-- ========================================== -->
+<!-- TAB: ATTRIBUTES -->
+<!-- ========================================== -->
+<div id="tab-attributes" class="tab-content">
+    <h2>Attributes Prices (Level 1 - 750 / MAX)</h2>
+    <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 20px;">Bảng tra cứu chi tiết số lượng Coin cần
+        thiết để nâng cấp chỉ số nhân vật từ Level 1 đến Level 750 (Max).</p>
+    <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 20px;">Trong đó chỉ số Speed và Def max là 60.
+    </p>
+    <div class="filter-container">
+        <div style="display: flex; align-items: center; gap: 10px; width: 100%;">
+            <label class="filter-label">Chọn mốc level:</label>
+            <select id="filterAttrRange" class="filter-select" onchange="filterAttributesRange()">
+                <option value="all">Tổng số coin cho các mốc level</option>
+                <option value="1-100">Level 1 - 100</option>
+                <option value="101-200">Level 101 - 200</option>
+                <option value="201-300">Level 201 - 300</option>
+                <option value="301-400">Level 301 - 400</option>
+                <option value="401-500">Level 401 - 500</option>
+                <option value="501-600">Level 501 - 600</option>
+                <option value="601-750">Level 601 - 750 (Max)</option>
+            </select>
+        </div>
+    </div>
+    
+    <div id="attributes-table-container" style="margin-top: 15px;">
+        <p style="color: var(--text-muted);">Đang tải dữ liệu...</p>
+    </div>
+</div>
