@@ -6,7 +6,7 @@
 
     <!-- SKILLS MENU -->
     <div class="sub-btn-group">
-        <button class="sub-btn" onclick="openSubTab(event, 'skill-basic', 'skill-sub')" id="defaultSkillSub">
+        <button class="sub-btn active" onclick="openSubTab(event, 'skill-basic', 'skill-sub')" id="defaultSkillSub">
             Basic
         </button>
 
@@ -24,10 +24,8 @@
     </div>
 
     <!-- BASIC SKILLS -->
-    <div id="skill-basic" class="skill-sub">
-
+    <div id="skill-basic" class="skill-sub" style="display: block;">
         <h2>Basic Skills</h2>
-
         <div class="table-responsive">
             <table>
                 <thead>
@@ -38,200 +36,14 @@
                         <th width="15%">Tổng Gems</th>
                     </tr>
                 </thead>
-
-                <tbody>
-                    <tr>
-                        <td><span class="type-phys">Vật lí</span></td>
-                        <td><b>Double Claw</b></td>
-                        <td>
-                            <div>Inflicts damage on the enemy twice with a sharp slash.</div>
-                            <div class="skill-translation">(Gây sát thương lên kẻ địch 2 lần bằng một đòn chém sắc bén)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            9,820
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-phys">Vật lí</span></td>
-                        <td><b>Overhead Triple Claw</b></td>
-                        <td>
-                            <div>Dashes towards the target for a powerful hit. </div>
-                            <div class="skill-translation">(Lướt tới mục tiêu để tung ra một đòn tấn công uy lực)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            19,640
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-ice">Băng</span></td>
-                        <td><b>Frost Bite</b></td>
-                        <td>
-                            <div>Hits and slows down the enemy with a freezing blow.</div>
-                            <div class="skill-translation">(Tấn công và làm chậm kẻ địch bằng một đòn đánh băng giá)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            29,460
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-poison">Độc</span></td>
-                        <td><b>Venom</b></td>
-                        <td>
-                            <div>Hits the enemy with venom leaving them poisoned.</div>
-                            <div class="skill-translation">(Tấn công kẻ địch bằng nọc độc, khiến chúng bị nhiễm độc)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            39,280
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-fire">Lửa</span></td>
-                        <td><b>Flame Spin</b></td>
-                        <td>
-                            <div>Fire attack inflicting damage on enemies in your area.</div>
-                            <div class="skill-translation">(Đòn tấn công lửa gây sát thương lên kẻ địch trong vùng ảnh hưởng)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            39,280
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-phys">Vật lí</span></td>
-                        <td><b>Life Steal</b></td>
-                        <td>
-                            <div>Regenerates your HP by half of the damage inflicted.</div>
-                            <div class="skill-translation">(Hồi phục HP bằng một nửa sát thương gây ra)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            58,920
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-fire">Lửa</span></td>
-                        <td><b>Firewall</b></td>
-                        <td>
-                            <div>Creates a fire wall in front of you and burns enemies that go through it.</div>
-                            <div class="skill-translation">(Tạo ra một bức tường lửa phía trước và đốt cháy kẻ địch đi qua nó)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            58,920
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-poison">Độc</span></td>
-                        <td><b>Poisonous Jump</b></td>
-                        <td>
-                            <div>Jumps towards the enemy for a poisonous hit.</div>
-                            <div class="skill-translation">(Nhảy tới kẻ địch để tung ra đòn đánh tẩm độc)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            77,760
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-phys">Vật lí</span></td>
-                        <td><b>Vampiric Overhead Claw</b></td>
-                        <td>
-                            <div>Jumps to the target and steals some of their HP.</div>
-                            <div class="skill-translation">(Nhảy đến mục tiêu và hút một phần HP của chúng)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            88,380
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-light">Điện</span></td>
-                        <td><b>Shock Jump</b></td>
-                        <td>
-                            <div>Dashes towards the target inflicting electric damage with a chance to shock the enemy.
-                            </div>
-                            <div class="skill-translation">(Lướt tới mục tiêu gây sát thương điện kèm tỷ lệ làm choáng kẻ địch)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            88,380
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-ice">Băng</span></td>
-                        <td><b>Frozen Claw Jump</b></td>
-                        <td>
-                            <div>Dashes towards the target for a freezing hit.</div>
-                            <div class="skill-translation">(Lướt tới mục tiêu tung đòn đánh đóng băng)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            88,380
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-ice">Băng</span></td>
-                        <td><b>Freezing Wall</b></td>
-                        <td>
-                            <div>Creates an icy wall in front of you that freezes approaching enemies.</div>
-                            <div class="skill-translation">(Tạo bức tường băng phía trước làm đóng băng kẻ địch đến gần)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            88,380
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-light">Điện</span></td>
-                        <td><b>Thunder</b></td>
-                        <td>
-                            <div>A lightning that strikes a random enemy in front of you.</div>
-                            <div class="skill-translation">(Một tia chớp đánh vào kẻ địch ngẫu nhiên phía trước bạn)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            117,840
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-poison">Độc</span></td>
-                        <td><b>Poisonous Wall</b></td>
-                        <td>
-                            <div>Raises a toxic wall ahead that damages enemies and applies poison.</div>
-                            <div class="skill-translation">(Dựng lên bức tường độc phía trước gây sát thương và nhiễm độc kẻ địch)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            Chưa rõ
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-light">Điện</span></td>
-                        <td><b>Ball Lightning</b></td>
-                        <td>
-                            <div>Forms a lightning sphere that deals damage with a chance to shock the enemy.</div>
-                            <div class="skill-translation">(Tạo cầu sét gây sát thương kèm tỷ lệ làm choáng kẻ địch)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            Chưa rõ
-                        </td>
-                    </tr>
-                </tbody>
+                <tbody id="skills-basic-tbody"></tbody>
             </table>
         </div>
-
     </div>
 
     <!-- SPECIAL SKILLS -->
     <div id="skill-specials" class="skill-sub">
-
         <h2>Special Skills</h2>
-
         <div class="table-responsive">
             <table>
                 <thead>
@@ -242,211 +54,14 @@
                         <th width="15%">Tổng Gems</th>
                     </tr>
                 </thead>
-
-                <tbody>
-                    <tr>
-                        <td><span class="type-fire">Lửa</span></td>
-                        <td><b>Fire Nova</b></td>
-                        <td>
-                            <div>Powerful blast inflicting damage on enemies in your area.</div>
-                            <div class="skill-translation">(Vụ nổ cực mạnh gây sát thương lên kẻ địch trong khu vực của bạn)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            29,460
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-ice">Băng</span></td>
-                        <td><b>Icy Spikes</b></td>
-                        <td>
-                            <div>Drops a hail of ice spikes in front of you and slows down hit enemies.</div>
-                            <div class="skill-translation">(Rơi một trận mưa gai băng phía trước và làm chậm kẻ địch trúng đòn)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            39,280
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-ice">Băng</span></td>
-                        <td><b>Frost Nova</b></td>
-                        <td>
-                            <div>Cold blast slowing down the enemies in your area for a certain period of time.</div>
-                            <div class="skill-translation">(Vụ nổ buốt giá làm chậm kẻ địch trong khu vực trong một khoảng thời gian)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            49,100
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-fire">Lửa</span></td>
-                        <td><b>Meteors</b></td>
-                        <td>
-                            <div>Drops a meteor shower in front of you, inflicting damage on hit enemies.</div>
-                            <div class="skill-translation">(Gọi mưa thiên thạch rơi xuống phía trước, gây sát thương kẻ địch trúng phải)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            49,100
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-light">Điện</span></td>
-                        <td><b>Shock Nova</b></td>
-                        <td>
-                            <div>Electric blast with a chance to shock the enemies in your area.</div>
-                            <div class="skill-translation">(Vụ nổ điện kèm tỷ lệ làm choáng kẻ địch trong khu vực của bạn)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            58,920
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-poison">Độc</span></td>
-                        <td><b>Venomous Skin</b></td>
-                        <td>
-                            <div>Poisons enemies that approach you. Can stack multiple times...</div>
-                            <div class="skill-translation">(Nhiễm độc kẻ địch tiếp cận bạn. Có thể cộng dồn nhiều lần...)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            68,740
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-poison">Độc</span></td>
-                        <td><b>Poison Nova</b></td>
-                        <td>
-                            <div>Venom blast leaving enemies in your area poisoned.</div>
-                            <div class="skill-translation">(Vụ nổ nọc độc khiến kẻ địch trong khu vực bị nhiễm độc)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            78,560
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-phys">Vật lí</span></td>
-                        <td><b>Hurricane</b></td>
-                        <td>
-                            <div>Creates a whirlwind inflicting continuous damage on enemies nearby.</div>
-                            <div class="skill-translation">(Tạo ra cơn lốc xoáy gây sát thương liên tục lên kẻ địch lân cận)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            78,560
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-fire">Lửa</span></td>
-                        <td><b>Fire Breath</b></td>
-                        <td>
-                            <div>A stream of fire inflicting damage on hit enemies.</div>
-                            <div class="skill-translation">(Luồng lửa phun ra gây sát thương lên kẻ địch trúng đòn)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            88,380
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-light">Điện</span></td>
-                        <td><b>Electrified</b></td>
-                        <td>
-                            <div>Makes you deal electric damage to nearby targets with a chance to shock them.</div>
-                            <div class="skill-translation">(Khiến bạn gây sát thương điện lên mục tiêu lân cận kèm tỷ lệ làm choáng chúng)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            88,380
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-poison">Độc</span></td>
-                        <td><b>Poisonous Cloud</b></td>
-                        <td>
-                            <div>Forms a cloud which inflicts poisonous damage on your enemies.</div>
-                            <div class="skill-translation">(Tạo ra đám mây gây sát thương độc lên kẻ địch)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            98,200
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-light">Điện</span></td>
-                        <td><b>Electroshock</b></td>
-                        <td>
-                            <div>A burst of electricity inflicting damage on targets in front of you...</div>
-                            <div class="skill-translation">(Luồng phóng điện gây sát thương lên mục tiêu phía trước bạn...)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            98,200
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-ice">Băng</span></td>
-                        <td><b>Freezing Breath</b></td>
-                        <td>
-                            <div>A stream of cold inflicting damage and slowing down the targets.</div>
-                            <div class="skill-translation">(Luồng khí lạnh gây sát thương và làm chậm mục tiêu)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            117,840
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-ice">Băng</span></td>
-                        <td><b>Hail</b></td>
-                        <td>
-                            <div>Creates a hailstorm cloud that slows down hit enemies.</div>
-                            <div class="skill-translation">(Tạo ra đám mây mưa đá làm chậm kẻ địch trúng đòn)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            117,840
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-fire">Lửa</span></td>
-                        <td><b>Fiery Ring</b></td>
-                        <td>
-                            <div>Creates a ring of fire that burns the enemies within its range.</div>
-                            <div class="skill-translation">(Tạo vòng tròn lửa đốt cháy kẻ địch trong phạm vi)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            117,840
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-light">Điện</span></td>
-                        <td><b>Thunderstorm</b></td>
-                        <td>
-                            <div>Forms a cloud which strikes your enemies with lightnings.</div>
-                            <div class="skill-translation">(Tạo đám mây gọi sét đánh xuống kẻ địch)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            117,840
-                        </td>
-                    </tr>
-                </tbody>
+                <tbody id="skills-specials-tbody"></tbody>
             </table>
         </div>
-
     </div>
 
     <!-- AURA SKILLS -->
     <div id="skill-auras" class="skill-sub">
-
         <h2>Aura Skills</h2>
-
         <div class="table-responsive">
             <table>
                 <thead>
@@ -457,128 +72,14 @@
                         <th width="15%">Tổng Gems</th>
                     </tr>
                 </thead>
-
-                <tbody>
-                    <tr>
-                        <td><span class="type-aura">Aura</span></td>
-                        <td><b>Speed Boost</b></td>
-                        <td>
-                            <div>Increases movement speed for a certain period of time.</div>
-                            <div class="skill-translation">(Tăng tốc độ di chuyển trong một khoảng thời gian)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            9,820
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-aura">Aura</span></td>
-                        <td><b>Life Regeneration</b></td>
-                        <td>
-                            <div>Gradually regenerates your health by a certain amount.</div>
-                            <div class="skill-translation">(Hồi phục dần lượng máu của bạn theo thời gian)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            19,640
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-aura">Aura</span></td>
-                        <td><b>Critical Boost</b></td>
-                        <td>
-                            <div>Increases critical hit probability for a certain period of time.</div>
-                            <div class="skill-translation">(Tăng tỷ lệ chí mạng trong một khoảng thời gian)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            19,640
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-aura">Aura</span></td>
-                        <td><b>Area Life Regeneration</b></td>
-                        <td>
-                            <div>Gradually regenerates HP of all allies in the area.</div>
-                            <div class="skill-translation">(Hồi phục dần HP cho tất cả đồng minh trong khu vực)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            39,280
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-aura">Aura</span></td>
-                        <td><b>Instant Life Regeneration</b></td>
-                        <td>
-                            <div>Regenerates a certain amount of your health instantly.</div>
-                            <div class="skill-translation">(Hồi phục ngay lập tức một lượng máu nhất định)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            49,100
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-aura">Aura</span></td>
-                        <td><b>Damage Boost</b></td>
-                        <td>
-                            <div>Increases inflicted damage for a certain period of time.</div>
-                            <div class="skill-translation">(Tăng sát thương gây ra trong một khoảng thời gian)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            49,100
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-aura">Aura</span></td>
-                        <td><b>Accursing Bite</b></td>
-                        <td>
-                            <div>Bites your enemy leaving them cursed with lower health, attack and speed.</div>
-                            <div class="skill-translation">(Cắn kẻ địch khiến chúng bị nguyền rủa giảm máu, sát thương và tốc độ)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            88,380
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-aura">Aura</span></td>
-                        <td><b>Battle Orders</b></td>
-                        <td>
-                            <div>Increases HP of the allies in your area.</div>
-                            <div class="skill-translation">(Tăng HP cho đồng minh trong khu vực của bạn)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            98,200
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-aura">Aura</span></td>
-                        <td><b>Rage</b></td>
-                        <td>
-                            <div>Boosts your damage, HP and speed for a certain period of time.</div>
-                            <div class="skill-translation">(Tăng sát thương, HP và tốc độ của bạn trong một khoảng thời gian)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            98,200
-                        </td>
-                    </tr>
-
-                </tbody>
+                <tbody id="skills-auras-tbody"></tbody>
             </table>
         </div>
-
     </div>
 
     <!-- TOTEMS & TRAPS -->
     <div id="skill-totems" class="skill-sub">
-
         <h2>Totems & Traps</h2>
-
         <div class="table-responsive">
             <table>
                 <thead>
@@ -589,123 +90,9 @@
                         <th width="15%">Tổng Gems</th>
                     </tr>
                 </thead>
-
-                <tbody>
-                    <tr>
-                        <td><span class="type-ice">Băng</span></td>
-                        <td><b>Freezing Trap</b></td>
-                        <td>
-                            <div>Deploys a trap that freezes the target upon activation.</div>
-                            <div class="skill-translation">(Đặt bẫy đóng băng mục tiêu khi kích hoạt)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            39,280
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-poison">Độc</span></td>
-                        <td><b>Swamp</b></td>
-                        <td>
-                            <div>Deploys a ring that slows down enemies within the area.</div>
-                            <div class="skill-translation">(Đặt vòng bẫy làm chậm kẻ địch trong vùng ảnh hưởng)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            49,100
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-phys">Vật lí</span></td>
-                        <td><b>Root Prison</b></td>
-                        <td>
-                            <div>Immobilizes the target and limits the actions it can take.</div>
-                            <div class="skill-translation">(Trói buộc mục tiêu và hạn chế các hành động chúng có thể thực hiện)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            78,560
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-fire">Lửa</span></td>
-                        <td><b>Explosion Trap</b></td>
-                        <td>
-                            <div>Deploys an exploding trap that deals damage to every enemy in range.</div>
-                            <div class="skill-translation">(Đặt bẫy nổ gây sát thương mọi kẻ địch trong tầm bắn)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            88,380
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-aura">Aura</span></td>
-                        <td><b>Life Regeneration Totem</b></td>
-                        <td>
-                            <div>Deploys a totem that heals all friendly players within its range.</div>
-                            <div class="skill-translation">(Đặt cọc hồi máu cho tất cả đồng minh trong tầm ảnh hưởng)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            98,200
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-ice">Băng</span></td>
-                        <td><b>Freezing Area Trap</b></td>
-                        <td>
-                            <div>Deploys a trap that deals damage and freezes every enemy in range.</div>
-                            <div class="skill-translation">(Đặt bẫy gây sát thương và đóng băng mọi kẻ địch trong phạm vi)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            117,840
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-light">Điện</span></td>
-                        <td><b>Electric Trap</b></td>
-                        <td>
-                            <div>Deploys a trap that deals electric damage to enemies in range upon activation.
-                            </div>
-                            <div class="skill-translation">(Đặt bẫy gây sát thương sét lên kẻ địch trong phạm vi khi kích hoạt)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            117,840
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-poison">Độc</span></td>
-                        <td><b>Poison Trap</b></td>
-                        <td>
-                            <div>Deploys a trap that inflicts damage upon activation and leaves the target poisoned.
-                            </div>
-                            <div class="skill-translation">(Đặt bẫy gây sát thương khi kích hoạt và làm mục tiêu nhiễm độc)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            117,840
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span class="type-aura">Aura</span></td>
-                        <td><b>Shield Totem</b></td>
-                        <td>
-                            <div>Deploys a totem that reduces damage for all friendly players in range.</div>
-                            <div class="skill-translation">(Đặt cọc giảm sát thương nhận vào cho mọi đồng minh trong phạm vi)</div>
-                        </td>
-                        <td class="gem-text">
-                            <span class="gem-icon">💎</span>
-                            117,840
-                        </td>
-                    </tr>
-
-                </tbody>
+                <tbody id="skills-totems-tbody"></tbody>
             </table>
         </div>
-
     </div>
 
 </div>

@@ -1,0 +1,891 @@
+{
+  "helmet": [
+    {
+      "name": "Ominous Grove",
+      "nameClass": "legend-title",
+      "element": "Độc",
+      "elementClass": "type-poison",
+      "baseStats": [
+        "- Max Health: 5,720 + 19 * Health",
+        "- Fire resistance: 20%",
+        "- Poison mastery: 20%",
+        "- Electric resistance: 30%",
+        "- Physical resistance: 20%",
+        "- 15% chance to cast Venom Level 13 on attack",
+        "- Accursing Bite: Damage +46% * Skill Level",
+        "- Poisonous Cloud: Cooldown -6s",
+        "- Rage: Health boost +1.6% * Skill Level",
+        "- 10% chance to cast Speed Boost Level 1 on hit received",
+        "- Accursing Bite: Cooldown -5s"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Electric resistance +19%"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Physical resistance +10%"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "2.5% chance to cast speed boost lvl 1 on hit received"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Accursing bite cooldown -5s"
+        }
+      ]
+    },
+    {
+      "name": "Echoing Crown",
+      "nameClass": "legend-title",
+      "element": "Điện",
+      "elementClass": "type-light",
+      "baseStats": [
+        "- Max Health: 6,250 + 24 * Health",
+        "- Fire resistance: 26.7%",
+        "- Electric mastery: 18%",
+        "- Electric resistance: 26.7%",
+        "- Physical resistance: 20%",
+        "- 15% chance to cast Shock Nova Level 13 on hit received",
+        "- Electric Trap: Damage +55% * Skill Level",
+        "- Rage: Health boost +2.3% * Skill Level",
+        "- Thunderstorm: Cooldown -6s",
+        "- Thunderstorm: Number of hits +2"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Thunderstorm: Cooldown -2s"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Electric resistance +8%"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Physical resistance 80%"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Thunderstorm: Number of hits +2"
+        }
+      ]
+    },
+    {
+      "name": "Adamant Protector",
+      "nameClass": "legend-title",
+      "element": "Lửa",
+      "elementClass": "type-fire",
+      "baseStats": [
+        "- Max Health: 6,100 + 21 * Health",
+        "- Fire resistance: 26.7%",
+        "- Fire mastery: 23%",
+        "- Electric resistance: 26.7%",
+        "- Physical resistance: 20%",
+        "- 10% chance to cast Meteors Level 13 on attack",
+        "- Explosion Trap: Damage +38.5% * Skill Level",
+        "- Rage: Health boost +15%",
+        "- Fiery Ring: Damage/s +23%",
+        "- Root Prison: Cooldown -5s",
+        "- Firewall: Duration +1s * Skill Level"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Electric resistance +6.5%"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Fire Ring: Damage/s +5% * skill level"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Physical resistance 10%"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Firewall: Duration +1s, Root Prison: Cooldown -5s"
+        }
+      ]
+    },
+    {
+      "name": "Polar Vortex",
+      "nameClass": "legend-title",
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "baseStats": [
+        "- Max Health: 5,700 + 21 * Health",
+        "- Fire resistance: 30%",
+        "- Cold mastery: 19%",
+        "- Electric resistance: 20%",
+        "- Physical resistance: 20%",
+        "- 12% chance to cast Frost Nova Level 13 on hit received",
+        "- Freezing Breath: Handicap +12%",
+        "- Hail: Cooldown -9s",
+        "- Freezing Area Trap: Cooldown -3s",
+        "- Rage: Health boost +2% * Skill Level",
+        "- Freezing Breath: Cooldown -6.1s",
+        "- Freezing Area Trap: Damage +46% * Skill Level"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Freezing Breath: Cooldown -2.5s"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Electric resistance 11%"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Freezing Area Trap: Damage +23% * Skill level"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Physical resistance +20%"
+        }
+      ]
+    }
+  ],
+  "artifact": [
+    {
+      "name": "Calamitous Emerald",
+      "nameClass": "legend-title",
+      "element": "Độc",
+      "elementClass": "type-poison",
+      "baseStats": [
+        "- Damage: 266 + 0.88 * Attack",
+        "- Cold resistance: 26.7%",
+        "- Physical resistance: 20%",
+        "- Max Health: 3,200 + 20 * Health",
+        "- Poison resistance: 26.7%",
+        "- 15% chance to cast Venomous Skin Level 13 on hit received",
+        "- Swamp: Handicap +12.1%",
+        "- Poisonous Jump: Effect duration +2.5s",
+        "- Rage: Health boost +10%",
+        "- Poison Trap: Damage +38% * Skill Level",
+        "- Poisonous Cloud: Damage/s +10% * Skill Level"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Max Health 800 + 4 * Health"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Poison Trap: Damage +15% * Skill Level"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Poison resistance +8.3%"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Poisonous Cloud: Damage/s +10% * Skill Level"
+        }
+      ]
+    },
+    {
+      "name": "Stormy Topaz",
+      "nameClass": "legend-title",
+      "element": "Điện",
+      "elementClass": "type-light",
+      "baseStats": [
+        "- Damage: 274 + 0.92 * Attack",
+        "- Cold resistance: 30%",
+        "- Physical resistance: 20%",
+        "- Max Health: 3,700 + 20 * Health",
+        "- Poison resistance: 20%",
+        "- 12% chance to cast Electrified Level 13 on hit received",
+        "- Electroshock: Damage +400%",
+        "- Rage: Health boost +15%",
+        "- Thunder: Damage +56% * Skill Level",
+        "- Thunder: Cooldown -5s"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Max Health 740 + 4 * Health"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Poison resistance +2%"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Thunder: Damage +20% * Skill Level"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Thunder: Cooldown -5s"
+        }
+      ]
+    },
+    {
+      "name": "Fiendish Magma",
+      "nameClass": "legend-title",
+      "element": "Lửa",
+      "elementClass": "type-fire",
+      "baseStats": [
+        "- Damage: 272 + 1 * Attack",
+        "- Cold resistance: 20%",
+        "- Physical resistance: 20%",
+        "- Poison resistance: 30%",
+        "- Max Health: 3,500 + 13 * Health",
+        "- 12% chance to cast Root Prison Level 10 on attack",
+        "- Explosion Trap: Damage +38% * Skill Level",
+        "- Rage: Health boost +2.7% * Skill Level",
+        "- Root Prison: Cooldown -7s",
+        "- Fiery Ring: Duration +2s"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Poison resistance +22%"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Root Prison: Cooldown -1s"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Max Health 750 + 4 * Health"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Fiery Ring: Duration +2s"
+        }
+      ]
+    },
+    {
+      "name": "Frigid Sapphire",
+      "nameClass": "legend-title",
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "baseStats": [
+        "- Damage: 310 + 0.92 * Attack",
+        "- Cold resistance: 26.7%",
+        "- Physical resistance: 20%",
+        "- Poison resistance: 26.7%",
+        "- Max Health: 4,200 + 10 * Health",
+        "- Freezing Breath: Cooldown -7.2s",
+        "- Hail: Damage +18.4% * Skill Level",
+        "- Freezing Area Trap: Damage +64% * Skill Level",
+        "- Frozen Claw Jump: Cooldown -9.3s",
+        "- Rage: Health boost +21%",
+        "- Hail: Handicap +10%",
+        "- Frozen Claw Jump: Damage +300%"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Poison resistance +4.6%"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Max Health 800 + 2.2 * Health"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Frozen Claw Jump: Damage +75% and Hail: Handicap +10%"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Freezing Wall: Damage/s +150%"
+        }
+      ]
+    }
+  ],
+  "collar": [
+    {
+      "name": "Baleful Ivy",
+      "nameClass": "legend-title",
+      "element": "Độc",
+      "elementClass": "type-poison",
+      "baseStats": [
+        "- Max Health: 5,350 + 20 * Health",
+        "- Fire resistance: 20%",
+        "- Electric resistance: 30%",
+        "- Damage: 200 + 0.7 * Attack",
+        "- Physical resistance: 20%",
+        "- Poison Trap: Cooldown -3s",
+        "- Poisonous Cloud: Damage/s +20% * Skill Level",
+        "- Rage: Speed boost +20%",
+        "- Poisonous Jump: Cooldown -4s",
+        "- Poison Trap: Effect duration +0.2s * Skill Level"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Damage 20 + 0.15 * Attack"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Poisonous Jump: Cooldown -1s"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Physical resistance +5%"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Poison Trap: Effect duration +0.2s * Skill Level"
+        }
+      ]
+    },
+    {
+      "name": "Electric Turmoil",
+      "nameClass": "legend-title",
+      "element": "Điện",
+      "elementClass": "type-light",
+      "baseStats": [
+        "- Max Health: 5,110 + 22 * Health",
+        "- Fire resistance: 26.7%",
+        "- Electric resistance: 26.7%",
+        "- Physical resistance: 20%",
+        "- Damage: 250 + 0.67 * Attack",
+        "- Thunder: Cooldown -4.9s",
+        "- Thunderstorm: Damage +18% * Skill Level",
+        "- Rage: Speed boost +3.5% * Skill Level",
+        "- 5% chance to cast Critical Boost Level 1 on attack",
+        "- Thunderstorm: Cooldown -6s"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Physical resistance +6%"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Damage 25 + 0.13 * Attack"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "+2% chance to cast Critical Boost Level 1 on attack"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Thunderstorm: Cooldown -6s"
+        }
+      ]
+    },
+    {
+      "name": "Quelled Hellfire",
+      "nameClass": "legend-title",
+      "element": "Lửa",
+      "elementClass": "type-fire",
+      "baseStats": [
+        "- Max Health: 5,400 + 20 * Health",
+        "- Fire resistance: 26.7%",
+        "- Electric resistance: 26.7%",
+        "- Physical resistance: 20%",
+        "- Damage: 180 + 0.63 * Attack",
+        "- Firewall: Damage/s +15.5% * Skill Level",
+        "- Root Prison: Cooldown -6s",
+        "- Rage: Speed boost +50%",
+        "- 5% chance to cast Firewall Level 10 on attack",
+        "- Explosion Trap: Cooldown -5s"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Physical resistance +5%"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Damage 18 + 0.14 * Attack"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "+2% chance to cast Firewall Level 4 on attack"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Explosion Trap: Cooldown -5s"
+        }
+      ]
+    },
+    {
+      "name": "Frozen Wisdom",
+      "nameClass": "legend-title",
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "baseStats": [
+        "- Max Health: 6,525 + 22 * Health",
+        "- Fire resistance: 30%",
+        "- Electric resistance: 20%",
+        "- Physical resistance: 20%",
+        "- Damage: 234 + 0.5 * Attack",
+        "- 15% chance to cast Icy Spikes Level 13 on attack",
+        "- Hail: Effect duration +2s",
+        "- Freezing Area Trap: Effect duration +2s",
+        "- Frozen Claw Jump: Cooldown -9.7s",
+        "- Rage: Speed boost +40%",
+        "- Freezing Breath: Damage/s +9.5% * Skill Level",
+        "- Freezing Wall: Duration +3s"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Physical resistance +7%"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Damage +47 + 0.1 * Attack"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Freezing Breath: Damage/s +4% * Skill Level"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Freezing Wall: Duration +3s"
+        }
+      ]
+    }
+  ],
+  "frontlegs": [
+    {
+      "name": "Thorny Strike",
+      "nameClass": "legend-title",
+      "element": "Độc",
+      "elementClass": "type-poison",
+      "baseStats": [
+        "- Damage: 285 + 0.83 * Attack",
+        "- Cold resistance: 26.7%",
+        "- Poison resistance: 26.7%",
+        "- Attack speed: 0.26",
+        "- Reduces shock duration by 60%",
+        "- Movement speed: 0.4",
+        "- Poison mastery: 10%",
+        "- Poisonous Jump: Cooldown -5s",
+        "- Poison Trap: Damage/s +15% * Skill Level",
+        "- Poisonous Jump: Damage/s +10% * Skill Level",
+        "- Accursing Bite: Damage +46% * Skill Level"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Movement speed +0.4"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Poisonous Damage/s +39%"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Accursing Bite: Damage +195%"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Poison mastery +10%"
+        }
+      ]
+    },
+    {
+      "name": "Hurricane Hit",
+      "nameClass": "legend-title",
+      "element": "Điện",
+      "elementClass": "type-light",
+      "baseStats": [
+        "- Damage: 230 + 0.96 * Attack",
+        "- Cold resistance: 30%",
+        "- Poison resistance: 20%",
+        "- Attack speed: 0.2",
+        "- Movement speed: 0.41",
+        "- Electric mastery: 10%",
+        "- Electric Trap: Damage +54% * Skill Level",
+        "- Thunder: Cooldown -5s",
+        "- Thunder: Damage +46% * Skill Level"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Thunder: Cooldown -1s"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Thunder: Damage +13% * Skill Level"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Movement speed +0.41"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Electric mastery +10%"
+        }
+      ]
+    },
+    {
+      "name": "Wings of Phoenix",
+      "nameClass": "legend-title",
+      "element": "Lửa",
+      "elementClass": "type-fire",
+      "baseStats": [
+        "- Damage: 265 + 1.08 * Attack",
+        "- Cold resistance: 20%",
+        "- Poison resistance: 30%",
+        "- Attack speed: 0.3",
+        "- Reduces poison duration by 25%",
+        "- Movement speed: 0.36",
+        "- Fire mastery: 20%",
+        "- Firewall: Cooldown -5s",
+        "- Firewall: Damage/s +15.5% * Skill Level",
+        "- Root Prison: Effect duration +1s",
+        "- 20% chance to cast Fire Nova Level 12 on hit received",
+        "- Rage: Damage boost +1.5% * Skill Level"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "5% chance to cast Fire Nova Level 3 on hit received"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Movement speed +0.36"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Fire mastery +5%"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Rage: Damage boost +19.5%"
+        }
+      ]
+    },
+    {
+      "name": "Numbing Touch",
+      "nameClass": "legend-title",
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "baseStats": [
+        "- Damage: 274 + 1.02 * Attack",
+        "- Cold resistance: 26.7%",
+        "- Poison resistance: 26.7%",
+        "- Attack speed: 0.24",
+        "- Movement speed: 0.37",
+        "- Cold mastery: 11%",
+        "- Freezing Breath: Duration +3s",
+        "- Hail: Cooldown -10.9s",
+        "- Frozen Claw Jump: Damage +32.3% * Skill Level",
+        "- Freezing Wall: Damage/s +230%",
+        "- 20% chance to cast Frost Bite Level 12 on attack",
+        "- Frozen Claw Jump: Effect duration +2s"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "+5% chance to cast Frost Bite Level 3 on attack"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Movement speed +0.37"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Cold mastery +5%"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Hail: Damage +100% and Frozen Claw Jump: Effect duration +2s"
+        }
+      ]
+    }
+  ],
+  "rearlegs": [
+    {
+      "name": "Venom Spikes",
+      "nameClass": "legend-title",
+      "element": "Độc",
+      "elementClass": "type-poison",
+      "baseStats": [
+        "- Damage: 274 + 0.95 * Attack",
+        "- Electric resistance: 30%",
+        "- Movement speed: 0.39",
+        "- Attack speed: 0.14",
+        "- Poison mastery: 20%",
+        "- Fire resistance: 20%",
+        "- Poisonous Cloud: Damage/s +8.5% * Skill Level",
+        "- Accursing Bite: Damage +46% * Skill Level",
+        "- Rage: Cooldown -5s",
+        "- Poisonous Cloud: Cooldown -7.1s",
+        "- 10% chance to cast Swamp Level 13 on hit received"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Poison mastery +20%"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Poisonous Cloud: Cooldown -2s"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Fire resistance +20%"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "+10% chance to cast Swamp Level 13 on hit received"
+        }
+      ]
+    },
+    {
+      "name": "Lightning Guards",
+      "nameClass": "legend-title",
+      "element": "Điện",
+      "elementClass": "type-light",
+      "baseStats": [
+        "- Damage: 294 + 0.87 * Attack",
+        "- Electric/Fire resistance: 26.7%",
+        "- Movement speed: 0.4",
+        "- Attack speed: 0.15",
+        "- Electric mastery: 18%",
+        "- Fire resistance: 26.7%",
+        "- Thunderstorm: Cooldown -6s",
+        "- Rage: Cooldown -5s",
+        "- Thunderstorm: Damage +15% * Skill Level",
+        "- Thunderstorm: Number of hits +2"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Thunderstorm: Damage +5% * Skill Level"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Electric mastery +10%"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Fire resistance +5.8%"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Thunderstorm: Number of hits +2"
+        }
+      ]
+    },
+    {
+      "name": "Flaming Irons",
+      "nameClass": "legend-title",
+      "element": "Lửa",
+      "elementClass": "type-fire",
+      "baseStats": [
+        "- Damage: 282 + 0.96 * Attack",
+        "- Electric/Fire resistance: 26.7%",
+        "- Movement speed: 0.45",
+        "- Attack speed: 0.2",
+        "- Fire mastery: 15%",
+        "- Fire resistance: 26.7%",
+        "- Fiery Ring: Cooldown -8s",
+        "- Rage: Cooldown -5s",
+        "- Explosion Trap: Damage +38% * Skill Level",
+        "- Firewall: Damage/s +14% * Skill Level"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Fire mastery +3%"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Explosion Trap: 104%"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Fire resistance +14%"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Firewall: Damage/s +14% * Skill Level"
+        }
+      ]
+    },
+    {
+      "name": "Blizzard Claws",
+      "nameClass": "legend-title",
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "baseStats": [
+        "- Damage: 242 + 0.85 * Attack",
+        "- Electric resistance: 20%",
+        "- Movement speed: 0.42",
+        "- Attack speed: 0.16",
+        "- Fire resistance: 30%",
+        "- Cold mastery: 15%",
+        "- Freezing Wall: Cooldown -10.5s",
+        "- Frozen Claw Jump: Damage +47% * Skill Level",
+        "- Rage: Cooldown -5s",
+        "- Hail: Number of hits +4",
+        "- Freezing Breath: Damage/s +12% * Skill Level"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Fire resistance +14%"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Cold mastery +8%"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Hail: Number of hits +1"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Freezing Breath: Damage/s +12% * Skill Level"
+        }
+      ]
+    }
+  ],
+  "armor": [
+    {
+      "name": "Forest's Pride",
+      "nameClass": "legend-title",
+      "element": "Độc",
+      "elementClass": "type-poison",
+      "baseStats": [
+        "- Max Health: 5,200 + 21 * Health",
+        "- Poison/Cold resistance: 26.7%",
+        "- Physical resistance: 20%",
+        "- Poisonous Jump: Damage +34% * Skill Level",
+        "- Swamp: Cooldown -10s",
+        "- Rage: Attack speed boost +25%",
+        "- 9% chance to cast Poison Nova Level 12 on hit received",
+        "- Rage: Effect duration +0.3s * Skill Level",
+        "- Poisonous Cloud: Cooldown -6s"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "+3% chance to cast Poison Nova Level 3 on hit received"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Cold resistance +10.4%"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Rage: Effect duration +1.3s"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Poisonous Cloud: Cooldown -6s"
+        }
+      ]
+    },
+    {
+      "name": "Thunderbringer",
+      "nameClass": "legend-title",
+      "element": "Điện",
+      "elementClass": "type-light",
+      "baseStats": [
+        "- Max Health: 5,665 + 21 * Health",
+        "- Poison/Physical resistance: 20%",
+        "- Cold resistance: 30%",
+        "- Electric Trap: Cooldown -3s",
+        "- Thunderstorm: Cooldown -6s",
+        "- Rage: Attack speed boost +3% * Skill Level",
+        "- Electroshock: Damage +400%",
+        "- Rage: Effect duration +0.3s * Skill Level",
+        "- 2% chance to cast Electroshock Level 6 on attack"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Cold resistance +15%"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Electroshock: Damage +100%"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Rage: Effect duration +1.3s"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "+2% chance to cast Electroshock Level 6 on attack"
+        }
+      ]
+    },
+    {
+      "name": "Conflagration",
+      "nameClass": "legend-title",
+      "element": "Lửa",
+      "elementClass": "type-fire",
+      "baseStats": [
+        "- Max Health: 5,150 + 19 * Health",
+        "- Poison resistance: 30%",
+        "- Physical/Cold resistance: 20%",
+        "- Fiery Ring: Damage/s +20% * Skill Level",
+        "- Root Prison: Cooldown -9s",
+        "- Firewall: Cooldown -5s",
+        "- Rage: Attack speed boost +3.5% * Skill Level",
+        "- Fiery Ring: Damage/s -7s",
+        "- Rage: Effect duration +0.3s * Skill Level",
+        "- Firewall: Damage/s +10% * Skill Level"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Fiery Ring: Cooldown -2s"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Cold resistance +20%"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "Rage: Effect duration +1.3s"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Firewall: Damage/s +10% * Skill Level"
+        }
+      ]
+    },
+    {
+      "name": "Heart of Winter",
+      "nameClass": "legend-title",
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "baseStats": [
+        "- Max Health: 7,340 + 24 * Health",
+        "- Poison/Cold resistance: 26.7%",
+        "- Physical resistance: 20%",
+        "- Freezing Breath: Damage/s +18.4% * Skill Level",
+        "- Freezing Area Trap: Handicap +10%",
+        "- Freezing Wall: Damage/s +23% * Skill Level",
+        "- Rage: Attack speed boost +3% * Skill Level",
+        "- Hail: Damage +12% * Skill Level",
+        "- 8% chance to cast Hurricane Level 13 on hit received",
+        "- Rage: Effect duration +0.3s * Skill Level"
+      ],
+      "tiers": [
+        {
+          "tier": "Lv.1 (Tier 1):",
+          "desc": "Hail: Damage +3.5% * Skill Level"
+        },
+        {
+          "tier": "Lv.4 (Tier 2):",
+          "desc": "Cold resistance +13.4%"
+        },
+        {
+          "tier": "Lv.7 (Tier 3):",
+          "desc": "+3.5% chance to cast Hurricane Level 7 on hit received"
+        },
+        {
+          "tier": "Lv.10 (Tier 4):",
+          "desc": "Rage: Effect duration +0.3s * Skill Level"
+        }
+      ]
+    }
+  ]
+}

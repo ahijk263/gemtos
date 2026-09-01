@@ -1,0 +1,250 @@
+{
+  "legendary": [
+    {
+      "name": "Nur",
+      "stars": "★★★",
+      "className": "rune-legendary"
+    },
+    {
+      "name": "Fas",
+      "stars": "★★★",
+      "className": "rune-legendary"
+    },
+    {
+      "name": "Sil",
+      "stars": "★★★",
+      "className": "rune-legendary"
+    },
+    {
+      "name": "Dal",
+      "stars": "★★★",
+      "className": "rune-legendary"
+    },
+    {
+      "name": "Rak",
+      "stars": "★★",
+      "className": "rune-legendary"
+    },
+    {
+      "name": "Kul",
+      "stars": "★★",
+      "className": "rune-legendary"
+    },
+    {
+      "name": "Ran",
+      "stars": "★★",
+      "className": "rune-legendary"
+    },
+    {
+      "name": "Vir",
+      "stars": "★★",
+      "className": "rune-legendary"
+    },
+    {
+      "name": "Zul",
+      "stars": "★",
+      "className": "rune-legendary"
+    },
+    {
+      "name": "Xim",
+      "stars": "★",
+      "className": "rune-legendary"
+    },
+    {
+      "name": "Fer",
+      "stars": "★",
+      "className": "rune-legendary"
+    },
+    {
+      "name": "Lok",
+      "stars": "★",
+      "className": "rune-legendary"
+    }
+  ],
+  "epic": [
+    {
+      "name": "Gul",
+      "stars": "★★★",
+      "className": "rune-epic"
+    },
+    {
+      "name": "Dan",
+      "stars": "★★★",
+      "className": "rune-epic"
+    },
+    {
+      "name": "Ves",
+      "stars": "★★★",
+      "className": "rune-epic"
+    },
+    {
+      "name": "Lar",
+      "stars": "★★★",
+      "className": "rune-epic"
+    },
+    {
+      "name": "Tor",
+      "stars": "★★",
+      "className": "rune-epic"
+    },
+    {
+      "name": "Nar",
+      "stars": "★★",
+      "className": "rune-epic"
+    },
+    {
+      "name": "Kel",
+      "stars": "★★",
+      "className": "rune-epic"
+    },
+    {
+      "name": "Fin",
+      "stars": "★★",
+      "className": "rune-epic"
+    },
+    {
+      "name": "Fen",
+      "stars": "★",
+      "className": "rune-epic"
+    },
+    {
+      "name": "Sim",
+      "stars": "★",
+      "className": "rune-epic"
+    },
+    {
+      "name": "Rul",
+      "stars": "★",
+      "className": "rune-epic"
+    },
+    {
+      "name": "Tar",
+      "stars": "★",
+      "className": "rune-epic"
+    }
+  ],
+  "rare": [
+    {
+      "name": "Tir",
+      "stars": "★★★",
+      "className": "rune-rare"
+    },
+    {
+      "name": "Kor",
+      "stars": "★★★",
+      "className": "rune-rare"
+    },
+    {
+      "name": "Nir",
+      "stars": "★★★",
+      "className": "rune-rare"
+    },
+    {
+      "name": "Lum",
+      "stars": "★★★",
+      "className": "rune-rare"
+    },
+    {
+      "name": "Mor",
+      "stars": "★★",
+      "className": "rune-rare"
+    },
+    {
+      "name": "Run",
+      "stars": "★★",
+      "className": "rune-rare"
+    },
+    {
+      "name": "Vor",
+      "stars": "★★",
+      "className": "rune-rare"
+    },
+    {
+      "name": "Kir",
+      "stars": "★★",
+      "className": "rune-rare"
+    },
+    {
+      "name": "Kal",
+      "stars": "★",
+      "className": "rune-rare"
+    },
+    {
+      "name": "Zan",
+      "stars": "★",
+      "className": "rune-rare"
+    },
+    {
+      "name": "Xar",
+      "stars": "★",
+      "className": "rune-rare"
+    },
+    {
+      "name": "Dol",
+      "stars": "★",
+      "className": "rune-rare"
+    }
+  ],
+  "common": [
+    {
+      "name": "Lun",
+      "stars": "★★★",
+      "className": "rune-common"
+    },
+    {
+      "name": "Gar",
+      "stars": "★★★",
+      "className": "rune-common"
+    },
+    {
+      "name": "Dak",
+      "stars": "★★★",
+      "className": "rune-common"
+    },
+    {
+      "name": "Mar",
+      "stars": "★★★",
+      "className": "rune-common"
+    },
+    {
+      "name": "Tek",
+      "stars": "★★",
+      "className": "rune-common"
+    },
+    {
+      "name": "Vok",
+      "stars": "★★",
+      "className": "rune-common"
+    },
+    {
+      "name": "Sul",
+      "stars": "★★",
+      "className": "rune-common"
+    },
+    {
+      "name": "Rin",
+      "stars": "★★",
+      "className": "rune-common"
+    },
+    {
+      "name": "Zor",
+      "stars": "★",
+      "className": "rune-common"
+    },
+    {
+      "name": "Nim",
+      "stars": "★",
+      "className": "rune-common"
+    },
+    {
+      "name": "Bar",
+      "stars": "★",
+      "className": "rune-common"
+    },
+    {
+      "name": "Tok",
+      "stars": "★",
+      "className": "rune-common"
+    }
+  ]
+}

@@ -4,441 +4,50 @@
 
 <div id="tab-runes" class="tab-content">
 
-<div class="combiner-section">
-    <h3 style="margin-top: 0; color: var(--accent-primary);">
-        Bộ lọc & Tổ Hợp Ngọc (Rune Combiner)
+    <div class="combiner-section">
+        <h3 style="margin-top: 0; color: var(--accent-primary);">
+            Bộ lọc & Tổ Hợp Ngọc (Rune Combiner)
+        </h3>
+
+        <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 10px;">
+            Nhấn vào các Rune bên dưới để thêm vào tổ hợp tìm kiếm (tối đa 4).
+            Nhấn lại để bỏ chọn.
+        </p>
+
+        <div id="selected-runes-container" class="selected-runes-container"></div>
+
+        <button class="ctrl-btn" id="clear-runes-btn" onclick="clearRunes()"
+            style="display: none; margin-top: 15px; border-color: var(--danger); color: var(--danger);">
+            Xóa tất cả
+        </button>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- FILTER RESULT -->
+    <!-- ========================================== -->
+
+    <div id="filter-result-box">
+        <h3 id="filter-title" style="margin-top: 0;">
+            Kết quả:
+        </h3>
+
+        <div id="filter-content"></div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- RUNE LIST -->
+    <!-- ========================================== -->
+
+    <h3 style="margin-top: 20px;">
+        Danh sách Rune
     </h3>
 
-    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 10px;">
-        Nhấn vào các Rune bên dưới để thêm vào tổ hợp tìm kiếm (tối đa 4).
-        Nhấn lại để bỏ chọn.
-    </p>
-
-    <div id="selected-runes-container" class="selected-runes-container"></div>
-
-    <button class="ctrl-btn" id="clear-runes-btn" onclick="clearRunes()"
-        style="display: none; margin-top: 15px; border-color: var(--danger); color: var(--danger);">
-        Xóa tất cả
-    </button>
-</div>
-
-
-<!-- ========================================== -->
-<!-- FILTER RESULT -->
-<!-- ========================================== -->
-
-<div id="filter-result-box">
-    <h3 id="filter-title" style="margin-top: 0;">
-        Kết quả:
-    </h3>
-
-    <div id="filter-content"></div>
-</div>
-
-
-<!-- ========================================== -->
-<!-- RUNE LIST -->
-<!-- ========================================== -->
-
-<h3 style="margin-top: 20px;">
-    Danh sách Rune
-</h3>
-
-
-<div class="table-responsive" style="border: none;">
-    <table style="border: none;">
-        <tbody>
-
-            <!-- ========================================== -->
-            <!-- NHÓM 1: LEGENDARY -->
-            <!-- ========================================== -->
-
-            <tr>
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-legendary" id="rune-Nur" onclick="toggleRune('Nur')">
-                        <span class="rune-name">Nur</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-legendary" id="rune-Fas" onclick="toggleRune('Fas')">
-                        <span class="rune-name">Fas</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-legendary" id="rune-Sil" onclick="toggleRune('Sil')">
-                        <span class="rune-name">Sil</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-legendary" id="rune-Dal" onclick="toggleRune('Dal')">
-                        <span class="rune-name">Dal</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-legendary" id="rune-Rak" onclick="toggleRune('Rak')">
-                        <span class="rune-name">Rak</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-legendary" id="rune-Kul" onclick="toggleRune('Kul')">
-                        <span class="rune-name">Kul</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-legendary" id="rune-Ran" onclick="toggleRune('Ran')">
-                        <span class="rune-name">Ran</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-legendary" id="rune-Vir" onclick="toggleRune('Vir')">
-                        <span class="rune-name">Vir</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-legendary" id="rune-Zul" onclick="toggleRune('Zul')">
-                        <span class="rune-name">Zul</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-legendary" id="rune-Xim" onclick="toggleRune('Xim')">
-                        <span class="rune-name">Xim</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-legendary" id="rune-Fer" onclick="toggleRune('Fer')">
-                        <span class="rune-name">Fer</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-legendary" id="rune-Lok" onclick="toggleRune('Lok')">
-                        <span class="rune-name">Lok</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-            </tr>
-
-
-            <!-- ========================================== -->
-            <!-- NHÓM 2: EPIC -->
-            <!-- ========================================== -->
-
-            <tr>
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-epic" id="rune-Gul" onclick="toggleRune('Gul')">
-                        <span class="rune-name">Gul</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-epic" id="rune-Dan" onclick="toggleRune('Dan')">
-                        <span class="rune-name">Dan</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-epic" id="rune-Ves" onclick="toggleRune('Ves')">
-                        <span class="rune-name">Ves</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-epic" id="rune-Lar" onclick="toggleRune('Lar')">
-                        <span class="rune-name">Lar</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-epic" id="rune-Tor" onclick="toggleRune('Tor')">
-                        <span class="rune-name">Tor</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-epic" id="rune-Nar" onclick="toggleRune('Nar')">
-                        <span class="rune-name">Nar</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-epic" id="rune-Kel" onclick="toggleRune('Kel')">
-                        <span class="rune-name">Kel</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-epic" id="rune-Fin" onclick="toggleRune('Fin')">
-                        <span class="rune-name">Fin</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-epic" id="rune-Fen" onclick="toggleRune('Fen')">
-                        <span class="rune-name">Fen</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-epic" id="rune-Sim" onclick="toggleRune('Sim')">
-                        <span class="rune-name">Sim</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-epic" id="rune-Rul" onclick="toggleRune('Rul')">
-                        <span class="rune-name">Rul</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-epic" id="rune-Tar" onclick="toggleRune('Tar')">
-                        <span class="rune-name">Tar</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-            </tr>
-
-
-            <!-- ========================================== -->
-            <!-- NHÓM 3: RARE -->
-            <!-- ========================================== -->
-
-            <tr>
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-rare" id="rune-Tir" onclick="toggleRune('Tir')">
-                        <span class="rune-name">Tir</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-rare" id="rune-Kor" onclick="toggleRune('Kor')">
-                        <span class="rune-name">Kor</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-rare" id="rune-Nir" onclick="toggleRune('Nir')">
-                        <span class="rune-name">Nir</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-rare" id="rune-Lum" onclick="toggleRune('Lum')">
-                        <span class="rune-name">Lum</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-rare" id="rune-Mor" onclick="toggleRune('Mor')">
-                        <span class="rune-name">Mor</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-rare" id="rune-Run" onclick="toggleRune('Run')">
-                        <span class="rune-name">Run</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-rare" id="rune-Vor" onclick="toggleRune('Vor')">
-                        <span class="rune-name">Vor</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-rare" id="rune-Kir" onclick="toggleRune('Kir')">
-                        <span class="rune-name">Kir</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-rare" id="rune-Kal" onclick="toggleRune('Kal')">
-                        <span class="rune-name">Kal</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-rare" id="rune-Zan" onclick="toggleRune('Zan')">
-                        <span class="rune-name">Zan</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-rare" id="rune-Xar" onclick="toggleRune('Xar')">
-                        <span class="rune-name">Xar</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-rare" id="rune-Dol" onclick="toggleRune('Dol')">
-                        <span class="rune-name">Dol</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-            </tr>
-
-
-            <!-- ========================================== -->
-            <!-- NHÓM 4: COMMON -->
-            <!-- ========================================== -->
-
-            <tr>
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-common" id="rune-Lun" onclick="toggleRune('Lun')">
-                        <span class="rune-name">Lun</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-common" id="rune-Gar" onclick="toggleRune('Gar')">
-                        <span class="rune-name">Gar</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-common" id="rune-Dak" onclick="toggleRune('Dak')">
-                        <span class="rune-name">Dak</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-common" id="rune-Mar" onclick="toggleRune('Mar')">
-                        <span class="rune-name">Mar</span>
-                        <span class="stars">★★★</span>
-                    </div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-common" id="rune-Tek" onclick="toggleRune('Tek')">
-                        <span class="rune-name">Tek</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-common" id="rune-Vok" onclick="toggleRune('Vok')">
-                        <span class="rune-name">Vok</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-common" id="rune-Sul" onclick="toggleRune('Sul')">
-                        <span class="rune-name">Sul</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-common" id="rune-Rin" onclick="toggleRune('Rin')">
-                        <span class="rune-name">Rin</span>
-                        <span class="stars">★★</span>
-                    </div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-common" id="rune-Zor" onclick="toggleRune('Zor')">
-                        <span class="rune-name">Zor</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-common" id="rune-Nim" onclick="toggleRune('Nim')">
-                        <span class="rune-name">Nim</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-common" id="rune-Bar" onclick="toggleRune('Bar')">
-                        <span class="rune-name">Bar</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-
-                <td style="border:none; padding:5px;">
-                    <div class="rune-card rune-common" id="rune-Tok" onclick="toggleRune('Tok')">
-                        <span class="rune-name">Tok</span>
-                        <span class="stars">★</span>
-                    </div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
-</div>
+    <div class="table-responsive" style="border: none;">
+        <table style="border: none;">
+            <tbody id="runes-table-body"></tbody>
+        </table>
+    </div>
 
 </div>
-```

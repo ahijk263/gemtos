@@ -1,727 +1,88 @@
-// --- MODAL CÀI ĐẶT ---
-function toggleSettings() {
-    const modal = document.getElementById("settingsModal");
-    if (modal.classList.contains("show")) {
-        modal.classList.remove("show");
-        setTimeout(() => modal.style.display = "none", 250);
-    } else {
-        modal.style.display = "flex";
-        void modal.offsetWidth;
-        modal.classList.add("show");
-    }
-}
+// ==========================================
+// GAMETOS WIKI - MAIN ENTRY POINT
+// ==========================================
 
-function closeSettings(event) {
-    if (event.target === document.getElementById("settingsModal")) {
-        toggleSettings();
-    }
-}
+import {
+    initTheme,
+    toggleTheme,
+    toggleSettings,
+    closeSettings,
+    changeFont
+} from "./modules/theme.js";
 
-// --- CHỈNH SỬA (EDIT MODE) VÀ LƯU DỮ LIỆU ---
-let isEditing = false;
+import {
+    openTab,
+    openSubTab,
+    openItemSub,
+    loadPageSection
+} from "./modules/router.js";
 
-function toggleEditMode() {
-    isEditing = !isEditing;
-    const editToggleBtn = document.getElementById("editToggleBtn");
-    const resetBtn = document.getElementById("resetBtn");
-    const editableElements = document.querySelectorAll(".tab-content td, .tab-content th, .tab-content h2, .tab-content p, .rune-desc, .rune-stats, .gem-text");
+import {
+    loadSkillsData,
+    renderSkills
+} from "./modules/skills.js";
 
-    if (isEditing) {
-        editToggleBtn.innerHTML = "💾 Lưu lại";
-        resetBtn.style.display = "inline-block";
-        document.body.classList.add("editing-mode");
-        editableElements.forEach(el => el.setAttribute("contenteditable", "true"));
-    } else {
-        editToggleBtn.innerHTML = "✏️ Chỉnh sửa";
-        resetBtn.style.display = "none";
-        document.body.classList.remove("editing-mode");
-        editableElements.forEach(el => el.removeAttribute("contenteditable"));
+import {
+    loadItemsData,
+    renderItems
+} from "./modules/items.js";
 
-        if (typeof clearRunes === 'function') clearRunes();
+import {
+    loadRunesData,
+    toggleRune,
+    removeRune,
+    clearRunes,
+    renderSelectedRunes,
+    executeRuneCombination
+} from "./modules/runes.js";
 
-        const dataToSave = {
-            skills: document.getElementById("tab-skills") ? sanitizeTabHtml("tab-skills", document.getElementById("tab-skills").innerHTML) : "",
-            items: document.getElementById("tab-items") ? sanitizeTabHtml("tab-items", document.getElementById("tab-items").innerHTML) : "",
-            runes: document.getElementById("tab-runes") ? sanitizeTabHtml("tab-runes", document.getElementById("tab-runes").innerHTML) : "",
-            runeskills: document.getElementById("tab-runeskills") ? sanitizeTabHtml("tab-runeskills", document.getElementById("tab-runeskills").innerHTML) : "",
-            documents: document.getElementById("tab-documents") ? sanitizeTabHtml("tab-documents", document.getElementById("tab-documents").innerHTML) : "",
-            attributes: document.getElementById("tab-attributes") ? sanitizeTabHtml("tab-attributes", document.getElementById("tab-attributes").innerHTML) : ""
-        };
-        localStorage.setItem("game_custom_data_v18", JSON.stringify(dataToSave));
-        alert("Đã lưu nội dung chỉnh sửa thành công!");
-        toggleSettings();
-    }
-}
+import {
+    loadRuneSkillsData,
+    openRuneSkillSub,
+    applyRuneSkillFilter
+} from "./modules/runeSkills.js";
 
-function resetData() {
-    if (confirm("Bạn có chắc muốn khôi phục toàn bộ dữ liệu về mặc định gốc? Các thay đổi sẽ bị mất.")) {
-        localStorage.removeItem("game_custom_data_v18");
-        location.reload();
-    }
-}
+import {
+    loadAttributesData,
+    renderAttributesView,
+    selectAttributeRange,
+    filterAttributesRange
+} from "./modules/attributes.js";
 
-function changeFont() {
-    const font = document.getElementById('fontSelect').value;
-    document.body.style.fontFamily = font;
-    localStorage.setItem('game_font', font);
-}
+// Expose functions globally for HTML inline handlers
+window.toggleTheme = toggleTheme;
+window.toggleSettings = toggleSettings;
+window.closeSettings = closeSettings;
+window.changeFont = changeFont;
+window.openTab = openTab;
+window.openSubTab = openSubTab;
+window.openItemSub = openItemSub;
+window.toggleRune = toggleRune;
+window.removeRune = removeRune;
+window.clearRunes = clearRunes;
+window.openRuneSkillSub = openRuneSkillSub;
+window.applyRuneSkillFilter = applyRuneSkillFilter;
+window.filterAttributesRange = filterAttributesRange;
+window.selectAttributeRange = selectAttributeRange;
 
-const PAGE_FILES = {
-    "tab-skills": "skills",
-    "tab-items": "items",
-    "tab-runes": "runes",
-    "tab-runeskills": "rune-skills",
-    "tab-documents": "documents",
-    "tab-attributes": "attributes"
-};
-
-const loadedPages = new Set();
-
-function getSavedTabData() {
-    const savedDataStr = localStorage.getItem("game_custom_data_v18");
-    if (!savedDataStr) return {};
-
-    try {
-        const parsed = JSON.parse(savedDataStr) || {};
-        const cleaned = {};
-        Object.entries(parsed).forEach(([key, value]) => {
-            if (typeof value !== "string") return;
-            cleaned[key] = sanitizeTabHtml(key, value);
-        });
-        return cleaned;
-    } catch (error) {
-        console.error("Lỗi đọc dữ liệu lưu trữ:", error);
-        return {};
-    }
-}
-
-function sanitizeTabHtml(tabId, html) {
-    if (!html || typeof html !== "string") return html;
-
-    let cleaned = html.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, "");
-    cleaned = cleaned.replace(/<div[^>]*id=["']tab-runes["'][\s\S]*?<\/div>/gi, "");
-    cleaned = cleaned.replace(/<div[^>]*id=["']tab-runeskills["'][\s\S]*?<\/div>/gi, "");
-    cleaned = cleaned.replace(/<div[^>]*class=["'][^"']*(combiner-section|selected-runes-container|filter-result-box|rune-card)[^"']*["'][^>]*>[\s\S]*?<\/div>/gi, "");
-
-    return cleaned;
-}
-
-function renderRuneSkillRows(rows, targetId) {
-    const target = document.getElementById(targetId);
-    if (!target) return;
-
-    target.innerHTML = "";
-    rows.forEach((row) => {
-        const tr = document.createElement("tr");
-        const runes = Array.isArray(row.runes) ? row.runes.join(" ") : (row.runes || "");
-        const shape = row.shape || "N/A";
-        const rarity = row.rarity || "";
-        const level = row.level || "";
-        const runesList = row.runeslist || runes;
-        const cssClass = row.className || "legend-title";
-        const descEn = row.description || "";
-        const descVi = row.descriptionVi || "";
-        const showVi = descVi && descVi !== descEn;
-
-        tr.setAttribute("data-runes", runes);
-        tr.setAttribute("data-title", row.title || "");
-        tr.setAttribute("data-skill", row.skill || "");
-        tr.setAttribute("data-shape", shape);
-        tr.setAttribute("data-rarity", rarity);
-        tr.setAttribute("data-level", String(level));
-        tr.setAttribute("data-runeslist", runesList);
-        tr.setAttribute("data-class", cssClass);
-
-        const viColor = cssClass === "epic-title" ? "#a855f7" : "#b7791f";
-
-        tr.innerHTML = `
-            <td>
-                <span class="${cssClass}">${row.title || ""}</span><br>
-                <span style="font-weight:600; font-size:13px; color:var(--text-muted)">${row.skill || ""}</span><br>
-                <span style="font-size:12px;">${rarity}</span>
-            </td>
-            <td>
-                Cấp độ: ${level}<br>
-                Ngọc: ${runesList}<br>
-                <span style="font-size:12px; color:var(--text-muted)">${shape}</span>
-            </td>
-            <td>
-                <b>${row.effectTitle || row.skill || ""}</b><br>
-                <div class="rune-desc">${descEn}</div>
-                ${showVi ? `<div class="rune-desc" style="margin-top:6px; color: ${viColor};">(${descVi})</div>` : ""}
-                <div class="rune-stats">${row.stats || ""}</div>
-            </td>
-        `;
-
-        target.appendChild(tr);
-    });
-}
-
-async function loadRuneSkillsData() {
-    const targetBodies = [
-        { key: "legend", id: "rune-skills-table-body" },
-        { key: "epic", id: "rune-skills-epic-table-body" },
-        { key: "rare", id: "rune-skills-rare-table-body" }
-    ];
-
-    try {
-        const response = await fetch("data/rune-skills_data.json");
-        if (!response.ok) {
-            throw new Error(`Không tải được dữ liệu rune-skills (${response.status})`);
-        }
-
-        const data = await response.json();
-        targetBodies.forEach(({ key, id }) => {
-            const rows = Array.isArray(data[key]) ? data[key] : [];
-            renderRuneSkillRows(rows, id);
-        });
-    } catch (error) {
-        console.error("Lỗi khi tải dữ liệu rune-skills:", error);
-    }
-}
-
-async function loadPageSection(tabId) {
-    const container = document.getElementById("page-container");
-    if (!container || !PAGE_FILES[tabId]) return null;
-    if (document.getElementById(tabId)) return document.getElementById(tabId);
-
-    try {
-        const response = await fetch(`pages/${PAGE_FILES[tabId]}.html`);
-        if (!response.ok) {
-            throw new Error(`Không tải được ${PAGE_FILES[tabId]}.html (${response.status})`);
-        }
-
-        const markup = await response.text();
-        const wrapper = document.createElement("div");
-        wrapper.innerHTML = markup.trim();
-
-        let section = wrapper.querySelector(`.${"tab-content"}`) || wrapper.firstElementChild;
-        if (!section || !section.classList || !section.classList.contains("tab-content")) {
-            section = document.createElement("div");
-            section.className = "tab-content";
-            section.id = tabId;
-            section.innerHTML = markup.trim();
-        }
-
-        section.id = tabId;
-        section.classList.add("tab-content");
-
-        const savedData = getSavedTabData();
-        const pageKey = PAGE_FILES[tabId];
-        if (savedData[pageKey]) {
-            section.innerHTML = sanitizeTabHtml(tabId, savedData[pageKey]);
-        }
-
-        container.appendChild(section);
-        if (tabId === "tab-runeskills") {
-            await loadRuneSkillsData();
-        }
-        if (tabId === "tab-attributes") {
-            await loadAttributesData();
-        }
-        loadedPages.add(tabId);
-        return section;
-    } catch (error) {
-        console.error(error);
-        const fallback = document.createElement("div");
-        fallback.className = "tab-content";
-        fallback.id = tabId;
-        fallback.style.display = "block";
-        fallback.style.padding = "16px";
-        fallback.style.color = "var(--danger)";
-        fallback.innerHTML = `Không thể tải dữ liệu ${PAGE_FILES[tabId]}.html.`;
-        container.appendChild(fallback);
-        loadedPages.add(tabId);
-        return fallback;
-    }
-}
-
-// --- KHỞI TẠO TẢI DỮ LIỆU KHI MỞ TRANG (MẶC ĐỊNH LUÔN Ở SKILLS, BASIC) ---
+// Initialize app when DOM is ready
 window.addEventListener("DOMContentLoaded", async () => {
-    const rawSavedData = localStorage.getItem("game_custom_data_v18");
-    if (rawSavedData) {
-        try {
-            const parsed = JSON.parse(rawSavedData);
-            const hasStaleRuneMarkup = Object.values(parsed || {}).some(value => typeof value === "string" && /id=["']tab-runes["']|rune-card|combiner-section|selected-runes-container|filter-result-box/.test(value));
-            if (hasStaleRuneMarkup) {
-                localStorage.removeItem("game_custom_data_v18");
-            }
-        } catch (error) {
-            localStorage.removeItem("game_custom_data_v18");
-        }
-    }
+    // Clear legacy cache if present
+    localStorage.removeItem("game_custom_data_v18");
 
-    const savedTheme = localStorage.getItem("game_theme_clean");
-    const themeBtn = document.getElementById("themeToggleBtn");
+    // Initialize Theme and Font
+    initTheme();
 
-    if (savedTheme === "light") {
-        document.body.classList.add("light-mode");
-        if (themeBtn) themeBtn.innerHTML = "☀️";
-    } else {
-        document.body.classList.remove("light-mode");
-        if (themeBtn) themeBtn.innerHTML = "🌙";
-    }
-
+    // Default open Skills tab
     const defaultTab = document.getElementById("defaultOpen");
     if (defaultTab) {
         try {
             await loadPageSection("tab-skills");
-            defaultTab.click();
+            defaultTab.classList.add("active");
+            const skillsTab = document.getElementById("tab-skills");
+            if (skillsTab) skillsTab.style.display = "block";
         } catch (error) {
-            console.error("Lỗi khi tải nội dung tab mặc định:", error);
+            console.error("Lỗi khi tải tab mặc định:", error);
         }
     }
-
-    const savedFont = localStorage.getItem("game_font");
-    if (savedFont) {
-        document.body.style.fontFamily = savedFont;
-        const fontSelect = document.getElementById('fontSelect');
-        if (fontSelect) fontSelect.value = savedFont;
-    }
-
-    // Mặc định luôn mở Tab Skills và Tab con Basic khi load trang hoặc F5
-    var defaultSkillSub = document.getElementById("defaultSkillSub");
-    if (defaultSkillSub) defaultSkillSub.click();
-
-    // Mặc định mở Tab Items → Helmet
-    var defaultItemSub = document.getElementById("defaultItemSub");
-    if (defaultItemSub) defaultItemSub.click();
 });
-
-// --- CHUYỂN ĐỔI DARK / LIGHT THEME ---
-function toggleTheme() {
-    const body = document.body;
-    const themeBtn = document.getElementById("themeToggleBtn");
-    body.classList.toggle("light-mode");
-
-    if (body.classList.contains("light-mode")) {
-        localStorage.setItem("game_theme_clean", "light");
-        if (themeBtn) themeBtn.innerHTML = "☀️";
-    } else {
-        localStorage.setItem("game_theme_clean", "dark");
-        if (themeBtn) themeBtn.innerHTML = "🌙";
-    }
-    // Re-ensure currently active tab and its sub-tab remain visible after theme switch.
-    try {
-        // Re-click the active main tab to re-apply visibility rules
-        const activeMain = document.querySelector('.btn.active');
-        if (activeMain) activeMain.click();
-
-        // If Skills tab is visible, ensure a sub-tab is opened (restore default if none active)
-        const skillsTab = document.getElementById('tab-skills');
-        if (skillsTab && window.getComputedStyle(skillsTab).display !== 'none') {
-            const activeSub = document.querySelector('#tab-skills .sub-btn.active') || document.getElementById('defaultSkillSub');
-            if (activeSub) activeSub.click();
-        }
-    } catch (e) {
-        console.warn('Error while refreshing tabs after theme toggle', e);
-    }
-}
-
-// --- CÁC HÀM XỬ LÝ TAB ---
-async function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tab-content");
-    for (i = 0; i < tabcontent.length; i++) tabcontent[i].style.display = "none";
-    tablinks = document.getElementsByClassName("btn");
-    for (i = 0; i < tablinks.length; i++) tablinks[i].classList.remove("active");
-
-    if (!document.getElementById(tabName)) {
-        await loadPageSection(tabName);
-    }
-
-    const targetTab = document.getElementById(tabName);
-    if (targetTab) targetTab.style.display = "block";
-    // prefer the event's currentTarget, fallback to data-tab selector
-    const activeBtn = (evt && evt.currentTarget) ? evt.currentTarget : document.querySelector(`.btn[data-tab="${tabName}"]`);
-    if (activeBtn) activeBtn.classList.add("active");
-
-    // If Items tab opened, ensure default sub 'Helmet' is activated
-    if (tabName === "tab-items") {
-        // Some pages build sub-buttons after insertion; schedule click on next tick
-        setTimeout(() => {
-            const defaultItemSub = document.getElementById("defaultItemSub");
-            if (defaultItemSub) {
-                defaultItemSub.click();
-            }
-        }, 0);
-    }
-}
-
-function openSubTab(evt, subTabName, groupClass) {
-    var i, subcontent, sublinks;
-    subcontent = document.getElementsByClassName(groupClass);
-    for (i = 0; i < subcontent.length; i++) subcontent[i].style.display = "none";
-    var parent = evt.currentTarget.parentNode;
-    sublinks = parent.getElementsByClassName("sub-btn");
-    for (i = 0; i < sublinks.length; i++) sublinks[i].className = sublinks[i].className.replace(" active", "");
-    document.getElementById(subTabName).style.display = "block";
-    evt.currentTarget.classList.add("active");
-}
-
-function openRuneSkillSub(evt, subId) {
-    var subs = document.getElementsByClassName("runeskills-sub");
-    for (var i = 0; i < subs.length; i++) subs[i].style.display = "none";
-    document.getElementById(subId).style.display = "block";
-    var buttons = document.querySelectorAll("#tab-runeskills .sub-btn");
-    buttons.forEach(b => b.classList.remove("active"));
-    evt.currentTarget.classList.add("active");
-    applyRuneSkillFilter();
-}
-
-function openItemSub(evt, subId) {
-    var items = document.getElementsByClassName("item-sub");
-    for (var i = 0; i < items.length; i++) items[i].style.display = "none";
-    document.getElementById(subId).style.display = "block";
-    var buttons = document.querySelectorAll("#tab-items .sub-btn");
-    buttons.forEach(b => b.classList.remove("active"));
-    evt.currentTarget.classList.add("active");
-}
-
-// --- COMBINER ---
-let currentSelectedRunes = [];
-
-function applyRuneSelectionState(runeName, isSelected) {
-    const runeIndex = currentSelectedRunes.indexOf(runeName);
-
-    if (isSelected && runeIndex === -1) {
-        currentSelectedRunes.push(runeName);
-    } else if (!isSelected && runeIndex > -1) {
-        currentSelectedRunes.splice(runeIndex, 1);
-    }
-
-    const runeElement = document.getElementById("rune-" + runeName);
-    if (runeElement) {
-        runeElement.classList.toggle("selected", isSelected);
-    }
-}
-
-function toggleRune(runeName) {
-    if (currentSelectedRunes.includes(runeName)) {
-        applyRuneSelectionState(runeName, false);
-    } else {
-        if (currentSelectedRunes.length >= 4) {
-            alert("Chỉ có thể chọn tối đa 4 Rune để tổ hợp!");
-            return;
-        }
-        applyRuneSelectionState(runeName, true);
-    }
-
-    renderSelectedRunes();
-    executeRuneCombination();
-}
-
-function removeRune(runeName) {
-    applyRuneSelectionState(runeName, false);
-    renderSelectedRunes();
-    executeRuneCombination();
-}
-
-function clearRunes() {
-    currentSelectedRunes.slice().forEach(runeName => applyRuneSelectionState(runeName, false));
-    renderSelectedRunes();
-    executeRuneCombination();
-}
-
-function renderSelectedRunes() {
-    const container = document.getElementById("selected-runes-container");
-    const clearBtn = document.getElementById("clear-runes-btn");
-
-    if (!container || !clearBtn) return;
-
-    container.innerHTML = "";
-    if (currentSelectedRunes.length === 0) {
-        clearBtn.style.display = "none";
-        container.innerHTML = `<span style="color: var(--text-muted); font-size: 13px; font-style: italic;">Chưa có Rune nào được chọn...</span>`;
-        return;
-    }
-
-    clearBtn.style.display = "inline-block";
-    currentSelectedRunes.forEach(rune => {
-        const badge = document.createElement("span");
-        badge.className = "selected-rune-badge";
-        badge.innerHTML = `${rune} <span class="remove-x" onclick="removeRune('${rune}')">&times;</span>`;
-        container.appendChild(badge);
-    });
-}
-
-function createRuneCombinationCard(row, isExactMatch) {
-    const card = document.createElement("div");
-    const cssClass = row.getAttribute("data-class") || "legend-title";
-    const titleText = row.getAttribute("data-title");
-    const skillText = row.getAttribute("data-skill");
-    const shapeText = row.getAttribute("data-shape") || "N/A";
-    const rarityText = row.getAttribute("data-rarity");
-    const levelText = row.getAttribute("data-level");
-    const runesListText = row.getAttribute("data-runeslist");
-    const fullDetailsHTML = row.cells[2].innerHTML;
-
-    card.className = "grid-card";
-    if (isExactMatch) card.classList.add("exact-match-card");
-
-    card.innerHTML = `
-        <div class="${cssClass}" style="margin-bottom: 5px; font-size: 15px;">${titleText}</div>
-        <div class="grid-card-skill">Hỗ trợ kỹ năng: ${skillText}</div>
-        <div class="grid-card-meta">Hình dạng: ${shapeText} | Độ hiếm: ${rarityText}</div>
-        <div class="grid-card-runes">Cấp độ yêu cầu: ${levelText} | Ngọc: ${runesListText}</div>
-        <div class="grid-card-toggle-text">Nhấn để xem chi tiết ▼</div>
-        <div class="grid-card-details">${fullDetailsHTML}</div>
-    `;
-
-    card.addEventListener("click", function () {
-        this.classList.toggle("expanded");
-        const toggleText = this.querySelector(".grid-card-toggle-text");
-        if (toggleText) {
-            toggleText.innerHTML = this.classList.contains("expanded") ? "Thu gọn ▲" : "Nhấn để xem chi tiết ▼";
-        }
-    });
-
-    return card;
-}
-
-function executeRuneCombination() {
-    const rows = document.querySelectorAll(".runeskills-sub tr[data-runes]");
-    const container = document.getElementById("filter-content");
-    const title = document.getElementById("filter-title");
-    const box = document.getElementById("filter-result-box");
-
-    if (!container || !title || !box) return;
-    if (currentSelectedRunes.length === 0) {
-        box.style.display = "none";
-        return;
-    }
-
-    title.textContent = "Kết quả tổ hợp: " + currentSelectedRunes.join(" + ");
-    container.innerHTML = "";
-
-    const gridDiv = document.createElement("div");
-    gridDiv.className = "grid-container";
-    let matchCount = 0;
-    let exactMatchFound = false;
-
-    rows.forEach(row => {
-        const runesAttr = row.getAttribute("data-runes");
-        if (!runesAttr) return;
-
-        const recipeRunes = runesAttr.split(" ");
-        const containsAll = currentSelectedRunes.every(rune => recipeRunes.includes(rune));
-        if (!containsAll) return;
-
-        matchCount++;
-        const isExactMatch = currentSelectedRunes.length === recipeRunes.length;
-        if (isExactMatch) exactMatchFound = true;
-
-        gridDiv.appendChild(createRuneCombinationCard(row, isExactMatch));
-    });
-
-    if (matchCount === 0) {
-        container.innerHTML = "<p style='color: var(--text-muted);'>Không có công thức nào phù hợp với tổ hợp này.</p>";
-    } else {
-        const statusMessage = document.createElement("div");
-        statusMessage.style.marginBottom = "15px";
-        statusMessage.style.color = exactMatchFound ? "var(--success)" : "var(--text-muted)";
-        statusMessage.innerHTML = exactMatchFound
-            ? "🎉 <b style='font-size: 14px;'>Tổ hợp thành công!</b> Bạn đã tìm ra công thức hoàn chỉnh:"
-            : "Các công thức có chứa tổ hợp này:";
-        container.appendChild(statusMessage);
-        container.appendChild(gridDiv);
-    }
-
-    box.style.display = "block";
-}
-
-// --- BỘ LỌC KỸ NĂNG & HÌNH DẠNG ---
-function applyRuneSkillFilter() {
-    var typeFilter = document.getElementById("filterSkillType").value;
-    var shapeFilter = document.getElementById("filterRuneShape").value;
-    var rows = document.querySelectorAll(".runeskills-sub tr[data-runes]");
-
-    rows.forEach(row => {
-        var shape = row.getAttribute("data-shape") || "";
-        var htmlContent = row.innerHTML.toLowerCase();
-        var isPassive = htmlContent.includes("cơ hội thi triển") || htmlContent.includes("chance to cast") || htmlContent.includes("kích hoạt bổ trợ");
-        var isActive = !isPassive;
-
-        var matchType = (typeFilter === "all") || (typeFilter === "active" && isActive) || (typeFilter === "passive" && isPassive);
-        var matchShape = (shapeFilter === "all") || shape.includes(shapeFilter);
-
-        row.style.display = (matchType && matchShape) ? "" : "none";
-    });
-}
-
-// --- ATTRIBUTES DATA LOADING ---
-let attributesData = [];
-
-const ATTRIBUTE_RANGES = [
-    { min: 1, max: 100, label: "Level 1 - 100" },
-    { min: 101, max: 200, label: "Level 101 - 200" },
-    { min: 201, max: 300, label: "Level 201 - 300" },
-    { min: 301, max: 400, label: "Level 301 - 400" },
-    { min: 401, max: 500, label: "Level 401 - 500" },
-    { min: 501, max: 600, label: "Level 501 - 600" },
-    { min: 601, max: 700, label: "Level 601 - 700" },
-    { min: 701, max: 750, label: "Level 701 - 750 (Max)" }
-];
-
-function parseCoinValue(coinStr) {
-    if (!coinStr || coinStr === "MAX") return 0;
-    return parseInt(String(coinStr).replace(/,/g, "")) || 0;
-}
-
-async function loadAttributesData() {
-    const container = document.getElementById("attributes-table-container");
-    if (!container) return;
-
-    try {
-        const response = await fetch("data/attributes_data.json");
-        if (!response.ok) {
-            throw new Error(`Không tải được dữ liệu attributes (${response.status})`);
-        }
-
-        attributesData = await response.json();
-        renderAttributesView();
-    } catch (error) {
-        console.error("Lỗi khi tải dữ liệu attributes:", error);
-        container.innerHTML = "<p style='color: var(--danger);'>Lỗi tải dữ liệu chỉ số!</p>";
-    }
-}
-
-function renderAttributesView() {
-    const container = document.getElementById("attributes-table-container");
-    if (!container || !attributesData || !attributesData.length) return;
-
-    const selectElem = document.getElementById("filterAttrRange");
-    const searchElem = document.getElementById("filterAttrSearch");
-    const filterValue = selectElem ? selectElem.value : "all";
-    const searchValue = searchElem ? searchElem.value.trim() : "";
-
-    // 1. Tìm kiếm level cụ thể
-    if (searchValue !== "") {
-        const targetLevel = parseInt(searchValue);
-        const matched = attributesData.filter(r => r.lvl === targetLevel);
-        if (matched.length === 0) {
-            container.innerHTML = `<p style="color: var(--text-muted); padding: 15px;">Không tìm thấy kết quả cho Level ${targetLevel} (Hỗ trợ Level 1 - 750).</p>`;
-            return;
-        }
-
-        let html = `<div class="attributes-grid">`;
-        matched.forEach(row => {
-            html += `
-                <div class="attributes-row attributes-item" data-level="${row.lvl}">
-                    <span class="attr-lvl">Level ${row.lvl}</span>
-                    <span class="attr-coin">🪙 ${row.coin}</span>
-                </div>
-            `;
-        });
-        html += `</div>`;
-        container.innerHTML = html;
-        return;
-    }
-
-    // 2. Mốc "all" -> Hiển thị 2 cột, mỗi bên 4 hàng
-    if (filterValue === "all") {
-        let totalAll = 0;
-        const leftRanges = ATTRIBUTE_RANGES.slice(0, 4);
-        const rightRanges = ATTRIBUTE_RANGES.slice(4, 8);
-
-        const renderSubTable = (rangesList) => {
-            let tableHtml = `
-                <table class="attributes-summary-table">
-                    <thead>
-                        <tr>
-                            <th>Mốc Level</th>
-                            <th>Tổng số Coin</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-            `;
-
-            rangesList.forEach(range => {
-                const rangeRows = attributesData.filter(r => r.lvl >= range.min && r.lvl <= range.max);
-                const sumCoin = rangeRows.reduce((acc, r) => acc + parseCoinValue(r.coin), 0);
-                totalAll += sumCoin;
-
-                tableHtml += `
-                    <tr class="summary-row" onclick="selectAttributeRange('${range.min}-${range.max}')" title="Bấm để xem chi tiết mốc ${range.label}">
-                        <td style="color: var(--text-main); font-weight: 600;">
-                            <span style="color: var(--accent-primary); margin-right: 6px;">▶</span> ${range.label}
-                        </td>
-                        <td style="color: var(--accent-primary); font-weight: 700; font-size: 14px;">
-                            ${sumCoin.toLocaleString("en-US")} 🪙
-                        </td>
-                    </tr>
-                `;
-            });
-
-            tableHtml += `
-                    </tbody>
-                </table>
-            `;
-            return tableHtml;
-        };
-
-        const leftTableHtml = renderSubTable(leftRanges);
-        const rightTableHtml = renderSubTable(rightRanges);
-
-        let html = `
-            <div style="margin-bottom: 14px; font-size: 14px; color: var(--text-muted);">
-                💡 Bấm vào một mốc level bất kỳ dưới đây để xem chi tiết từng cấp độ.
-            </div>
-            <div class="attributes-summary-container">
-                <div class="summary-columns-grid">
-                    <div>${leftTableHtml}</div>
-                    <div>${rightTableHtml}</div>
-                </div>
-                <div class="summary-grand-total">
-                    <span class="total-label">Tổng cộng toàn bộ (Level 1 - 750):</span>
-                    <span class="total-value">${totalAll.toLocaleString("en-US")} 🪙</span>
-                </div>
-            </div>
-        `;
-
-        container.innerHTML = html;
-        return;
-    }
-
-    // 3. Mốc cụ thể -> Hiển thị dạng lưới 5 cột
-    const [minLevel, maxLevel] = filterValue.split("-").map(Number);
-    const filteredRows = attributesData.filter(r => r.lvl >= minLevel && r.lvl <= maxLevel);
-    const rangeTotal = filteredRows.reduce((acc, r) => acc + parseCoinValue(r.coin), 0);
-
-    let html = `
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
-            <span style="font-weight: 700; color: var(--text-main); font-size: 15px;">
-                Chi tiết Level ${minLevel} - ${maxLevel}
-            </span>
-            <span style="font-weight: 700; color: #f59e0b; font-size: 14px; background: rgba(245, 158, 11, 0.1); padding: 4px 10px; border-radius: 4px; border: 1px solid rgba(245, 158, 11, 0.3);">
-                Tổng mốc: ${rangeTotal.toLocaleString("en-US")} 🪙
-            </span>
-        </div>
-        <div class="attributes-grid">
-    `;
-
-    filteredRows.forEach(row => {
-        html += `
-            <div class="attributes-row attributes-item" data-level="${row.lvl}">
-                <span class="attr-lvl">Level ${row.lvl}</span>
-                <span class="attr-coin">${row.coin} 🪙</span>
-            </div>
-        `;
-    });
-
-    html += `</div>`;
-    container.innerHTML = html;
-}
-
-function selectAttributeRange(rangeVal) {
-    const selectElem = document.getElementById("filterAttrRange");
-    if (selectElem) {
-        selectElem.value = rangeVal;
-        renderAttributesView();
-    }
-}
-
-function filterAttributesRange() {
-    renderAttributesView();
-}
-

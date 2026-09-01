@@ -1,0 +1,402 @@
+{
+  "basic": [
+    {
+      "element": "Vật lí",
+      "elementClass": "type-phys",
+      "name": "Double Claw",
+      "descEn": "Inflicts damage on the enemy twice with a sharp slash.",
+      "descVi": "Gây sát thương lên kẻ địch 2 lần bằng một đòn chém sắc bén",
+      "gems": "9,820"
+    },
+    {
+      "element": "Vật lí",
+      "elementClass": "type-phys",
+      "name": "Overhead Triple Claw",
+      "descEn": "Dashes towards the target for a powerful hit.",
+      "descVi": "Lướt tới mục tiêu để tung ra một đòn tấn công uy lực",
+      "gems": "19,640"
+    },
+    {
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "name": "Frost Bite",
+      "descEn": "Hits and slows down the enemy with a freezing blow.",
+      "descVi": "Tấn công và làm chậm kẻ địch bằng một đòn đánh băng giá",
+      "gems": "29,460"
+    },
+    {
+      "element": "Độc",
+      "elementClass": "type-poison",
+      "name": "Venom",
+      "descEn": "Hits the enemy with venom leaving them poisoned.",
+      "descVi": "Tấn công kẻ địch bằng nọc độc, khiến chúng bị nhiễm độc",
+      "gems": "39,280"
+    },
+    {
+      "element": "Lửa",
+      "elementClass": "type-fire",
+      "name": "Flame Spin",
+      "descEn": "Fire attack inflicting damage on enemies in your area.",
+      "descVi": "Đòn tấn công lửa gây sát thương lên kẻ địch trong vùng ảnh hưởng",
+      "gems": "39,280"
+    },
+    {
+      "element": "Vật lí",
+      "elementClass": "type-phys",
+      "name": "Life Steal",
+      "descEn": "Regenerates your HP by half of the damage inflicted.",
+      "descVi": "Hồi phục HP bằng một nửa sát thương gây ra",
+      "gems": "58,920"
+    },
+    {
+      "element": "Lửa",
+      "elementClass": "type-fire",
+      "name": "Firewall",
+      "descEn": "Creates a fire wall in front of you and burns enemies that go through it.",
+      "descVi": "Tạo ra một bức tường lửa phía trước và đốt cháy kẻ địch đi qua nó",
+      "gems": "58,920"
+    },
+    {
+      "element": "Độc",
+      "elementClass": "type-poison",
+      "name": "Poisonous Jump",
+      "descEn": "Jumps towards the enemy for a poisonous hit.",
+      "descVi": "Nhảy tới kẻ địch để tung ra đòn đánh tẩm độc",
+      "gems": "77,760"
+    },
+    {
+      "element": "Vật lí",
+      "elementClass": "type-phys",
+      "name": "Vampiric Overhead Claw",
+      "descEn": "Jumps to the target and steals some of their HP.",
+      "descVi": "Nhảy đến mục tiêu và hút một phần HP của chúng",
+      "gems": "88,380"
+    },
+    {
+      "element": "Điện",
+      "elementClass": "type-light",
+      "name": "Shock Jump",
+      "descEn": "Dashes towards the target inflicting electric damage with a chance to shock the enemy.",
+      "descVi": "Lướt tới mục tiêu gây sát thương điện kèm tỷ lệ làm choáng kẻ địch",
+      "gems": "88,380"
+    },
+    {
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "name": "Frozen Claw Jump",
+      "descEn": "Dashes towards the target for a freezing hit.",
+      "descVi": "Lướt tới mục tiêu tung đòn đánh đóng băng",
+      "gems": "88,380"
+    },
+    {
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "name": "Freezing Wall",
+      "descEn": "Creates an icy wall in front of you that freezes approaching enemies.",
+      "descVi": "Tạo bức tường băng phía trước làm đóng băng kẻ địch đến gần",
+      "gems": "88,380"
+    },
+    {
+      "element": "Điện",
+      "elementClass": "type-light",
+      "name": "Thunder",
+      "descEn": "A lightning that strikes a random enemy in front of you.",
+      "descVi": "Một tia chớp đánh vào kẻ địch ngẫu nhiên phía trước bạn",
+      "gems": "117,840"
+    },
+    {
+      "element": "Độc",
+      "elementClass": "type-poison",
+      "name": "Poisonous Wall",
+      "descEn": "Raises a toxic wall ahead that damages enemies and applies poison.",
+      "descVi": "Dựng lên bức tường độc phía trước gây sát thương và nhiễm độc kẻ địch",
+      "gems": "Chưa rõ"
+    },
+    {
+      "element": "Điện",
+      "elementClass": "type-light",
+      "name": "Ball Lightning",
+      "descEn": "Forms a lightning sphere that deals damage with a chance to shock the enemy.",
+      "descVi": "Tạo cầu sét gây sát thương kèm tỷ lệ làm choáng kẻ địch",
+      "gems": "Chưa rõ"
+    }
+  ],
+  "specials": [
+    {
+      "element": "Lửa",
+      "elementClass": "type-fire",
+      "name": "Fire Nova",
+      "descEn": "Powerful blast inflicting damage on enemies in your area.",
+      "descVi": "Vụ nổ cực mạnh gây sát thương lên kẻ địch trong khu vực của bạn",
+      "gems": "29,460"
+    },
+    {
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "name": "Icy Spikes",
+      "descEn": "Drops a hail of ice spikes in front of you and slows down hit enemies.",
+      "descVi": "Rơi một trận mưa gai băng phía trước và làm chậm kẻ địch trúng đòn",
+      "gems": "39,280"
+    },
+    {
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "name": "Frost Nova",
+      "descEn": "Cold blast slowing down the enemies in your area for a certain period of time.",
+      "descVi": "Vụ nổ buốt giá làm chậm kẻ địch trong khu vực trong một khoảng thời gian",
+      "gems": "49,100"
+    },
+    {
+      "element": "Lửa",
+      "elementClass": "type-fire",
+      "name": "Meteors",
+      "descEn": "Drops a meteor shower in front of you, inflicting damage on hit enemies.",
+      "descVi": "Gọi mưa thiên thạch rơi xuống phía trước, gây sát thương kẻ địch trúng phải",
+      "gems": "49,100"
+    },
+    {
+      "element": "Điện",
+      "elementClass": "type-light",
+      "name": "Shock Nova",
+      "descEn": "Electric blast with a chance to shock the enemies in your area.",
+      "descVi": "Vụ nổ điện kèm tỷ lệ làm choáng kẻ địch trong khu vực của bạn",
+      "gems": "58,920"
+    },
+    {
+      "element": "Độc",
+      "elementClass": "type-poison",
+      "name": "Venomous Skin",
+      "descEn": "Poisons enemies that approach you. Can stack multiple times...",
+      "descVi": "Nhiễm độc kẻ địch tiếp cận bạn. Có thể cộng dồn nhiều lần...",
+      "gems": "68,740"
+    },
+    {
+      "element": "Độc",
+      "elementClass": "type-poison",
+      "name": "Poison Nova",
+      "descEn": "Venom blast leaving enemies in your area poisoned.",
+      "descVi": "Vụ nổ nọc độc khiến kẻ địch trong khu vực bị nhiễm độc",
+      "gems": "78,560"
+    },
+    {
+      "element": "Vật lí",
+      "elementClass": "type-phys",
+      "name": "Hurricane",
+      "descEn": "Creates a whirlwind inflicting continuous damage on enemies nearby.",
+      "descVi": "Tạo ra cơn lốc xoáy gây sát thương liên tục lên kẻ địch lân cận",
+      "gems": "78,560"
+    },
+    {
+      "element": "Lửa",
+      "elementClass": "type-fire",
+      "name": "Fire Breath",
+      "descEn": "A stream of fire inflicting damage on hit enemies.",
+      "descVi": "Luồng lửa phun ra gây sát thương lên kẻ địch trúng đòn",
+      "gems": "88,380"
+    },
+    {
+      "element": "Điện",
+      "elementClass": "type-light",
+      "name": "Electrified",
+      "descEn": "Makes you deal electric damage to nearby targets with a chance to shock them.",
+      "descVi": "Khiến bạn gây sát thương điện lên mục tiêu lân cận kèm tỷ lệ làm choáng chúng",
+      "gems": "88,380"
+    },
+    {
+      "element": "Độc",
+      "elementClass": "type-poison",
+      "name": "Poisonous Cloud",
+      "descEn": "Forms a cloud which inflicts poisonous damage on your enemies.",
+      "descVi": "Tạo ra đám mây gây sát thương độc lên kẻ địch",
+      "gems": "98,200"
+    },
+    {
+      "element": "Điện",
+      "elementClass": "type-light",
+      "name": "Electroshock",
+      "descEn": "A burst of electricity inflicting damage on targets in front of you...",
+      "descVi": "Luồng phóng điện gây sát thương lên mục tiêu phía trước bạn...",
+      "gems": "98,200"
+    },
+    {
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "name": "Freezing Breath",
+      "descEn": "A stream of cold inflicting damage and slowing down the targets.",
+      "descVi": "Luồng khí lạnh gây sát thương và làm chậm mục tiêu",
+      "gems": "117,840"
+    },
+    {
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "name": "Hail",
+      "descEn": "Creates a hailstorm cloud that slows down hit enemies.",
+      "descVi": "Tạo ra đám mây mưa đá làm chậm kẻ địch trúng đòn",
+      "gems": "117,840"
+    },
+    {
+      "element": "Lửa",
+      "elementClass": "type-fire",
+      "name": "Fiery Ring",
+      "descEn": "Creates a ring of fire that burns the enemies within its range.",
+      "descVi": "Tạo vòng tròn lửa đốt cháy kẻ địch trong phạm vi",
+      "gems": "117,840"
+    },
+    {
+      "element": "Điện",
+      "elementClass": "type-light",
+      "name": "Thunderstorm",
+      "descEn": "Forms a cloud which strikes your enemies with lightnings.",
+      "descVi": "Tạo đám mây gọi sét đánh xuống kẻ địch",
+      "gems": "117,840"
+    }
+  ],
+  "auras": [
+    {
+      "element": "Aura",
+      "elementClass": "type-aura",
+      "name": "Speed Boost",
+      "descEn": "Increases movement speed for a certain period of time.",
+      "descVi": "Tăng tốc độ di chuyển trong một khoảng thời gian",
+      "gems": "9,820"
+    },
+    {
+      "element": "Aura",
+      "elementClass": "type-aura",
+      "name": "Life Regeneration",
+      "descEn": "Gradually regenerates your health by a certain amount.",
+      "descVi": "Hồi phục dần lượng máu của bạn theo thời gian",
+      "gems": "19,640"
+    },
+    {
+      "element": "Aura",
+      "elementClass": "type-aura",
+      "name": "Critical Boost",
+      "descEn": "Increases critical hit probability for a certain period of time.",
+      "descVi": "Tăng tỷ lệ chí mạng trong một khoảng thời gian",
+      "gems": "19,640"
+    },
+    {
+      "element": "Aura",
+      "elementClass": "type-aura",
+      "name": "Area Life Regeneration",
+      "descEn": "Gradually regenerates HP of all allies in the area.",
+      "descVi": "Hồi phục dần HP cho tất cả đồng minh trong khu vực",
+      "gems": "39,280"
+    },
+    {
+      "element": "Aura",
+      "elementClass": "type-aura",
+      "name": "Instant Life Regeneration",
+      "descEn": "Regenerates a certain amount of your health instantly.",
+      "descVi": "Hồi phục ngay lập tức một lượng máu nhất định",
+      "gems": "49,100"
+    },
+    {
+      "element": "Aura",
+      "elementClass": "type-aura",
+      "name": "Damage Boost",
+      "descEn": "Increases inflicted damage for a certain period of time.",
+      "descVi": "Tăng sát thương gây ra trong một khoảng thời gian",
+      "gems": "49,100"
+    },
+    {
+      "element": "Aura",
+      "elementClass": "type-aura",
+      "name": "Accursing Bite",
+      "descEn": "Bites your enemy leaving them cursed with lower health, attack and speed.",
+      "descVi": "Cắn kẻ địch khiến chúng bị nguyền rủa giảm máu, sát thương và tốc độ",
+      "gems": "88,380"
+    },
+    {
+      "element": "Aura",
+      "elementClass": "type-aura",
+      "name": "Battle Orders",
+      "descEn": "Increases HP of the allies in your area.",
+      "descVi": "Tăng HP cho đồng minh trong khu vực của bạn",
+      "gems": "98,200"
+    },
+    {
+      "element": "Aura",
+      "elementClass": "type-aura",
+      "name": "Rage",
+      "descEn": "Boosts your damage, HP and speed for a certain period of time.",
+      "descVi": "Tăng sát thương, HP và tốc độ của bạn trong một khoảng thời gian",
+      "gems": "98,200"
+    }
+  ],
+  "totems": [
+    {
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "name": "Freezing Trap",
+      "descEn": "Deploys a trap that freezes the target upon activation.",
+      "descVi": "Đặt bẫy đóng băng mục tiêu khi kích hoạt",
+      "gems": "39,280"
+    },
+    {
+      "element": "Độc",
+      "elementClass": "type-poison",
+      "name": "Swamp",
+      "descEn": "Deploys a ring that slows down enemies within the area.",
+      "descVi": "Đặt vòng bẫy làm chậm kẻ địch trong vùng ảnh hưởng",
+      "gems": "49,100"
+    },
+    {
+      "element": "Vật lí",
+      "elementClass": "type-phys",
+      "name": "Root Prison",
+      "descEn": "Immobilizes the target and limits the actions it can take.",
+      "descVi": "Trói buộc mục tiêu và hạn chế các hành động chúng có thể thực hiện",
+      "gems": "78,560"
+    },
+    {
+      "element": "Lửa",
+      "elementClass": "type-fire",
+      "name": "Explosion Trap",
+      "descEn": "Deploys an exploding trap that deals damage to every enemy in range.",
+      "descVi": "Đặt bẫy nổ gây sát thương mọi kẻ địch trong tầm bắn",
+      "gems": "88,380"
+    },
+    {
+      "element": "Aura",
+      "elementClass": "type-aura",
+      "name": "Life Regeneration Totem",
+      "descEn": "Deploys a totem that heals all friendly players within its range.",
+      "descVi": "Đặt cọc hồi máu cho tất cả đồng minh trong tầm ảnh hưởng",
+      "gems": "98,200"
+    },
+    {
+      "element": "Băng",
+      "elementClass": "type-ice",
+      "name": "Freezing Area Trap",
+      "descEn": "Deploys a trap that deals damage and freezes every enemy in range.",
+      "descVi": "Đặt bẫy gây sát thương và đóng băng mọi kẻ địch trong phạm vi",
+      "gems": "117,840"
+    },
+    {
+      "element": "Điện",
+      "elementClass": "type-light",
+      "name": "Electric Trap",
+      "descEn": "Deploys a trap that deals electric damage to enemies in range upon activation.",
+      "descVi": "Đặt bẫy gây sát thương sét lên kẻ địch trong phạm vi khi kích hoạt",
+      "gems": "117,840"
+    },
+    {
+      "element": "Độc",
+      "elementClass": "type-poison",
+      "name": "Poison Trap",
+      "descEn": "Deploys a trap that inflicts damage upon activation and leaves the target poisoned.",
+      "descVi": "Đặt bẫy gây sát thương khi kích hoạt và làm mục tiêu nhiễm độc",
+      "gems": "117,840"
+    },
+    {
+      "element": "Aura",
+      "elementClass": "type-aura",
+      "name": "Shield Totem",
+      "descEn": "Deploys a totem that reduces damage for all friendly players in range.",
+      "descVi": "Đặt cọc giảm sát thương nhận vào cho mọi đồng minh trong phạm vi",
+      "gems": "117,840"
+    }
+  ]
+}
