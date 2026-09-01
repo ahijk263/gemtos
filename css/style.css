@@ -644,6 +644,10 @@
      margin: 8px 0;
  }
 
+ tr[data-class="epic-title"] .rune-desc:first-of-type {
+     color: #a855f7 !important;
+ }
+
  .rune-stats {
      font-size: 13px;
  }

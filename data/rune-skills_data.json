@@ -618,8 +618,8 @@
       "runeslist": "Ves, Lar, Nar, Fin",
       "className": "epic-title",
       "effectTitle": "Rage ➔ Bloodfury Enhancement",
-      "description": "Cường hóa Cuồng Nộ giúp tăng máu và thời gian hiệu lực",
-      "descriptionVi": "Cường hóa Cuồng Nộ giúp tăng máu và thời gian hiệu lực",
+      "description": "(Cường hóa Cuồng Nộ giúp tăng máu và thời gian hiệu lực)",
+      "descriptionVi": "(Cường hóa Cuồng Nộ giúp tăng máu và thời gian hiệu lực)",
       "stats": "Máu tối đa: +2% | Thời gian: +0.4s | Máu: 558 | ST: 37"
     },
     {
@@ -639,8 +639,8 @@
       "runeslist": "Gul, Kel, Kor, Run",
       "className": "epic-title",
       "effectTitle": "Firewall ➔ Schorchmark Enhancement",
-      "description": "Cường hóa sát thương đốt theo giây của Tường Lửa",
-      "descriptionVi": "Cường hóa sát thương đốt theo giây của Tường Lửa",
+      "description": "(Cường hóa sát thương đốt theo giây của Tường Lửa)",
+      "descriptionVi": "(Cường hóa sát thương đốt theo giây của Tường Lửa)",
       "stats": "Sát thương/giây: +15% | Máu: 571 | ST: 37"
     },
     {
@@ -660,8 +660,8 @@
       "runeslist": "Dan, Tor, Rul, Kor",
       "className": "epic-title",
       "effectTitle": "Fire Breath ➔ Infernal Breath",
-      "description": "Giải phóng ba luồng lửa theo hình nón rộng hơn, bao phủ một khu vực lớn hơn",
-      "descriptionVi": "Giải phóng ba luồng lửa theo hình nón rộng hơn, bao phủ một khu vực lớn hơn",
+      "description": "(Giải phóng ba luồng lửa theo hình nón rộng hơn, bao phủ một khu vực lớn hơn)",
+      "descriptionVi": "(Giải phóng ba luồng lửa theo hình nón rộng hơn, bao phủ một khu vực lớn hơn)",
       "stats": "Sát thương/giây: +50% | Thời gian: +0.50s | Máu: 562 | ST: 37"
     },
     {
@@ -680,8 +680,8 @@
       "runeslist": "Kel, Sim, Tar",
       "className": "epic-title",
       "effectTitle": "Fiery Ring ➔ Emberlash Enhancement",
-      "description": "Cường hóa sát thương và thời gian của Vòng Tròn Lửa",
-      "descriptionVi": "Cường hóa sát thương và thời gian của Vòng Tròn Lửa",
+      "description": "(Cường hóa sát thương và thời gian của Vòng Tròn Lửa)",
+      "descriptionVi": "(Cường hóa sát thương và thời gian của Vòng Tròn Lửa)",
       "stats": "Sát thương/giây: +7% | Thời gian: +0.4s | Máu: 429 | ST: 31"
     },
     {
@@ -701,8 +701,8 @@
       "runeslist": "Rul, Tar, Tir, Kir",
       "className": "epic-title",
       "effectTitle": "Explosion Trap ➔ Shrapnel Enhancement",
-      "description": "Tăng sát thương bẫy nổ và giảm thời gian hồi chiêu",
-      "descriptionVi": "Tăng sát thương bẫy nổ và giảm thời gian hồi chiêu",
+      "description": "(Tăng sát thương bẫy nổ và giảm thời gian hồi chiêu)",
+      "descriptionVi": "(Tăng sát thương bẫy nổ và giảm thời gian hồi chiêu)",
       "stats": "Sát thương: +100% | Hồi chiêu: -1s | Máu: 309 | ST: 23"
     },
     {
@@ -722,8 +722,8 @@
       "runeslist": "Tor, Tir, Kor, Kir",
       "className": "epic-title",
       "effectTitle": "Frozen Claw Jump ➔ Deepfrost Enhancement",
-      "description": "Cường hóa sát thương và hiệu ứng cản trở của Cú Nhảy Vuốt Băng",
-      "descriptionVi": "Cường hóa sát thương và hiệu ứng cản trở của Cú Nhảy Vuốt Băng",
+      "description": "(Cường hóa sát thương và hiệu ứng cản trở của Cú Nhảy Vuốt Băng)",
+      "descriptionVi": "(Cường hóa sát thương và hiệu ứng cản trở của Cú Nhảy Vuốt Băng)",
       "stats": "Sát thương: +50% | Cản trở: +3% | Máu: 431 | ST: 32"
     },
     {
@@ -743,8 +743,8 @@
       "runeslist": "Kel, Rul, Lum, Kal",
       "className": "epic-title",
       "effectTitle": "Freezing Wall ➔ Frostclad Enhancement",
-      "description": "Cường hóa sát thương theo giây và thời gian của Tường Băng",
-      "descriptionVi": "Cường hóa sát thương theo giây và thời gian của Tường Băng",
+      "description": "(Cường hóa sát thương theo giây và thời gian của Tường Băng)",
+      "descriptionVi": "(Cường hóa sát thương theo giây và thời gian của Tường Băng)",
       "stats": "Sát thương/giây: +10% | Thời gian: +0.25s | Máu: 436 | ST: 32"
     },
     {
@@ -764,8 +764,8 @@
       "runeslist": "Nar, Kor, Mor, Dak",
       "className": "epic-title",
       "effectTitle": "Freezing Breath ➔ Rimewind Enhancement",
-      "description": "Cường hóa sát thương và thời gian của Hơi Thở Băng Giá",
-      "descriptionVi": "Cường hóa sát thương và thời gian của Hơi Thở Băng Giá",
+      "description": "(Cường hóa sát thương và thời gian của Hơi Thở Băng Giá)",
+      "descriptionVi": "(Cường hóa sát thương và thời gian của Hơi Thở Băng Giá)",
       "stats": "Sát thương/giây: +10% | Thời gian: +0.2s | Máu: 426 | ST: 32"
     },
     {
@@ -784,8 +784,8 @@
       "runeslist": "Lar, Fen, Vor",
       "className": "epic-title",
       "effectTitle": "Freezing Area Trap ➔ Glacierheart Enhancement",
-      "description": "Tăng mạnh sát thương cho Bẫy Vùng Băng Giá",
-      "descriptionVi": "Tăng mạnh sát thương cho Bẫy Vùng Băng Giá",
+      "description": "(Tăng mạnh sát thương cho Bẫy Vùng Băng Giá)",
+      "descriptionVi": "(Tăng mạnh sát thương cho Bẫy Vùng Băng Giá)",
       "stats": "Sát thương: +80% | Máu: 567 | ST: 37"
     },
     {
@@ -805,8 +805,8 @@
       "runeslist": "Fen, Kor, Nir, Lum",
       "className": "epic-title",
       "effectTitle": "Hurricane ➔ Frostveil Enhancement",
-      "description": "Cường hóa sát thương và thời gian của Cơn Lốc Xoáy",
-      "descriptionVi": "Cường hóa sát thương và thời gian của Cơn Lốc Xoáy",
+      "description": "(Cường hóa sát thương và thời gian của Cơn Lốc Xoáy)",
+      "descriptionVi": "(Cường hóa sát thương và thời gian của Cơn Lốc Xoáy)",
       "stats": "Sát thương/giây: +30% | Thời gian: +1s | Máu: 315 | ST: 23"
     },
     {
@@ -825,8 +825,8 @@
       "runeslist": "Tar, Nir, Kal",
       "className": "epic-title",
       "effectTitle": "Poisonous Jump ➔ Venomstep Enhancement",
-      "description": "Cường hóa sát thương và hiệu ứng độc của Cú Nhảy Độc",
-      "descriptionVi": "Cường hóa sát thương và hiệu ứng độc của Cú Nhảy Độc",
+      "description": "(Cường hóa sát thương và hiệu ứng độc của Cú Nhảy Độc)",
+      "descriptionVi": "(Cường hóa sát thương và hiệu ứng độc của Cú Nhảy Độc)",
       "stats": "Sát thương: +50% | ST/giây: +10% | Máu: 321 | ST: 23"
     },
     {
@@ -846,8 +846,8 @@
       "runeslist": "Lar, Sim, Rul, Nir",
       "className": "epic-title",
       "effectTitle": "Poisonous Wall ➔ Mireborn Enhancement",
-      "description": "Cường hóa sát thương và thời gian của Tường Độc",
-      "descriptionVi": "Cường hóa sát thương và thời gian của Tường Độc",
+      "description": "(Cường hóa sát thương và thời gian của Tường Độc)",
+      "descriptionVi": "(Cường hóa sát thương và thời gian của Tường Độc)",
       "stats": "Sát thương/giây: +10% | Thời gian: +0.1s | Máu: 562 | ST: 37"
     },
     {
@@ -866,8 +866,8 @@
       "runeslist": "Gul, Nar, Fen",
       "className": "epic-title",
       "effectTitle": "Toxic Quicksand ➔ Sinkmire Enhancement",
-      "description": "Cường hóa sát thương và thời gian của Cát Lún Độc",
-      "descriptionVi": "Cường hóa sát thương và thời gian của Cát Lún Độc",
+      "description": "(Cường hóa sát thương và thời gian của Cát Lún Độc)",
+      "descriptionVi": "(Cường hóa sát thương và thời gian của Cát Lún Độc)",
       "stats": "Sát thương/giây: +10% | Thời gian: +0.3s | Máu: 569 | ST: 36"
     },
     {
@@ -887,8 +887,8 @@
       "runeslist": "Sim, Vor, Dol, Gar",
       "className": "epic-title",
       "effectTitle": "Poisonous Cloud ➔ Vilecloud Enhancement",
-      "description": "Cường hóa sát thương và thời gian của Đám Mây Độc",
-      "descriptionVi": "Cường hóa sát thương và thời gian của Đám Mây Độc",
+      "description": "(Cường hóa sát thương và thời gian của Đám Mây Độc)",
+      "descriptionVi": "(Cường hóa sát thương và thời gian của Đám Mây Độc)",
       "stats": "Sát thương/giây: +20% | Thời gian: +0.2s | Máu: 313 | ST: 23"
     },
     {
@@ -907,8 +907,8 @@
       "runeslist": "Tor, Tar, Zan",
       "className": "epic-title",
       "effectTitle": "Poison Trap ➔ Blightstone Enhancement",
-      "description": "Cường hóa sát thương và hiệu ứng độc của Bẫy Độc",
-      "descriptionVi": "Cường hóa sát thương và hiệu ứng độc của Bẫy Độc",
+      "description": "(Cường hóa sát thương và hiệu ứng độc của Bẫy Độc)",
+      "descriptionVi": "(Cường hóa sát thương và hiệu ứng độc của Bẫy Độc)",
       "stats": "Sát thương: +50% | Sát thương/giây: +10% | Máu: 437 | ST: 32"
     },
     {
@@ -928,8 +928,8 @@
       "runeslist": "Kel, Fin, Lum, Vor",
       "className": "epic-title",
       "effectTitle": "Thunder ➔ Fulgurite Enhancement",
-      "description": "Cường hóa sát thương sét đánh và giảm thời gian hồi chiêu",
-      "descriptionVi": "Cường hóa sát thương sét đánh và giảm thời gian hồi chiêu",
+      "description": "(Cường hóa sát thương sét đánh và giảm thời gian hồi chiêu)",
+      "descriptionVi": "(Cường hóa sát thương sét đánh và giảm thời gian hồi chiêu)",
       "stats": "Sát thương: +30% | Hồi chiêu: -1s | Máu: 422 | ST: 32"
     },
     {
@@ -949,8 +949,8 @@
       "runeslist": "Dan, Nar, Fin, Tar",
       "className": "epic-title",
       "effectTitle": "Ball Lightning ➔ Greater Ball Lightning",
-      "description": "Cầu Sét bao phủ vùng rộng hơn, đánh trúng nhiều kẻ địch hơn trên đường đi",
-      "descriptionVi": "Cầu Sét bao phủ vùng rộng hơn, đánh trúng nhiều kẻ địch hơn trên đường đi",
+      "description": "(Cầu Sét bao phủ vùng rộng hơn, đánh trúng nhiều kẻ địch hơn trên đường đi)",
+      "descriptionVi": "(Cầu Sét bao phủ vùng rộng hơn, đánh trúng nhiều kẻ địch hơn trên đường đi)",
       "stats": "Sát thương/giây: +10% | Thời gian: +0.20s | Máu: 549 | ST: 37"
     },
     {
@@ -970,8 +970,8 @@
       "runeslist": "Nar, Tir, Run, Xar",
       "className": "epic-title",
       "effectTitle": "Thunderstorm ➔ Tempest Enhancement",
-      "description": "Cường hóa sát thương và tỷ lệ choáng của Bão Sét",
-      "descriptionVi": "Cường hóa sát thương và tỷ lệ choáng của Bão Sét",
+      "description": "(Cường hóa sát thương và tỷ lệ choáng của Bão Sét)",
+      "descriptionVi": "(Cường hóa sát thương và tỷ lệ choáng của Bão Sét)",
       "stats": "Sát thương: +20% | Tỷ lệ choáng: +2% | Máu: 433 | ST: 31"
     },
     {
@@ -990,8 +990,8 @@
       "runeslist": "Tor, Sim, Dol",
       "className": "epic-title",
       "effectTitle": "Electric Trap ➔ Sparkforge Enhancement",
-      "description": "Cường hóa sát thương và giảm hồi chiêu của Bẫy Điện",
-      "descriptionVi": "Cường hóa sát thương và giảm hồi chiêu của Bẫy Điện",
+      "description": "(Cường hóa sát thương và giảm hồi chiêu của Bẫy Điện)",
+      "descriptionVi": "(Cường hóa sát thương và giảm hồi chiêu của Bẫy Điện)",
       "stats": "Sát thương: +80% | Hồi chiêu: -0.1s | Máu: 420 | ST: 32"
     },
     {
@@ -1011,8 +1011,8 @@
       "runeslist": "Tar, Zan, Xar, Dol",
       "className": "epic-title",
       "effectTitle": "Root Prison ➔ Ironroot Enhancement",
-      "description": "Cường hóa thời gian hiệu lực trói chân của Ngục Rễ Cây",
-      "descriptionVi": "Cường hóa thời gian hiệu lực trói chân của Ngục Rễ Cây",
+      "description": "(Cường hóa thời gian hiệu lực trói chân của Ngục Rễ Cây)",
+      "descriptionVi": "(Cường hóa thời gian hiệu lực trói chân của Ngục Rễ Cây)",
       "stats": "Thời gian trói: +0.2s | Máu: 320 | ST: 23"
     },
     {
@@ -1032,7 +1032,7 @@
       "runeslist": "Ves, Tor, Nar, Sim",
       "className": "epic-title",
       "effectTitle": "Kích hoạt bổ trợ: Fire Nova",
-      "description": "4% chance to cast Fire Nova Level 2 on attack with cooldown 68.0s",
+      "description": "(4% chance to cast Fire Nova Level 2 on attack with cooldown 68.0s)",
       "descriptionVi": "4% cơ hội thi triển Vòng Sáng Lửa Cấp 2 khi tấn công, hồi chiêu 68.0s",
       "stats": "Máu tối đa: 570 | Sát thương: 37"
     },
@@ -1053,7 +1053,7 @@
       "runeslist": "Lar, Kel, Tor, Tar",
       "className": "epic-title",
       "effectTitle": "Kích hoạt bổ trợ: Icy Spikes",
-      "description": "5% chance to cast Icy Spikes Level 1 on attack with cooldown 77.0s",
+      "description": "(5% chance to cast Icy Spikes Level 1 on attack with cooldown 77.0s)",
       "descriptionVi": "5% cơ hội thi triển Gai Băng Cấp 1 khi tấn công, hồi chiêu 77.0s",
       "stats": "Máu tối đa: 555 | Sát thương: 37"
     },
@@ -1074,7 +1074,7 @@
       "runeslist": "Gul, Tor, Kel, Fen",
       "className": "epic-title",
       "effectTitle": "Kích hoạt bổ trợ: Electrified",
-      "description": "5% chance to cast Electrified Level 1 on attack with cooldown 135.0s",
+      "description": "(5% chance to cast Electrified Level 1 on attack with cooldown 135.0s)",
       "descriptionVi": "5% cơ hội thi triển Nhiễm Điện Cấp 1 khi tấn công, hồi chiêu 135.0s",
       "stats": "Máu tối đa: 556 | Sát thương: 37"
     },
@@ -1095,7 +1095,7 @@
       "runeslist": "Dan, Nar, Fin, Rul",
       "className": "epic-title",
       "effectTitle": "Kích hoạt bổ trợ: Venomous Skin",
-      "description": "5% chance to cast Venomous Skin Level 1 on attack with cooldown 75.0s",
+      "description": "(5% chance to cast Venomous Skin Level 1 on attack with cooldown 75.0s)",
       "descriptionVi": "5% cơ hội thi triển Da Độc Cấp 1 khi tấn công, hồi chiêu 75.0s",
       "stats": "Máu tối đa: 567 | Sát thương: 37"
     },
@@ -1116,7 +1116,7 @@
       "runeslist": "Lar, Kel, Sim, Nir",
       "className": "epic-title",
       "effectTitle": "Kích hoạt bổ trợ: Area Life Regeneration",
-      "description": "35% chance to cast Area Life Regeneration Level 1 on low health with cooldown 138.0s",
+      "description": "(35% chance to cast Area Life Regeneration Level 1 on low health with cooldown 138.0s)",
       "descriptionVi": "35% cơ hội thi triển Hồi Máu Diện Rộng Cấp 1 khi máu thấp, hồi chiêu 138.0s",
       "stats": "Máu tối đa: 550 | Sát thương: 37"
     },
@@ -1137,7 +1137,7 @@
       "runeslist": "Nar, Fin, Tar, Nir",
       "className": "epic-title",
       "effectTitle": "Kích hoạt bổ trợ: Life Regeneration",
-      "description": "35% chance to cast Life Regeneration Level 1 on low health with cooldown 100.0s",
+      "description": "(35% chance to cast Life Regeneration Level 1 on low health with cooldown 100.0s)",
       "descriptionVi": "35% cơ hội thi triển Hồi Máu Cấp 1 khi máu thấp, hồi chiêu 100.0s",
       "stats": "Máu tối đa: 422 | Sát thương: 32"
     }
@@ -1159,9 +1159,9 @@
       "runeslist": "Zan, Sul, Bar",
       "className": "rare-title",
       "effectTitle": "Flame Spin Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương/giây: +25% | Cooldown: -2s | Máu: 105 | ST: 7[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương/giây: +25% | Cooldown: -2s | Máu: 105 | ST: 7"
     },
     {
       "runes": [
@@ -1180,9 +1180,9 @@
       "runeslist": "Tir, Kal, Xar, Dol",
       "className": "rare-title",
       "effectTitle": "Fire Breath Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương/giây: +15% | Máu: 221 | ST: 14[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương/giây: +15% | Máu: 221 | ST: 14"
     },
     {
       "runes": [
@@ -1201,9 +1201,9 @@
       "runeslist": "Dol, Gar, Tek, Rin",
       "className": "rare-title",
       "effectTitle": "Meteors Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương: +50% | Máu: 105 | ST: 6[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương: +50% | Máu: 105 | ST: 6"
     },
     {
       "runes": [
@@ -1222,9 +1222,9 @@
       "runeslist": "Xar, Mar, Sul, Nim",
       "className": "rare-title",
       "effectTitle": "Frost Bite Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương: +10% | Máu: 106 | ST: 7[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương: +10% | Máu: 106 | ST: 7"
     },
     {
       "runes": [
@@ -1243,9 +1243,9 @@
       "runeslist": "Kir, Kal, Mar, Dak",
       "className": "rare-title",
       "effectTitle": "Frost Nova Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương: +15% | Máu: 155 | ST: 10[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương: +15% | Máu: 155 | ST: 10"
     },
     {
       "runes": [
@@ -1263,9 +1263,9 @@
       "runeslist": "Dol, Tek, Rin",
       "className": "rare-title",
       "effectTitle": "Icy Spikes Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương: +20% | Máu: 104 | ST: 7[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương: +20% | Máu: 104 | ST: 7"
     },
     {
       "runes": [
@@ -1284,9 +1284,9 @@
       "runeslist": "Kor, Mor, Vok, Bar",
       "className": "rare-title",
       "effectTitle": "Hurricane Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương/giây: +5% | Máu: 222 | ST: 14[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương/giây: +5% | Máu: 222 | ST: 14"
     },
     {
       "runes": [
@@ -1304,9 +1304,9 @@
       "runeslist": "Nir, Kir, Zor",
       "className": "rare-title",
       "effectTitle": "Poisonous Cloud Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương/giây: +8% | Máu: 222 | ST: 14[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương/giây: +8% | Máu: 222 | ST: 14"
     },
     {
       "runes": [
@@ -1324,9 +1324,9 @@
       "runeslist": "Mor, Xar, Tok",
       "className": "rare-title",
       "effectTitle": "Poison Nova Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương: +20% | Máu: 160 | ST: 10[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương: +20% | Máu: 160 | ST: 10"
     },
     {
       "runes": [
@@ -1345,9 +1345,9 @@
       "runeslist": "Zan, Sul, Zor, Tok",
       "className": "rare-title",
       "effectTitle": "Venomous Skin Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương/giây: +1% | Máu: 106 | ST: 6[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương/giây: +1% | Máu: 106 | ST: 6"
     },
     {
       "runes": [
@@ -1365,9 +1365,9 @@
       "runeslist": "Kal, Sul, Tok",
       "className": "rare-title",
       "effectTitle": "Venom Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương: +15% | Máu: 103 | ST: 7[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương: +15% | Máu: 103 | ST: 7"
     },
     {
       "runes": [
@@ -1386,9 +1386,9 @@
       "runeslist": "Vor, Kir, Kal, Dak",
       "className": "rare-title",
       "effectTitle": "Shock Jump Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương: +20% | Máu: 158 | ST: 10[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương: +20% | Máu: 158 | ST: 10"
     },
     {
       "runes": [
@@ -1406,9 +1406,9 @@
       "runeslist": "Lum, Run, Zan",
       "className": "rare-title",
       "effectTitle": "Electrified Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương: +5% | Máu: 216 | ST: 14[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương: +5% | Máu: 216 | ST: 14"
     },
     {
       "runes": [
@@ -1426,9 +1426,9 @@
       "runeslist": "Xar, Dak, Tok",
       "className": "rare-title",
       "effectTitle": "Shock Nova Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương: +30% | Máu: 106 | ST: 6[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương: +30% | Máu: 106 | ST: 6"
     },
     {
       "runes": [
@@ -1447,9 +1447,9 @@
       "runeslist": "Dol, Mar, Sul, Nim",
       "className": "rare-title",
       "effectTitle": "Freezing Trap Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Sát thương: +25% | Máu: 106 | ST: 7[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Sát thương: +25% | Máu: 106 | ST: 7"
     },
     {
       "runes": [
@@ -1468,9 +1468,9 @@
       "runeslist": "Kir, Gar, Rin, Nim",
       "className": "rare-title",
       "effectTitle": "Swamp Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Thời gian: +0.15s | Máu: 156 | ST: 10[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Thời gian: +0.15s | Máu: 156 | ST: 10"
     },
     {
       "runes": [
@@ -1488,9 +1488,9 @@
       "runeslist": "Run, Dol, Zor",
       "className": "rare-title",
       "effectTitle": "Root Prison Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Thời gian trói: +0.1s | Máu: 156 | ST: 10[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Thời gian trói: +0.1s | Máu: 156 | ST: 10"
     },
     {
       "runes": [
@@ -1508,9 +1508,9 @@
       "runeslist": "Mor, Vor, Vok",
       "className": "rare-title",
       "effectTitle": "Area Life Regeneration Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Hồi máu/giây: +0.1% | Thời gian: +0.1s | Máu: 158 | ST: 10[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Hồi máu/giây: +0.1% | Thời gian: +0.1s | Máu: 158 | ST: 10"
     },
     {
       "runes": [
@@ -1528,9 +1528,9 @@
       "runeslist": "Zan, Rin, Tok",
       "className": "rare-title",
       "effectTitle": "Life Regeneration Enhancement",
-      "description": "Runeword minimum statistics[cite: 1]",
-      "descriptionVi": "Runeword minimum statistics[cite: 1]",
-      "stats": "Hồi máu/giây: +0.1% | Thời gian: +0.1s | Máu: 106 | ST: 6[cite: 1]"
+      "description": "Runeword minimum statistics",
+      "descriptionVi": "Runeword minimum statistics",
+      "stats": "Hồi máu/giây: +0.1% | Thời gian: +0.1s | Máu: 106 | ST: 6"
     }
   ]
 }
