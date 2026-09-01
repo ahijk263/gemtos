@@ -104,6 +104,80 @@ function sanitizeTabHtml(tabId, html) {
     return cleaned;
 }
 
+function renderRuneSkillRows(rows, targetId) {
+    const target = document.getElementById(targetId);
+    if (!target) return;
+
+    target.innerHTML = "";
+    rows.forEach((row) => {
+        const tr = document.createElement("tr");
+        const runes = Array.isArray(row.runes) ? row.runes.join(" ") : (row.runes || "");
+        const shape = row.shape || "N/A";
+        const rarity = row.rarity || "";
+        const level = row.level || "";
+        const runesList = row.runeslist || runes;
+        const cssClass = row.className || "legend-title";
+        const descEn = row.description || "";
+        const descVi = row.descriptionVi || "";
+        const showVi = descVi && descVi !== descEn;
+
+        tr.setAttribute("data-runes", runes);
+        tr.setAttribute("data-title", row.title || "");
+        tr.setAttribute("data-skill", row.skill || "");
+        tr.setAttribute("data-shape", shape);
+        tr.setAttribute("data-rarity", rarity);
+        tr.setAttribute("data-level", String(level));
+        tr.setAttribute("data-runeslist", runesList);
+        tr.setAttribute("data-class", cssClass);
+
+        const viColor = cssClass === "epic-title" ? "#a855f7" : "#b7791f";
+
+        tr.innerHTML = `
+            <td>
+                <span class="${cssClass}">${row.title || ""}</span><br>
+                <span style="font-weight:600; font-size:13px; color:var(--text-muted)">${row.skill || ""}</span><br>
+                <span style="font-size:12px;">${rarity}</span>
+            </td>
+            <td>
+                Cấp độ: ${level}<br>
+                Ngọc: ${runesList}<br>
+                <span style="font-size:12px; color:var(--text-muted)">${shape}</span>
+            </td>
+            <td>
+                <b>${row.effectTitle || row.skill || ""}</b><br>
+                <div class="rune-desc">${descEn}</div>
+                ${showVi ? `<div class="rune-desc" style="margin-top:6px; color: ${viColor};">(${descVi})</div>` : ""}
+                <div class="rune-stats">${row.stats || ""}</div>
+            </td>
+        `;
+
+        target.appendChild(tr);
+    });
+}
+
+async function loadRuneSkillsData() {
+    const targetBodies = [
+        { key: "legend", id: "rune-skills-table-body" },
+        { key: "epic", id: "rune-skills-epic-table-body" },
+        { key: "rare", id: "rune-skills-rare-table-body" }
+    ];
+
+    try {
+        const response = await fetch("data/rune-skills_data.json");
+        if (!response.ok) {
+            throw new Error(`Không tải được dữ liệu rune-skills (${response.status})`);
+        }
+
+        const data = await response.json();
+        targetBodies.forEach(({ key, id }) => {
+            const rows = Array.isArray(data[key]) ? data[key] : [];
+            renderRuneSkillRows(rows, id);
+        });
+    } catch (error) {
+        console.error("Lỗi khi tải dữ liệu rune-skills:", error);
+    }
+}
+
 async function loadPageSection(tabId) {
     const container = document.getElementById("page-container");
     if (!container || !PAGE_FILES[tabId]) return null;
@@ -137,6 +211,9 @@ async function loadPageSection(tabId) {
         }
 
         container.appendChild(section);
+        if (tabId === "tab-runeskills") {
+            await loadRuneSkillsData();
+        }
         loadedPages.add(tabId);
         return section;
     } catch (error) {
