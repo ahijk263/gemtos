@@ -552,6 +552,22 @@ function applyRuneSkillFilter() {
 // --- ATTRIBUTES DATA LOADING ---
 let attributesData = [];
 
+const ATTRIBUTE_RANGES = [
+    { min: 1, max: 100, label: "Level 1 - 100" },
+    { min: 101, max: 200, label: "Level 101 - 200" },
+    { min: 201, max: 300, label: "Level 201 - 300" },
+    { min: 301, max: 400, label: "Level 301 - 400" },
+    { min: 401, max: 500, label: "Level 401 - 500" },
+    { min: 501, max: 600, label: "Level 501 - 600" },
+    { min: 601, max: 700, label: "Level 601 - 700" },
+    { min: 701, max: 750, label: "Level 701 - 750 (Max)" }
+];
+
+function parseCoinValue(coinStr) {
+    if (!coinStr || coinStr === "MAX") return 0;
+    return parseInt(String(coinStr).replace(/,/g, "")) || 0;
+}
+
 async function loadAttributesData() {
     const container = document.getElementById("attributes-table-container");
     if (!container) return;
@@ -563,58 +579,149 @@ async function loadAttributesData() {
         }
 
         attributesData = await response.json();
-        displayAttributesTable(attributesData);
+        renderAttributesView();
     } catch (error) {
         console.error("Lỗi khi tải dữ liệu attributes:", error);
         container.innerHTML = "<p style='color: var(--danger);'>Lỗi tải dữ liệu chỉ số!</p>";
     }
 }
 
-function displayAttributesTable(data) {
+function renderAttributesView() {
     const container = document.getElementById("attributes-table-container");
-    if (!container) return;
+    if (!container || !attributesData || !attributesData.length) return;
+
+    const selectElem = document.getElementById("filterAttrRange");
+    const searchElem = document.getElementById("filterAttrSearch");
+    const filterValue = selectElem ? selectElem.value : "all";
+    const searchValue = searchElem ? searchElem.value.trim() : "";
+
+    // 1. Tìm kiếm level cụ thể
+    if (searchValue !== "") {
+        const targetLevel = parseInt(searchValue);
+        const matched = attributesData.filter(r => r.lvl === targetLevel);
+        if (matched.length === 0) {
+            container.innerHTML = `<p style="color: var(--text-muted); padding: 15px;">Không tìm thấy kết quả cho Level ${targetLevel} (Hỗ trợ Level 1 - 750).</p>`;
+            return;
+        }
+
+        let html = `<div class="attributes-grid">`;
+        matched.forEach(row => {
+            html += `
+                <div class="attributes-row attributes-item" data-level="${row.lvl}">
+                    <span class="attr-lvl">Level ${row.lvl}</span>
+                    <span class="attr-coin">🪙 ${row.coin}</span>
+                </div>
+            `;
+        });
+        html += `</div>`;
+        container.innerHTML = html;
+        return;
+    }
+
+    // 2. Mốc "all" -> Hiển thị 2 cột, mỗi bên 4 hàng
+    if (filterValue === "all") {
+        let totalAll = 0;
+        const leftRanges = ATTRIBUTE_RANGES.slice(0, 4);
+        const rightRanges = ATTRIBUTE_RANGES.slice(4, 8);
+
+        const renderSubTable = (rangesList) => {
+            let tableHtml = `
+                <table class="attributes-summary-table">
+                    <thead>
+                        <tr>
+                            <th>Mốc Level</th>
+                            <th>Tổng số Coin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+
+            rangesList.forEach(range => {
+                const rangeRows = attributesData.filter(r => r.lvl >= range.min && r.lvl <= range.max);
+                const sumCoin = rangeRows.reduce((acc, r) => acc + parseCoinValue(r.coin), 0);
+                totalAll += sumCoin;
+
+                tableHtml += `
+                    <tr class="summary-row" onclick="selectAttributeRange('${range.min}-${range.max}')" title="Bấm để xem chi tiết mốc ${range.label}">
+                        <td style="color: var(--text-main); font-weight: 600;">
+                            <span style="color: var(--accent-primary); margin-right: 6px;">▶</span> ${range.label}
+                        </td>
+                        <td style="color: var(--accent-primary); font-weight: 700; font-size: 14px;">
+                            ${sumCoin.toLocaleString("en-US")} 🪙
+                        </td>
+                    </tr>
+                `;
+            });
+
+            tableHtml += `
+                    </tbody>
+                </table>
+            `;
+            return tableHtml;
+        };
+
+        const leftTableHtml = renderSubTable(leftRanges);
+        const rightTableHtml = renderSubTable(rightRanges);
+
+        let html = `
+            <div style="margin-bottom: 14px; font-size: 14px; color: var(--text-muted);">
+                💡 Bấm vào một mốc level bất kỳ dưới đây để xem chi tiết từng cấp độ.
+            </div>
+            <div class="attributes-summary-container">
+                <div class="summary-columns-grid">
+                    <div>${leftTableHtml}</div>
+                    <div>${rightTableHtml}</div>
+                </div>
+                <div class="summary-grand-total">
+                    <span class="total-label">Tổng cộng toàn bộ (Level 1 - 750):</span>
+                    <span class="total-value">${totalAll.toLocaleString("en-US")} 🪙</span>
+                </div>
+            </div>
+        `;
+
+        container.innerHTML = html;
+        return;
+    }
+
+    // 3. Mốc cụ thể -> Hiển thị dạng lưới 5 cột
+    const [minLevel, maxLevel] = filterValue.split("-").map(Number);
+    const filteredRows = attributesData.filter(r => r.lvl >= minLevel && r.lvl <= maxLevel);
+    const rangeTotal = filteredRows.reduce((acc, r) => acc + parseCoinValue(r.coin), 0);
 
     let html = `
-        <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
-            <thead>
-                <tr style="background: var(--table-header); border-bottom: 2px solid var(--border-color);">
-                    <th style="padding: 12px; text-align: left; color: var(--text-main); font-weight: 700;">Level</th>
-                    <th style="padding: 12px; text-align: right; color: var(--text-main); font-weight: 700;">Coin</th>
-                </tr>
-            </thead>
-            <tbody>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
+            <span style="font-weight: 700; color: var(--text-main); font-size: 15px;">
+                Chi tiết Level ${minLevel} - ${maxLevel}
+            </span>
+            <span style="font-weight: 700; color: #f59e0b; font-size: 14px; background: rgba(245, 158, 11, 0.1); padding: 4px 10px; border-radius: 4px; border: 1px solid rgba(245, 158, 11, 0.3);">
+                Tổng mốc: ${rangeTotal.toLocaleString("en-US")} 🪙
+            </span>
+        </div>
+        <div class="attributes-grid">
     `;
 
-    data.forEach((row, index) => {
-        const bgColor = index % 2 === 0 ? "transparent" : "var(--table-hover)";
+    filteredRows.forEach(row => {
         html += `
-            <tr class="attributes-row" data-level="${row.lvl}" style="background: ${bgColor}; border-bottom: 1px solid var(--border-color);">
-                <td style="padding: 12px; text-align: left; color: var(--text-main);">${row.lvl}</td>
-                <td style="padding: 12px; text-align: right; color: var(--accent-primary); font-weight: 600;">${row.coin}</td>
-            </tr>
+            <div class="attributes-row attributes-item" data-level="${row.lvl}">
+                <span class="attr-lvl">Level ${row.lvl}</span>
+                <span class="attr-coin">${row.coin} 🪙</span>
+            </div>
         `;
     });
 
-    html += `
-            </tbody>
-        </table>
-    `;
-
+    html += `</div>`;
     container.innerHTML = html;
 }
 
-function filterAttributesRange() {
-    const filterValue = document.getElementById("filterAttrRange").value;
-    const rows = document.querySelectorAll(".attributes-row");
-
-    if (filterValue === "all") {
-        rows.forEach(row => row.style.display = "");
-    } else {
-        const [minLevel, maxLevel] = filterValue.split("-").map(Number);
-        rows.forEach(row => {
-            const level = parseInt(row.getAttribute("data-level"));
-            row.style.display = (level >= minLevel && level <= maxLevel) ? "" : "none";
-        });
+function selectAttributeRange(rangeVal) {
+    const selectElem = document.getElementById("filterAttrRange");
+    if (selectElem) {
+        selectElem.value = rangeVal;
+        renderAttributesView();
     }
+}
+
+function filterAttributesRange() {
+    renderAttributesView();
 }
 
