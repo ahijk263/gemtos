@@ -53,11 +53,16 @@ Desktop.ini
 
 # ================================
 
-# Node.js (if used in the future)
+# Node.js / Frontend build tools
 
 # ================================
 
 node_modules/
+.npm/
+.vite/
+.cache/
+coverage/
+*.tsbuildinfo
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

@@ -101,7 +101,6 @@ function sanitizeTabHtml(tabId, html) {
     cleaned = cleaned.replace(/<div[^>]*id=["']tab-runeskills["'][\s\S]*?<\/div>/gi, "");
     cleaned = cleaned.replace(/<div[^>]*class=["'][^"']*(combiner-section|selected-runes-container|filter-result-box|rune-card)[^"']*["'][^>]*>[\s\S]*?<\/div>/gi, "");
 
-    if (tabId === "tab-runes") return cleaned;
     return cleaned;
 }
 
@@ -300,48 +299,61 @@ function openItemSub(evt, subId) {
 // --- COMBINER ---
 let currentSelectedRunes = [];
 
-function toggleRune(runeName) {
-    const index = currentSelectedRunes.indexOf(runeName);
-    const runeElement = document.getElementById("rune-" + runeName);
-    if (index > -1) {
-        currentSelectedRunes.splice(index, 1);
-        if (runeElement) runeElement.classList.remove("selected");
-    } else {
-        if (currentSelectedRunes.length >= 4) { alert("Chỉ có thể chọn tối đa 4 Rune để tổ hợp!"); return; }
+function applyRuneSelectionState(runeName, isSelected) {
+    const runeIndex = currentSelectedRunes.indexOf(runeName);
+
+    if (isSelected && runeIndex === -1) {
         currentSelectedRunes.push(runeName);
-        if (runeElement) runeElement.classList.add("selected");
+    } else if (!isSelected && runeIndex > -1) {
+        currentSelectedRunes.splice(runeIndex, 1);
     }
-    renderSelectedRunes(); executeRuneCombination();
+
+    const runeElement = document.getElementById("rune-" + runeName);
+    if (runeElement) {
+        runeElement.classList.toggle("selected", isSelected);
+    }
+}
+
+function toggleRune(runeName) {
+    if (currentSelectedRunes.includes(runeName)) {
+        applyRuneSelectionState(runeName, false);
+    } else {
+        if (currentSelectedRunes.length >= 4) {
+            alert("Chỉ có thể chọn tối đa 4 Rune để tổ hợp!");
+            return;
+        }
+        applyRuneSelectionState(runeName, true);
+    }
+
+    renderSelectedRunes();
+    executeRuneCombination();
 }
 
 function removeRune(runeName) {
-    const index = currentSelectedRunes.indexOf(runeName);
-    if (index > -1) {
-        currentSelectedRunes.splice(index, 1);
-        const runeElement = document.getElementById("rune-" + runeName);
-        if (runeElement) runeElement.classList.remove("selected");
-    }
-    renderSelectedRunes(); executeRuneCombination();
+    applyRuneSelectionState(runeName, false);
+    renderSelectedRunes();
+    executeRuneCombination();
 }
 
 function clearRunes() {
-    currentSelectedRunes.forEach(runeName => {
-        const runeElement = document.getElementById("rune-" + runeName);
-        if (runeElement) runeElement.classList.remove("selected");
-    });
-    currentSelectedRunes = [];
-    renderSelectedRunes(); executeRuneCombination();
+    currentSelectedRunes.slice().forEach(runeName => applyRuneSelectionState(runeName, false));
+    renderSelectedRunes();
+    executeRuneCombination();
 }
 
 function renderSelectedRunes() {
     const container = document.getElementById("selected-runes-container");
     const clearBtn = document.getElementById("clear-runes-btn");
+
+    if (!container || !clearBtn) return;
+
     container.innerHTML = "";
     if (currentSelectedRunes.length === 0) {
         clearBtn.style.display = "none";
         container.innerHTML = `<span style="color: var(--text-muted); font-size: 13px; font-style: italic;">Chưa có Rune nào được chọn...</span>`;
         return;
     }
+
     clearBtn.style.display = "inline-block";
     currentSelectedRunes.forEach(rune => {
         const badge = document.createElement("span");
@@ -351,72 +363,88 @@ function renderSelectedRunes() {
     });
 }
 
-function executeRuneCombination() {
-    var rows = document.querySelectorAll(".runeskills-sub tr[data-runes]");
-    var container = document.getElementById("filter-content");
-    var title = document.getElementById("filter-title");
-    var box = document.getElementById("filter-result-box");
+function createRuneCombinationCard(row, isExactMatch) {
+    const card = document.createElement("div");
+    const cssClass = row.getAttribute("data-class") || "legend-title";
+    const titleText = row.getAttribute("data-title");
+    const skillText = row.getAttribute("data-skill");
+    const shapeText = row.getAttribute("data-shape") || "N/A";
+    const rarityText = row.getAttribute("data-rarity");
+    const levelText = row.getAttribute("data-level");
+    const runesListText = row.getAttribute("data-runeslist");
+    const fullDetailsHTML = row.cells[2].innerHTML;
 
-    if (currentSelectedRunes.length === 0) { box.style.display = "none"; return; }
+    card.className = "grid-card";
+    if (isExactMatch) card.classList.add("exact-match-card");
+
+    card.innerHTML = `
+        <div class="${cssClass}" style="margin-bottom: 5px; font-size: 15px;">${titleText}</div>
+        <div class="grid-card-skill">Hỗ trợ kỹ năng: ${skillText}</div>
+        <div class="grid-card-meta">Hình dạng: ${shapeText} | Độ hiếm: ${rarityText}</div>
+        <div class="grid-card-runes">Cấp độ yêu cầu: ${levelText} | Ngọc: ${runesListText}</div>
+        <div class="grid-card-toggle-text">Nhấn để xem chi tiết ▼</div>
+        <div class="grid-card-details">${fullDetailsHTML}</div>
+    `;
+
+    card.addEventListener("click", function () {
+        this.classList.toggle("expanded");
+        const toggleText = this.querySelector(".grid-card-toggle-text");
+        if (toggleText) {
+            toggleText.innerHTML = this.classList.contains("expanded") ? "Thu gọn ▲" : "Nhấn để xem chi tiết ▼";
+        }
+    });
+
+    return card;
+}
+
+function executeRuneCombination() {
+    const rows = document.querySelectorAll(".runeskills-sub tr[data-runes]");
+    const container = document.getElementById("filter-content");
+    const title = document.getElementById("filter-title");
+    const box = document.getElementById("filter-result-box");
+
+    if (!container || !title || !box) return;
+    if (currentSelectedRunes.length === 0) {
+        box.style.display = "none";
+        return;
+    }
+
     title.textContent = "Kết quả tổ hợp: " + currentSelectedRunes.join(" + ");
     container.innerHTML = "";
-    var gridDiv = document.createElement("div"); gridDiv.className = "grid-container";
-    var matchCount = 0; var exactMatchFound = false;
+
+    const gridDiv = document.createElement("div");
+    gridDiv.className = "grid-container";
+    let matchCount = 0;
+    let exactMatchFound = false;
 
     rows.forEach(row => {
-        var runesAttr = row.getAttribute("data-runes");
-        if (runesAttr) {
-            var recipeRunes = runesAttr.split(" ");
-            let containsAll = currentSelectedRunes.every(r => recipeRunes.includes(r));
-            if (containsAll) {
-                matchCount++;
-                let isExactMatch = (currentSelectedRunes.length === recipeRunes.length);
-                var titleText = row.getAttribute("data-title");
-                var skillText = row.getAttribute("data-skill");
-                var shapeText = row.getAttribute("data-shape") || "N/A";
-                var rarityText = row.getAttribute("data-rarity");
-                var levelText = row.getAttribute("data-level");
-                var runesListText = row.getAttribute("data-runeslist");
-                var cssClass = row.getAttribute("data-class") || "legend-title";
-                var fullDetailsHTML = row.cells[2].innerHTML;
+        const runesAttr = row.getAttribute("data-runes");
+        if (!runesAttr) return;
 
-                var card = document.createElement("div"); card.className = "grid-card";
-                if (isExactMatch) { card.classList.add("exact-match-card"); exactMatchFound = true; }
+        const recipeRunes = runesAttr.split(" ");
+        const containsAll = currentSelectedRunes.every(rune => recipeRunes.includes(rune));
+        if (!containsAll) return;
 
-                card.innerHTML = `
-                            <div class="${cssClass}" style="margin-bottom: 5px; font-size: 15px;">${titleText}</div>
-                            <div class="grid-card-skill">Hỗ trợ kỹ năng: ${skillText}</div>
-                            <div class="grid-card-meta">Hình dạng: ${shapeText} | Độ hiếm: ${rarityText}</div>
-                            <div class="grid-card-runes">Cấp độ yêu cầu: ${levelText} | Ngọc: ${runesListText}</div>
-                            <div class="grid-card-toggle-text">Nhấn để xem chi tiết ▼</div>
-                            <div class="grid-card-details">${fullDetailsHTML}</div>
-                        `;
-                card.addEventListener('click', function () {
-                    this.classList.toggle('expanded');
-                    var toggleText = this.querySelector('.grid-card-toggle-text');
-                    toggleText.innerHTML = this.classList.contains('expanded') ? 'Thu gọn ▲' : 'Nhấn để xem chi tiết ▼';
-                });
-                gridDiv.appendChild(card);
-            }
-        }
+        matchCount++;
+        const isExactMatch = currentSelectedRunes.length === recipeRunes.length;
+        if (isExactMatch) exactMatchFound = true;
+
+        gridDiv.appendChild(createRuneCombinationCard(row, isExactMatch));
     });
 
     if (matchCount === 0) {
         container.innerHTML = "<p style='color: var(--text-muted);'>Không có công thức nào phù hợp với tổ hợp này.</p>";
     } else {
-        if (exactMatchFound) {
-            const successMsg = document.createElement("div");
-            successMsg.innerHTML = "🎉 <b style='font-size: 14px;'>Tổ hợp thành công!</b> Bạn đã tìm ra công thức hoàn chỉnh:";
-            successMsg.style.color = "var(--success)"; successMsg.style.marginBottom = "15px";
-            container.appendChild(successMsg);
-        } else {
-            const partialMsg = document.createElement("div");
-            partialMsg.innerHTML = "Các công thức có chứa tổ hợp này:";
-            partialMsg.style.color = "var(--text-muted)"; partialMsg.style.marginBottom = "15px";
-            container.appendChild(partialMsg);
-        }
+        const statusMessage = document.createElement("div");
+        statusMessage.style.marginBottom = "15px";
+        statusMessage.style.color = exactMatchFound ? "var(--success)" : "var(--text-muted)";
+        statusMessage.innerHTML = exactMatchFound
+            ? "🎉 <b style='font-size: 14px;'>Tổ hợp thành công!</b> Bạn đã tìm ra công thức hoàn chỉnh:"
+            : "Các công thức có chứa tổ hợp này:";
+        container.appendChild(statusMessage);
         container.appendChild(gridDiv);
     }
+
     box.style.display = "block";
 }
 
