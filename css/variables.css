@@ -1,0 +1,72 @@
+/* ==========================================
+   CSS VARIABLES & THEMES (Dark / Light)
+   ========================================== */
+:root {
+    /* Background & Surfaces */
+    --bg-body: #080c14;
+    --bg-panel: #111827;
+    --bg-surface: #0f172a;
+    --border-color: #1f2937;
+    --modal-overlay: rgba(0, 0, 0, 0.85);
+
+    /* Text Colors */
+    --text-main: #f3f4f6;
+    --text-muted: #9ca3af;
+
+    /* Primary Accent & Glow */
+    --accent-primary: #3b82f6;
+    --accent-glow: rgba(59, 130, 246, 0.4);
+
+    /* Interactive Buttons */
+    --btn-bg: #1f2937;
+    --btn-hover: #374151;
+
+    /* Tables */
+    --table-header: #1a2234;
+    --table-hover: #162032;
+
+    /* Status Colors */
+    --danger: #ef4444;
+    --success: #10b981;
+    --warning: #f59e0b;
+
+    /* Game Elements Colors */
+    --elem-phys: #9ca3af;
+    --elem-poison: #10b981;
+    --elem-fire: #ef4444;
+    --elem-ice: #0ea5e9;
+    --elem-light: #f59e0b;
+    --elem-aura: #ec4899;
+
+    /* Game Rarity Colors */
+    --rarity-legend: #f59e0b;
+    --rarity-epic: #a855f7;
+    --rarity-rare: #3b82f6;
+    --rarity-common: #f3f4f6;
+
+    /* Fonts */
+    --font-heading: 'Orbitron', sans-serif;
+    --font-body: 'Rajdhani', sans-serif;
+}
+
+body.light-mode {
+    --bg-body: #e5e7eb;
+    --bg-panel: #ffffff;
+    --bg-surface: #f3f4f6;
+    --border-color: #d1d5db;
+    --modal-overlay: rgba(0, 0, 0, 0.6);
+
+    --text-main: #111827;
+    --text-muted: #4b5563;
+
+    --accent-primary: #2563eb;
+    --accent-glow: rgba(37, 99, 235, 0.25);
+
+    --btn-bg: #f3f4f6;
+    --btn-hover: #e5e7eb;
+
+    --table-header: #f9fafb;
+    --table-hover: #f3f4f6;
+
+    --rarity-common: #111827;
+}

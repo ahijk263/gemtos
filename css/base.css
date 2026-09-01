@@ -1,0 +1,45 @@
+/* ==========================================
+   BASE & TYPOGRAPHY STYLES
+   ========================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    padding: 20px;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.5;
+    margin: auto;
+    max-width: 1250px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    color: var(--text-main);
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px var(--accent-glow);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: var(--accent-primary);
+    border-bottom: 2px solid var(--accent-primary);
+    padding-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-family: var(--font-heading);
+    letter-spacing: 0.5px;
+}

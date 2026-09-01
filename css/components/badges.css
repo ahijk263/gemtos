@@ -1,0 +1,105 @@
+/* ==========================================
+   COMPONENT: BADGES, ELEMENTS & SHARED TAGS
+   ========================================== */
+/* Element Colors */
+.type-phys { color: var(--elem-phys); font-weight: 700; }
+.type-poison { color: var(--elem-poison); font-weight: 700; }
+.type-fire { color: var(--elem-fire); font-weight: 700; }
+.type-ice { color: var(--elem-ice); font-weight: 700; }
+.type-light { color: var(--elem-light); font-weight: 700; }
+.type-aura { color: var(--elem-aura); font-weight: 700; }
+
+/* Rarity Titles */
+.rarity-legendary,
+.legend-title {
+    color: var(--rarity-legend) !important;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(245, 158, 11, 0.3);
+}
+
+.rarity-epic,
+.epic-title {
+    color: var(--rarity-epic) !important;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
+}
+
+.rarity-rare,
+.rare-title {
+    color: var(--rarity-rare) !important;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+.stars {
+    color: var(--rarity-legend);
+    font-size: 13px;
+    text-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+}
+
+/* Gems & Descriptions */
+.gem-text {
+    color: var(--rarity-epic);
+    font-weight: 700;
+}
+
+.gem-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    vertical-align: 2px;
+}
+
+.skill-translation {
+    color: #b7791f;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.96;
+    margin-top: 4px;
+}
+
+body.light-mode .skill-translation {
+    color: #8a5a00;
+}
+
+.item-stats div {
+    margin-bottom: 2px;
+}
+
+.tier-title {
+    color: var(--text-main);
+    font-weight: 700;
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+/* Filter Bars */
+.filter-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    background: var(--bg-body);
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.filter-select {
+    background: var(--bg-panel);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter-label {
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 13px;
+}

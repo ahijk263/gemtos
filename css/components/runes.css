@@ -1,0 +1,160 @@
+/* ==========================================
+   COMPONENT: RUNES & RUNE COMBINER
+   ========================================== */
+.rune-card {
+    cursor: pointer;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--bg-body);
+    user-select: none;
+    transition: 0.2s ease;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.rune-card.selected {
+    background: var(--accent-primary);
+    color: #ffffff;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.rune-card.selected .rune-name,
+.rune-card.selected .stars {
+    color: #ffffff !important;
+}
+
+.rune-card:hover:not(.selected) {
+    background: var(--btn-hover);
+    border-color: var(--accent-primary);
+}
+
+.rune-legendary .rune-name { color: var(--rarity-legend); font-weight: 700; }
+.rune-epic .rune-name { color: var(--rarity-epic); font-weight: 700; }
+.rune-rare .rune-name { color: var(--rarity-rare); font-weight: 700; }
+.rune-common .rune-name { color: var(--rarity-common); font-weight: 700; }
+
+.combiner-section {
+    background: var(--bg-body);
+    padding: 18px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px dashed var(--border-color);
+}
+
+.selected-runes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    min-height: 35px;
+    align-items: center;
+}
+
+.selected-rune-badge {
+    background: var(--accent-primary);
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    font-size: 13px;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.selected-rune-badge .remove-x {
+    cursor: pointer;
+}
+
+#filter-result-box {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: var(--bg-body);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.grid-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.grid-card:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.exact-match-card {
+    border-color: var(--success) !important;
+    background: rgba(16, 185, 129, 0.05);
+}
+
+.grid-card-skill {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.grid-card-meta {
+    font-size: 13px;
+    color: var(--text-main);
+    margin-bottom: 10px;
+}
+
+.grid-card-runes {
+    font-size: 13px;
+    background: var(--bg-body);
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.grid-card-details {
+    display: none;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed var(--border-color);
+}
+
+.grid-card.expanded .grid-card-details {
+    display: block;
+}
+
+.grid-card-toggle-text {
+    font-size: 12px;
+    color: var(--accent-primary);
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.rune-desc {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.rune-stats {
+    font-size: 13px;
+}
