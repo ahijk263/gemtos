@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html {
+    /* Keep the viewport width consistent between short and long pages. */
+    overflow-y: scroll;
+}
+
 body {
     font-family: var(--font-body);
     padding: 20px;

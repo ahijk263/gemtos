@@ -18,7 +18,7 @@ const PAGE_TEMPLATES = {};
 
 import { loadSkillsData } from "./game/skills.js";
 import { loadItemsData } from "./game/items.js";
-import { loadRunesData } from "./game/runes.js";
+import { loadRunesData } from "./runes.js";
 import { loadRuneSkillsData } from "./game/runeSkills.js";
 import { loadAttributesData } from "./game/attributes.js";
 

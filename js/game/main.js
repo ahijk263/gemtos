@@ -8,24 +8,24 @@ import {
     toggleSettings,
     closeSettings,
     changeFont
-} from "./modules/theme.js";
+} from "../theme.js";
 
 import {
     openTab,
     openSubTab,
     openItemSub,
     loadPageSection
-} from "./modules/router.js";
+} from "../router.js";
 
 import {
     loadSkillsData,
     renderSkills
-} from "./modules/game/skills.js";
+} from "./skills.js";
 
 import {
     loadItemsData,
     renderItems
-} from "./modules/game/items.js";
+} from "./items.js";
 
 import {
     loadRunesData,
@@ -34,20 +34,20 @@ import {
     clearRunes,
     renderSelectedRunes,
     executeRuneCombination
-} from "./modules/game/runes.js";
+} from "../runes.js";
 
 import {
     loadRuneSkillsData,
     openRuneSkillSub,
     applyRuneSkillFilter
-} from "./modules/game/runeSkills.js";
+} from "./runeSkills.js";
 
 import {
     loadAttributesData,
     renderAttributesView,
     selectAttributeRange,
     filterAttributesRange
-} from "./modules/game/attributes.js";
+} from "./attributes.js";
 
 // Expose functions globally for HTML inline handlers
 window.toggleTheme = toggleTheme;
