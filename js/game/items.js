@@ -50,6 +50,7 @@ export function renderItems(data) {
             tr.innerHTML = `
                 <td>
                     <span class="${nameClass}">${item.name}</span>
+                    ${item.shrinePrice ? `<div class="shrine-price">Giá shop shrine: ${item.shrinePrice}</div>` : ""}
                 </td>
                 <td>
                     <span class="${elementClass}">${item.element}</span>

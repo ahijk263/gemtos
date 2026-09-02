@@ -48,3 +48,9 @@ th {
 tr:hover td {
     background-color: var(--table-hover);
 }
+
+.shrine-price {
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--text-muted);
+}

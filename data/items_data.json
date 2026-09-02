@@ -3,6 +3,7 @@
     {
       "name": "Ominous Grove",
       "nameClass": "legend-title",
+      "shrinePrice": "2.000 🌙",
       "element": "Độc",
       "elementClass": "type-poison",
       "baseStats": [
@@ -40,6 +41,7 @@
     {
       "name": "Echoing Crown",
       "nameClass": "legend-title",
+      "shrinePrice": "2.200 🌙",
       "element": "Điện",
       "elementClass": "type-light",
       "baseStats": [
@@ -76,6 +78,7 @@
     {
       "name": "Adamant Protector",
       "nameClass": "legend-title",
+      "shrinePrice": "2.000 🌙",
       "element": "Lửa",
       "elementClass": "type-fire",
       "baseStats": [
@@ -113,6 +116,7 @@
     {
       "name": "Polar Vortex",
       "nameClass": "legend-title",
+      "shrinePrice": "2.000 🌙",
       "element": "Băng",
       "elementClass": "type-ice",
       "baseStats": [
@@ -153,6 +157,7 @@
     {
       "name": "Calamitous Emerald",
       "nameClass": "legend-title",
+      "shrinePrice": "3.000 🌙",
       "element": "Độc",
       "elementClass": "type-poison",
       "baseStats": [
@@ -189,6 +194,7 @@
     },
     {
       "name": "Stormy Topaz",
+      "shrinePrice": "3.000 🌙",
       "nameClass": "legend-title",
       "element": "Điện",
       "elementClass": "type-light",
@@ -226,6 +232,7 @@
     {
       "name": "Fiendish Magma",
       "nameClass": "legend-title",
+      "shrinePrice": "2.600 🌙",
       "element": "Lửa",
       "elementClass": "type-fire",
       "baseStats": [
@@ -262,6 +269,7 @@
     {
       "name": "Frigid Sapphire",
       "nameClass": "legend-title",
+      "shrinePrice": "2.500 🌙",
       "element": "Băng",
       "elementClass": "type-ice",
       "baseStats": [
@@ -302,6 +310,7 @@
     {
       "name": "Baleful Ivy",
       "nameClass": "legend-title",
+      "shrinePrice": "2.500 🌙",
       "element": "Độc",
       "elementClass": "type-poison",
       "baseStats": [
@@ -338,6 +347,7 @@
     {
       "name": "Electric Turmoil",
       "nameClass": "legend-title",
+      "shrinePrice": "2.600 🌙",
       "element": "Điện",
       "elementClass": "type-light",
       "baseStats": [
@@ -374,6 +384,7 @@
     {
       "name": "Quelled Hellfire",
       "nameClass": "legend-title",
+      "shrinePrice": "2.400 🌙",
       "element": "Lửa",
       "elementClass": "type-fire",
       "baseStats": [
@@ -410,6 +421,7 @@
     {
       "name": "Frozen Wisdom",
       "nameClass": "legend-title",
+      "shrinePrice": "2.800 🌙",
       "element": "Băng",
       "elementClass": "type-ice",
       "baseStats": [
@@ -450,6 +462,7 @@
     {
       "name": "Thorny Strike",
       "nameClass": "legend-title",
+      "shrinePrice": "2.400 🌙",
       "element": "Độc",
       "elementClass": "type-poison",
       "baseStats": [
@@ -487,6 +500,7 @@
     {
       "name": "Hurricane Hit",
       "nameClass": "legend-title",
+      "shrinePrice": "2.000 🌙",
       "element": "Điện",
       "elementClass": "type-light",
       "baseStats": [
@@ -522,6 +536,7 @@
     {
       "name": "Wings of Phoenix",
       "nameClass": "legend-title",
+      "shrinePrice": "3.000 🌙",
       "element": "Lửa",
       "elementClass": "type-fire",
       "baseStats": [
@@ -560,6 +575,7 @@
     {
       "name": "Numbing Touch",
       "nameClass": "legend-title",
+      "shrinePrice": "2.700 🌙",
       "element": "Băng",
       "elementClass": "type-ice",
       "baseStats": [
@@ -600,6 +616,7 @@
     {
       "name": "Venom Spikes",
       "nameClass": "legend-title",
+      "shrinePrice": "2.100 🌙",
       "element": "Độc",
       "elementClass": "type-poison",
       "baseStats": [
@@ -637,6 +654,7 @@
     {
       "name": "Lightning Guards",
       "nameClass": "legend-title",
+      "shrinePrice": "2.200 🌙",
       "element": "Điện",
       "elementClass": "type-light",
       "baseStats": [
@@ -673,6 +691,7 @@
     {
       "name": "Flaming Irons",
       "nameClass": "legend-title",
+      "shrinePrice": "2.000 🌙",
       "element": "Lửa",
       "elementClass": "type-fire",
       "baseStats": [
@@ -709,6 +728,7 @@
     {
       "name": "Blizzard Claws",
       "nameClass": "legend-title",
+      "shrinePrice": "2.000 🌙",
       "element": "Băng",
       "elementClass": "type-ice",
       "baseStats": [
@@ -748,6 +768,7 @@
     {
       "name": "Forest's Pride",
       "nameClass": "legend-title",
+      "shrinePrice": "2.000 🌙",
       "element": "Độc",
       "elementClass": "type-poison",
       "baseStats": [
@@ -783,6 +804,7 @@
     {
       "name": "Thunderbringer",
       "nameClass": "legend-title",
+      "shrinePrice": "2.000 🌙",
       "element": "Điện",
       "elementClass": "type-light",
       "baseStats": [
@@ -818,6 +840,7 @@
     {
       "name": "Conflagration",
       "nameClass": "legend-title",
+      "shrinePrice": "2.000 🌙",
       "element": "Lửa",
       "elementClass": "type-fire",
       "baseStats": [
@@ -854,6 +877,7 @@
     {
       "name": "Heart of Winter",
       "nameClass": "legend-title",
+      "shrinePrice": "2.000 🌙",
       "element": "Băng",
       "elementClass": "type-ice",
       "baseStats": [
