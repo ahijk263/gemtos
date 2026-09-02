@@ -20,12 +20,12 @@ import {
 import {
     loadSkillsData,
     renderSkills
-} from "./modules/skills.js";
+} from "./modules/game/skills.js";
 
 import {
     loadItemsData,
     renderItems
-} from "./modules/items.js";
+} from "./modules/game/items.js";
 
 import {
     loadRunesData,
@@ -34,20 +34,20 @@ import {
     clearRunes,
     renderSelectedRunes,
     executeRuneCombination
-} from "./modules/runes.js";
+} from "./modules/game/runes.js";
 
 import {
     loadRuneSkillsData,
     openRuneSkillSub,
     applyRuneSkillFilter
-} from "./modules/runeSkills.js";
+} from "./modules/game/runeSkills.js";
 
 import {
     loadAttributesData,
     renderAttributesView,
     selectAttributeRange,
     filterAttributesRange
-} from "./modules/attributes.js";
+} from "./modules/game/attributes.js";
 
 // Expose functions globally for HTML inline handlers
 window.toggleTheme = toggleTheme;

@@ -16,11 +16,11 @@ const PAGE_PATHS = {
 
 const PAGE_TEMPLATES = {};
 
-import { loadSkillsData } from "./skills.js";
-import { loadItemsData } from "./items.js";
-import { loadRunesData } from "./runes.js";
-import { loadRuneSkillsData } from "./runeSkills.js";
-import { loadAttributesData } from "./attributes.js";
+import { loadSkillsData } from "./game/skills.js";
+import { loadItemsData } from "./game/items.js";
+import { loadRunesData } from "./game/runes.js";
+import { loadRuneSkillsData } from "./game/runeSkills.js";
+import { loadAttributesData } from "./game/attributes.js";
 
 const loadedPages = new Set();
 
