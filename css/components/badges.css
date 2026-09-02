@@ -43,13 +43,6 @@
     font-weight: 700;
 }
 
-.gem-icon {
-    width: 16px;
-    height: 16px;
-    object-fit: contain;
-    vertical-align: 2px;
-}
-
 .skill-translation {
     color: #b7791f;
     font-weight: 400;
