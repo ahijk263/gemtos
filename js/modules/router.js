@@ -2,12 +2,19 @@
 // MODULE: ROUTER & PAGE LOADER
 // ==========================================
 
-import skillsHtml from "../../pages/skills.html?raw";
-import itemsHtml from "../../pages/items.html?raw";
-import runesHtml from "../../pages/runes.html?raw";
-import runeSkillsHtml from "../../pages/rune-skills.html?raw";
-import documentsHtml from "../../pages/documents.html?raw";
-import attributesHtml from "../../pages/attributes.html?raw";
+// Plain static server can't use bundler-specific `?raw` imports.
+// We'll fetch the HTML pages at runtime and cache them.
+
+const PAGE_PATHS = {
+    "tab-skills": "./pages/skills.html",
+    "tab-items": "./pages/items.html",
+    "tab-runes": "./pages/runes.html",
+    "tab-runeskills": "./pages/rune-skills.html",
+    "tab-documents": "./pages/documents.html",
+    "tab-attributes": "./pages/attributes.html"
+};
+
+const PAGE_TEMPLATES = {};
 
 import { loadSkillsData } from "./skills.js";
 import { loadItemsData } from "./items.js";
@@ -15,25 +22,34 @@ import { loadRunesData } from "./runes.js";
 import { loadRuneSkillsData } from "./runeSkills.js";
 import { loadAttributesData } from "./attributes.js";
 
-export const PAGE_TEMPLATES = {
-    "tab-skills": skillsHtml,
-    "tab-items": itemsHtml,
-    "tab-runes": runesHtml,
-    "tab-runeskills": runeSkillsHtml,
-    "tab-documents": documentsHtml,
-    "tab-attributes": attributesHtml
-};
-
 const loadedPages = new Set();
 
-export function loadPageSection(tabId) {
+async function fetchPageTemplate(tabId) {
+    if (PAGE_TEMPLATES[tabId]) return PAGE_TEMPLATES[tabId];
+    const path = PAGE_PATHS[tabId];
+    if (!path) return null;
+    try {
+        const resp = await fetch(path);
+        if (!resp.ok) throw new Error(`Failed to fetch ${path}: ${resp.status}`);
+        const text = await resp.text();
+        PAGE_TEMPLATES[tabId] = text;
+        return text;
+    } catch (e) {
+        console.error("Error fetching page template:", e);
+        return null;
+    }
+}
+
+export async function loadPageSection(tabId) {
     const container = document.getElementById("page-container");
-    if (!container || !PAGE_TEMPLATES[tabId]) return null;
+    if (!container) return null;
+
+    const markup = await fetchPageTemplate(tabId);
+    if (!markup) return null;
 
     let section = document.getElementById(tabId);
     if (section) return section;
 
-    const markup = PAGE_TEMPLATES[tabId];
     const wrapper = document.createElement("div");
     wrapper.innerHTML = markup.trim();
 
@@ -58,7 +74,7 @@ export function loadPageSection(tabId) {
         loadRunesData();
         // Pre-load rune skills if not loaded so combiner finds formulas
         if (!document.getElementById("tab-runeskills")) {
-            loadPageSection("tab-runeskills");
+            await loadPageSection("tab-runeskills");
             const rsTab = document.getElementById("tab-runeskills");
             if (rsTab) rsTab.style.display = "none";
         }
@@ -72,7 +88,7 @@ export function loadPageSection(tabId) {
     return section;
 }
 
-export function openTab(evt, tabName) {
+export async function openTab(evt, tabName) {
     const tabcontent = document.getElementsByClassName("tab-content");
     for (let i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
@@ -84,7 +100,7 @@ export function openTab(evt, tabName) {
     }
 
     if (!document.getElementById(tabName)) {
-        loadPageSection(tabName);
+        await loadPageSection(tabName);
     }
 
     const targetTab = document.getElementById(tabName);

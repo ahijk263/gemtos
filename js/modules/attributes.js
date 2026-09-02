@@ -2,7 +2,7 @@
 // MODULE: ATTRIBUTES
 // ==========================================
 
-import attributesData from "../../data/attributes_data.json";
+import attributesData from "../../data/attributes_data.json" assert { type: "json" };
 
 const ATTRIBUTE_RANGES = [
     { min: 1, max: 100, label: "Level 1 - 100" },

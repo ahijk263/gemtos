@@ -2,7 +2,7 @@
 // MODULE: ITEMS
 // ==========================================
 
-import itemsData from "../../data/items_data.json";
+import itemsData from "../../data/items_data.json" assert { type: "json" };
 
 export function loadItemsData() {
     renderItems(itemsData);

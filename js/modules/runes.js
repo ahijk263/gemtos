@@ -2,7 +2,7 @@
 // MODULE: RUNES & COMBINER
 // ==========================================
 
-import runesData from "../../data/runes_data.json";
+import runesData from "../../data/runes_data.json" assert { type: "json" };
 
 export let currentSelectedRunes = [];
 

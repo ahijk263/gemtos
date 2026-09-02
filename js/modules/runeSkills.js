@@ -2,7 +2,7 @@
 // MODULE: RUNE SKILLS
 // ==========================================
 
-import runeSkillsData from "../../data/rune-skills_data.json";
+import runeSkillsData from "../../data/rune-skills_data.json" assert { type: "json" };
 
 export function renderRuneSkillRows(rows, targetId) {
     const target = document.getElementById(targetId);
