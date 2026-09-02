@@ -67,11 +67,11 @@ export async function loadPageSection(tabId) {
 
     // Render dynamic data for the loaded tab
     if (tabId === "tab-skills") {
-        loadSkillsData();
+        await loadSkillsData();
     } else if (tabId === "tab-items") {
-        loadItemsData();
+        await loadItemsData();
     } else if (tabId === "tab-runes") {
-        loadRunesData();
+        await loadRunesData();
         // Pre-load rune skills if not loaded so combiner finds formulas
         if (!document.getElementById("tab-runeskills")) {
             await loadPageSection("tab-runeskills");
@@ -79,9 +79,9 @@ export async function loadPageSection(tabId) {
             if (rsTab) rsTab.style.display = "none";
         }
     } else if (tabId === "tab-runeskills") {
-        loadRuneSkillsData();
+        await loadRuneSkillsData();
     } else if (tabId === "tab-attributes") {
-        loadAttributesData();
+        await loadAttributesData();
     }
 
     loadedPages.add(tabId);

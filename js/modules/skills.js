@@ -2,9 +2,12 @@
 // MODULE: SKILLS
 // ==========================================
 
-import skillsData from "../../data/skills_data.json" assert { type: "json" };
+import { loadJson } from "./dataLoader.js";
 
-export function loadSkillsData() {
+let skillsData;
+
+export async function loadSkillsData() {
+    skillsData ??= await loadJson("./data/skills_data.json");
     renderSkills(skillsData);
 }
 

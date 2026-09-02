@@ -2,7 +2,9 @@
 // MODULE: RUNE SKILLS
 // ==========================================
 
-import runeSkillsData from "../../data/rune-skills_data.json" assert { type: "json" };
+import { loadJson } from "./dataLoader.js";
+
+let runeSkillsData;
 
 export function renderRuneSkillRows(rows, targetId) {
     const target = document.getElementById(targetId);
@@ -55,7 +57,8 @@ export function renderRuneSkillRows(rows, targetId) {
     });
 }
 
-export function loadRuneSkillsData() {
+export async function loadRuneSkillsData() {
+    runeSkillsData ??= await loadJson("./data/rune-skills_data.json");
     const targetBodies = [
         { key: "legend", id: "rune-skills-table-body" },
         { key: "epic", id: "rune-skills-epic-table-body" },

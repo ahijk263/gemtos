@@ -2,9 +2,12 @@
 // MODULE: ITEMS
 // ==========================================
 
-import itemsData from "../../data/items_data.json" assert { type: "json" };
+import { loadJson } from "./dataLoader.js";
 
-export function loadItemsData() {
+let itemsData;
+
+export async function loadItemsData() {
+    itemsData ??= await loadJson("./data/items_data.json");
     renderItems(itemsData);
 }
 

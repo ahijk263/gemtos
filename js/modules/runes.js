@@ -2,11 +2,14 @@
 // MODULE: RUNES & COMBINER
 // ==========================================
 
-import runesData from "../../data/runes_data.json" assert { type: "json" };
+import { loadJson } from "./dataLoader.js";
+
+let runesData;
 
 export let currentSelectedRunes = [];
 
-export function loadRunesData() {
+export async function loadRunesData() {
+    runesData ??= await loadJson("./data/runes_data.json");
     renderRunesList(runesData);
 }
 

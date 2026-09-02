@@ -2,7 +2,9 @@
 // MODULE: ATTRIBUTES
 // ==========================================
 
-import attributesData from "../../data/attributes_data.json" assert { type: "json" };
+import { loadJson } from "./dataLoader.js";
+
+let attributesData;
 
 const ATTRIBUTE_RANGES = [
     { min: 1, max: 100, label: "Level 1 - 100" },
@@ -20,7 +22,8 @@ function parseCoinValue(coinStr) {
     return parseInt(String(coinStr).replace(/,/g, "")) || 0;
 }
 
-export function loadAttributesData() {
+export async function loadAttributesData() {
+    attributesData ??= await loadJson("./data/attributes_data.json");
     renderAttributesView();
 }
 
