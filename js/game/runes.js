@@ -2,7 +2,7 @@
 // MODULE: RUNES & COMBINER
 // ==========================================
 
-import { loadJson } from "./game/dataLoader.js";
+import { loadJson } from "./dataLoader.js";
 
 let runesData;
 

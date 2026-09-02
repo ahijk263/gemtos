@@ -31,6 +31,87 @@
     box-shadow: 0 0 10px var(--accent-glow);
 }
 
+/* Global wiki search */
+.global-search {
+    position: relative;
+    width: min(680px, 100%);
+    margin: 0 auto 22px;
+}
+
+.global-search input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 16px;
+    font: 600 15px var(--font-main);
+    color: var(--text-main);
+    background: var(--bg-panel);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.global-search input:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 12px var(--accent-glow);
+}
+
+.global-search-results {
+    position: absolute;
+    z-index: 20;
+    top: calc(100% + 6px);
+    width: 100%;
+    max-height: 390px;
+    overflow-y: auto;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.global-search-result {
+    display: flex;
+    width: 100%;
+    padding: 10px 14px;
+    color: var(--text-main);
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    font-family: var(--font-main);
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.global-search-result:last-child { border-bottom: 0; }
+.global-search-result:hover { background: var(--btn-hover); }
+.global-search-result-name { font-weight: 700; }
+.global-search-result-meta { color: var(--text-muted); font-size: 12px; text-align: right; }
+.global-search-status { padding: 12px 14px; color: var(--text-muted); font-size: 13px; }
+
+.search-result-highlight {
+    animation: search-result-flash 1.8s ease-out;
+}
+
+@keyframes search-result-flash {
+    0%, 45% { box-shadow: inset 4px 0 0 var(--accent-primary); background: var(--btn-hover); }
+    100% { box-shadow: none; background: transparent; }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* Modal Settings */
 .modal-overlay {
     position: fixed;
