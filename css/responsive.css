@@ -18,6 +18,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    html {
+        background-attachment: scroll;
+    }
+
     body {
         padding: 12px;
     }

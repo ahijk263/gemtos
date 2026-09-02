@@ -35,7 +35,7 @@
 .global-search {
     position: relative;
     width: min(680px, 100%);
-    margin: 0 auto 22px;
+    margin: 0 auto 200px;
 }
 
 .global-search input {
