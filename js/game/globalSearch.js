@@ -110,8 +110,19 @@ function activateSubSection(result) {
 function focusResult(result) {
     let target;
     if (result.selector) {
-        target = [...document.querySelectorAll(result.selector)].find((row) =>
-            normalizeText(row.textContent).includes(normalizeText(result.name))
+        const resultName = normalizeText(result.name);
+        target = [...document.querySelectorAll(result.selector)].find((row) => {
+            const rowNames = [
+                row.dataset.title,
+                row.dataset.skill,
+                ...[...row.querySelectorAll("b, td:first-child > span")].map((element) => element.textContent)
+            ];
+            return rowNames.some((name) => normalizeText(name) === resultName);
+        });
+
+        // This is only a fallback for rows without a dedicated name element.
+        target ??= [...document.querySelectorAll(result.selector)].find((row) =>
+            normalizeText(row.textContent).includes(resultName)
         );
     }
     target ??= document.getElementById(result.targetId);
