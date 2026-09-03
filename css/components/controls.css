@@ -92,12 +92,8 @@
 .global-search-status { padding: 12px 14px; color: var(--text-muted); font-size: 13px; }
 
 .search-result-highlight {
-    animation: search-result-flash 1.8s ease-out;
-}
-
-@keyframes search-result-flash {
-    0%, 45% { box-shadow: inset 4px 0 0 var(--accent-primary); background: var(--btn-hover); }
-    100% { box-shadow: none; background: transparent; }
+    box-shadow: inset 4px 0 0 var(--accent-primary);
+    background: var(--btn-hover);
 }
 
 .sr-only {

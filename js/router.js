@@ -89,6 +89,11 @@ export async function loadPageSection(tabId) {
 }
 
 export async function openTab(evt, tabName) {
+    // A located search result remains highlighted only while its page is open.
+    document.querySelectorAll(".search-result-highlight").forEach((element) => {
+        element.classList.remove("search-result-highlight");
+    });
+
     const tabcontent = document.getElementsByClassName("tab-content");
     for (let i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";

@@ -7,6 +7,12 @@ import { openTab } from "../router.js";
 
 let searchIndexPromise;
 
+function clearSearchResultHighlights() {
+    document.querySelectorAll(".search-result-highlight").forEach((element) => {
+        element.classList.remove("search-result-highlight");
+    });
+}
+
 function normalizeText(value) {
     return String(value || "")
         .normalize("NFD")
@@ -164,6 +170,8 @@ export function initializeGlobalSearch() {
     if (!input || !results) return;
 
     input.addEventListener("input", async () => {
+        // A new query replaces the previously located result.
+        clearSearchResultHighlights();
         const query = normalizeText(input.value);
         if (!query) {
             results.hidden = true;
