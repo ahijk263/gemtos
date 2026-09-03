@@ -86,9 +86,13 @@ export async function openSkillDetails(skillName) {
 
         levels.forEach(({ label, cost, stats }) => {
             const row = document.createElement("tr");
-            [label, cost, stats].forEach((value) => {
+            [label, cost, stats].forEach((value, index) => {
                 const cell = document.createElement("td");
-                cell.textContent = value ?? "—";
+                if (index === 1 && value != null) {
+                    cell.innerHTML = `<span class="gem-icon">💎</span> ${value}`;
+                } else {
+                    cell.textContent = value ?? "—";
+                }
                 row.appendChild(cell);
             });
             tableBody.appendChild(row);
