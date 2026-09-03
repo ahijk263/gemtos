@@ -9,7 +9,7 @@ html {
     /* Keep the viewport width consistent between short and long pages. */
     overflow-y: scroll;
     min-height: 100%;
-    background: url("../assets/images/background_dark.jpg") center / cover fixed no-repeat;
+    background: url("../assets/images/background_dark.png") center / cover fixed no-repeat;
 }
 
 /* The theme class is applied to <body>, while the page background belongs to
