@@ -61,7 +61,40 @@
     color: var(--text-main);
 }
 
-.skill-details-modal { max-width: 760px; }
+.skill-details-modal {
+    max-width: 760px;
+    max-height: calc(100dvh - 48px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Keep the skill title and close button visible while long level lists scroll. */
+#skillDetailsBody {
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-right: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-primary) var(--bg-body);
+}
+
+#skillDetailsBody::-webkit-scrollbar {
+    width: 8px;
+}
+
+#skillDetailsBody::-webkit-scrollbar-track {
+    background: var(--bg-body);
+    border-radius: 999px;
+}
+
+#skillDetailsBody::-webkit-scrollbar-thumb {
+    background: var(--accent-primary);
+    border-radius: 999px;
+}
+
+#skillDetailsBody::-webkit-scrollbar-thumb:hover {
+    background: var(--text-main);
+}
 
 .skill-detail-table {
     width: 100%;
