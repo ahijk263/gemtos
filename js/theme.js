@@ -16,7 +16,7 @@ export function initTheme() {
 
     const savedFont = localStorage.getItem("game_font");
     if (savedFont) {
-        document.body.style.fontFamily = savedFont;
+        applyFont(savedFont);
         const fontSelect = document.getElementById("fontSelect");
         if (fontSelect) fontSelect.value = savedFont;
     }
@@ -72,6 +72,13 @@ export function changeFont() {
     const fontSelect = document.getElementById("fontSelect");
     if (!fontSelect) return;
     const font = fontSelect.value;
-    document.body.style.fontFamily = font;
+    applyFont(font);
     localStorage.setItem("game_font", font);
+}
+
+function applyFont(font) {
+    const root = document.documentElement.style;
+    root.setProperty("--font-body", font);
+    root.setProperty("--font-heading", font);
+    root.setProperty("--font-main", font);
 }

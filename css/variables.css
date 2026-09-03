@@ -47,6 +47,7 @@
     /* Fonts */
     --font-heading: 'Orbitron', sans-serif;
     --font-body: 'Rajdhani', sans-serif;
+    --font-main: var(--font-body);
 }
 
 body.light-mode {
