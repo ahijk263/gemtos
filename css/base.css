@@ -9,9 +9,13 @@ html {
     /* Keep the viewport width consistent between short and long pages. */
     overflow-y: scroll;
     min-height: 100%;
-    background:
-        linear-gradient(rgba(8, 12, 20, 0.48), rgba(8, 12, 20, 0.72)),
-        url("../assets/images/background.jpg") center / cover fixed no-repeat;
+    background: url("../assets/images/background_dark.jpg") center / cover fixed no-repeat;
+}
+
+/* The theme class is applied to <body>, while the page background belongs to
+   <html>. Keep both background images in sync with the selected theme. */
+html:has(body.light-mode) {
+    background: url("../assets/images/background_light.png") center / cover fixed no-repeat;
 }
 
 body {
@@ -25,6 +29,12 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     font-size: 16px;
     min-height: 100vh;
+}
+
+.title-search-group {
+    display: flow-root;
+    margin-top: -60px;
+    margin-bottom: 20px;
 }
 
 h1 {

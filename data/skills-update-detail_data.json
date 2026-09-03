@@ -1,0 +1,2634 @@
+{
+    "Double Claw": {
+        "unlock": {
+            "cost": 10,
+            "stats": "Sát thương: 240% | Hồi chiêu: 10s | Số hit: 2"
+        },
+        "levels": [
+            {
+                "cost": 25,
+                "stats": "Sát thương: 262% | Hồi chiêu: 10s | Số hit: 2"
+            },
+            {
+                "cost": 50,
+                "stats": "Sát thương: 285% | Hồi chiêu: 10s | Số hit: 2"
+            },
+            {
+                "cost": 75,
+                "stats": "Sát thương: 311% | Hồi chiêu: 10s | Số hit: 2"
+            },
+            {
+                "cost": 100,
+                "stats": "Sát thương: 339% | Hồi chiêu: 10s | Số hit: 2"
+            },
+            {
+                "cost": 135,
+                "stats": "Sát thương: 369% | Hồi chiêu: 10s | Số hit: 2"
+            },
+            {
+                "cost": 175,
+                "stats": "Sát thương: 402% | Hồi chiêu: 10s | Số hit: 2"
+            },
+            {
+                "cost": 250,
+                "stats": "Sát thương: 438% | Hồi chiêu: 10s | Số hit: 2"
+            },
+            {
+                "cost": 500,
+                "stats": "Sát thương: 478% | Hồi chiêu: 10s | Số hit: 2"
+            },
+            {
+                "cost": 1000,
+                "stats": "Sát thương: 520% | Hồi chiêu: 10s | Số hit: 2"
+            },
+            {
+                "cost": 1750,
+                "stats": "Sát thương: 568% | Hồi chiêu: 10s | Số hit: 2"
+            },
+            {
+                "cost": 2500,
+                "stats": "Sát thương: 619% | Hồi chiêu: 10s | Số hit: 2"
+            },
+            {
+                "cost": 3250,
+                "stats": "Sát thương: 675% | Hồi chiêu: 10s | Số hit: 2"
+            }
+        ]
+    },
+    "Speed Boost": {
+        "unlock": {
+            "cost": 10,
+            "stats": "Tăng tốc: 30.0% | Thời gian: 11.0s | CD: 30s"
+        },
+        "levels": [
+            {
+                "cost": 25,
+                "stats": "Tăng tốc: 32.1% | Thời gian: 11.9s | CD: 30s"
+            },
+            {
+                "cost": 50,
+                "stats": "Tăng tốc: 34.3% | Thời gian: 12.9s | CD: 30s"
+            },
+            {
+                "cost": 75,
+                "stats": "Tăng tốc: 36.8% | Thời gian: 14.0s | CD: 30s"
+            },
+            {
+                "cost": 100,
+                "stats": "Tăng tốc: 39.3% | Thời gian: 15.2s | CD: 30s"
+            },
+            {
+                "cost": 135,
+                "stats": "Tăng tốc: 42.1% | Thời gian: 16.5s | CD: 30s"
+            },
+            {
+                "cost": 175,
+                "stats": "Tăng tốc: 45.0% | Thời gian: 17.9s | CD: 30s"
+            },
+            {
+                "cost": 250,
+                "stats": "Tăng tốc: 48.2% | Thời gian: 19.5s | CD: 30s"
+            },
+            {
+                "cost": 500,
+                "stats": "Tăng tốc: 51.5% | Thời gian: 21.1s | CD: 30s"
+            },
+            {
+                "cost": 1000,
+                "stats": "Tăng tốc: 55.2% | Thời gian: 22.9s | CD: 30s"
+            },
+            {
+                "cost": 1750,
+                "stats": "Tăng tốc: 59.0% | Thời gian: 24.8s | CD: 30s"
+            },
+            {
+                "cost": 2500,
+                "stats": "Tăng tốc: 63.1% | Thời gian: 27.0s | CD: 30s"
+            },
+            {
+                "cost": 3250,
+                "stats": "Tăng tốc: 67.6% | Thời gian: 29.2s | CD: 30s"
+            }
+        ]
+    },
+    "Overhead Triple Claw": {
+        "unlock": {
+            "cost": 20,
+            "stats": "Sát thương: 260% | Hồi chiêu: 15s | Số hit: 3"
+        },
+        "levels": [
+            {
+                "cost": 50,
+                "stats": "Sát thương: 283% | Hồi chiêu: 15s | Số hit: 3"
+            },
+            {
+                "cost": 100,
+                "stats": "Sát thương: 309% | Hồi chiêu: 15s | Số hit: 3"
+            },
+            {
+                "cost": 150,
+                "stats": "Sát thương: 336% | Hồi chiêu: 15s | Số hit: 3"
+            },
+            {
+                "cost": 200,
+                "stats": "Sát thương: 367% | Hồi chiêu: 15s | Số hit: 3"
+            },
+            {
+                "cost": 270,
+                "stats": "Sát thương: 400% | Hồi chiêu: 15s | Số hit: 3"
+            },
+            {
+                "cost": 350,
+                "stats": "Sát thương: 436% | Hồi chiêu: 15s | Số hit: 3"
+            },
+            {
+                "cost": 500,
+                "stats": "Sát thương: 475% | Hồi chiêu: 15s | Số hit: 3"
+            },
+            {
+                "cost": 1000,
+                "stats": "Sát thương: 517% | Hồi chiêu: 15s | Số hit: 3"
+            },
+            {
+                "cost": 2000,
+                "stats": "Sát thương: 564% | Hồi chiêu: 15s | Số hit: 3"
+            },
+            {
+                "cost": 3500,
+                "stats": "Sát thương: 614% | Hồi chiêu: 15s | Số hit: 3"
+            },
+            {
+                "cost": 5000,
+                "stats": "Sát thương: 670% | Hồi chiêu: 15s | Số hit: 3"
+            },
+            {
+                "cost": 6500,
+                "stats": "Sát thương: 730% | Hồi chiêu: 15s | Số hit: 3"
+            }
+        ]
+    },
+    "Life Regeneration": {
+        "unlock": {
+            "cost": 20,
+            "stats": "Hồi máu/s: 2.5% | Thời gian: 8.0s | CD: 25s"
+        },
+        "levels": [
+            {
+                "cost": 50,
+                "stats": "Hồi máu/s: 2.6% | Thời gian: 8.5s | CD: 25s"
+            },
+            {
+                "cost": 100,
+                "stats": "Hồi máu/s: 2.8% | Thời gian: 9.0s | CD: 25s"
+            },
+            {
+                "cost": 150,
+                "stats": "Hồi máu/s: 2.9% | Thời gian: 9.5s | CD: 25s"
+            },
+            {
+                "cost": 200,
+                "stats": "Hồi máu/s: 3.1% | Thời gian: 10.1s | CD: 25s"
+            },
+            {
+                "cost": 270,
+                "stats": "Hồi máu/s: 3.3% | Thời gian: 10.7s | CD: 25s"
+            },
+            {
+                "cost": 350,
+                "stats": "Hồi máu/s: 3.4% | Thời gian: 11.3s | CD: 25s"
+            },
+            {
+                "cost": 500,
+                "stats": "Hồi máu/s: 3.6% | Thời gian: 12.0s | CD: 25s"
+            },
+            {
+                "cost": 1000,
+                "stats": "Hồi máu/s: 3.8% | Thời gian: 12.8s | CD: 25s"
+            },
+            {
+                "cost": 2000,
+                "stats": "Hồi máu/s: 4.0% | Thời gian: 13.5s | CD: 25s"
+            },
+            {
+                "cost": 3500,
+                "stats": "Hồi máu/s: 4.2% | Thời gian: 14.3s | CD: 25s"
+            },
+            {
+                "cost": 5000,
+                "stats": "Hồi máu/s: 4.5% | Thời gian: 15.2s | CD: 25s"
+            },
+            {
+                "cost": 6500,
+                "stats": "Hồi máu/s: 4.7% | Thời gian: 16.1s | CD: 25s"
+            }
+        ]
+    },
+    "Critical Boost": {
+        "unlock": {
+            "cost": 20,
+            "stats": "Boost: 110.0% | Thời gian: 12.0s | CD: 33s"
+        },
+        "levels": [
+            {
+                "cost": 50,
+                "stats": "Boost: 119.4% | Thời gian: 13.0s | CD: 33s"
+            },
+            {
+                "cost": 100,
+                "stats": "Boost: 129.5% | Thời gian: 14.0s | CD: 33s"
+            },
+            {
+                "cost": 150,
+                "stats": "Boost: 140.5% | Thời gian: 15.1s | CD: 33s"
+            },
+            {
+                "cost": 200,
+                "stats": "Boost: 152.4% | Thời gian: 16.3s | CD: 33s"
+            },
+            {
+                "cost": 270,
+                "stats": "Boost: 165.4% | Thời gian: 17.6s | CD: 33s"
+            },
+            {
+                "cost": 350,
+                "stats": "Boost: 179.5% | Thời gian: 19.0s | CD: 33s"
+            },
+            {
+                "cost": 500,
+                "stats": "Boost: 194.7% | Thời gian: 20.6s | CD: 33s"
+            },
+            {
+                "cost": 1000,
+                "stats": "Boost: 211.3% | Thời gian: 22.2s | CD: 33s"
+            },
+            {
+                "cost": 2000,
+                "stats": "Boost: 229.2% | Thời gian: 24.0s | CD: 33s"
+            },
+            {
+                "cost": 3500,
+                "stats": "Boost: 248.7% | Thời gian: 25.9s | CD: 33s"
+            },
+            {
+                "cost": 5000,
+                "stats": "Boost: 269.8% | Thời gian: 28.0s | CD: 33s"
+            },
+            {
+                "cost": 6500,
+                "stats": "Boost: 292.8% | Thời gian: 30.2s | CD: 33s"
+            }
+        ]
+    },
+    "Frost Bite": {
+        "unlock": {
+            "cost": 30,
+            "stats": "Sát thương: 360% | Làm chậm: 40% | Thời gian: 3.4s | Hồi chiêu: 24s"
+        },
+        "levels": [
+            {
+                "cost": 75,
+                "stats": "Sát thương: 392% | Làm chậm: 42% | Thời gian: 3.6s | Hồi chiêu: 24s"
+            },
+            {
+                "cost": 150,
+                "stats": "Sát thương: 428% | Làm chậm: 44% | Thời gian: 3.9s | Hồi chiêu: 24s"
+            },
+            {
+                "cost": 225,
+                "stats": "Sát thương: 466% | Làm chậm: 46% | Thời gian: 4.2s | Hồi chiêu: 24s"
+            },
+            {
+                "cost": 300,
+                "stats": "Sát thương: 508% | Làm chậm: 48% | Thời gian: 4.5s | Hồi chiêu: 24s"
+            },
+            {
+                "cost": 405,
+                "stats": "Sát thương: 553% | Làm chậm: 50% | Thời gian: 4.8s | Hồi chiêu: 24s"
+            },
+            {
+                "cost": 525,
+                "stats": "Sát thương: 603% | Làm chậm: 52% | Thời gian: 5.1s | Hồi chiêu: 24s"
+            },
+            {
+                "cost": 750,
+                "stats": "Sát thương: 657% | Làm chậm: 54% | Thời gian: 5.5s | Hồi chiêu: 24s"
+            },
+            {
+                "cost": 1500,
+                "stats": "Sát thương: 716% | Làm chậm: 56% | Thời gian: 5.8s | Hồi chiêu: 24s"
+            },
+            {
+                "cost": 3000,
+                "stats": "Sát thương: 781% | Làm chậm: 58% | Thời gian: 6.2s | Hồi chiêu: 24s"
+            },
+            {
+                "cost": 5250,
+                "stats": "Sát thương: 851% | Làm chậm: 60% | Thời gian: 6.7s | Hồi chiêu: 24s"
+            },
+            {
+                "cost": 7500,
+                "stats": "Sát thương: 927% | Làm chậm: 62% | Thời gian: 7.1s | Hồi chiêu: 24s"
+            },
+            {
+                "cost": 9750,
+                "stats": "Sát thương: 1010% | Làm chậm: 64% | Thời gian: 7.6s | Hồi chiêu: 24s"
+            }
+        ]
+    },
+    "Fire Nova": {
+        "unlock": {
+            "cost": 30,
+            "stats": "Damage: 300% | Phạm vi: 8.0 | CD: 20s"
+        },
+        "levels": [
+            {
+                "cost": 75,
+                "stats": "Damage: 330% | Phạm vi: 8.0 | CD: 20s"
+            },
+            {
+                "cost": 150,
+                "stats": "Damage: 363% | Phạm vi: 8.0 | CD: 20s"
+            },
+            {
+                "cost": 225,
+                "stats": "Damage: 399% | Phạm vi: 8.0 | CD: 20s"
+            },
+            {
+                "cost": 300,
+                "stats": "Damage: 439% | Phạm vi: 8.0 | CD: 20s"
+            },
+            {
+                "cost": 405,
+                "stats": "Damage: 483% | Phạm vi: 8.0 | CD: 20s"
+            },
+            {
+                "cost": 525,
+                "stats": "Damage: 531% | Phạm vi: 8.0 | CD: 20s"
+            },
+            {
+                "cost": 750,
+                "stats": "Damage: 585% | Phạm vi: 8.0 | CD: 20s"
+            },
+            {
+                "cost": 1500,
+                "stats": "Damage: 643% | Phạm vi: 8.0 | CD: 20s"
+            },
+            {
+                "cost": 3000,
+                "stats": "Damage: 707% | Phạm vi: 8.0 | CD: 20s"
+            },
+            {
+                "cost": 5250,
+                "stats": "Damage: 778% | Phạm vi: 8.0 | CD: 20s"
+            },
+            {
+                "cost": 7500,
+                "stats": "Damage: 856% | Phạm vi: 8.0 | CD: 20s"
+            },
+            {
+                "cost": 9750,
+                "stats": "Damage: 942% | Phạm vi: 8.0 | CD: 20s"
+            }
+        ]
+    },
+    "Freezing Trap": {
+        "unlock": {
+            "cost": 40,
+            "stats": "Damage: 550 | Làm chậm: 35 | Thời gian: 4.0s | Số bẫy tối đa: 1 | CD: 17s"
+        },
+        "levels": [
+            {
+                "cost": 100,
+                "stats": "Damage: 594 | Làm chậm: 37 | Thời gian: 4.2s | Số bẫy tối đa: 1 | CD: 17s"
+            },
+            {
+                "cost": 200,
+                "stats": "Damage: 642 | Làm chậm: 39 | Thời gian: 4.4s | Số bẫy tối đa: 1 | CD: 17s"
+            },
+            {
+                "cost": 300,
+                "stats": "Damage: 693 | Làm chậm: 41 | Thời gian: 4.6s | Số bẫy tối đa: 1 | CD: 17s"
+            },
+            {
+                "cost": 400,
+                "stats": "Damage: 748 | Làm chậm: 43 | Thời gian: 4.9s | Số bẫy tối đa: 1 | CD: 17s"
+            },
+            {
+                "cost": 540,
+                "stats": "Damage: 808 | Làm chậm: 45 | Thời gian: 5.1s | Số bẫy tối đa: 1 | CD: 17s"
+            },
+            {
+                "cost": 700,
+                "stats": "Damage: 873 | Làm chậm: 47 | Thời gian: 5.4s | Số bẫy tối đa: 1 | CD: 17s"
+            },
+            {
+                "cost": 1000,
+                "stats": "Damage: 943 | Làm chậm: 49 | Thời gian: 5.6s | Số bẫy tối đa: 1 | CD: 17s"
+            },
+            {
+                "cost": 2000,
+                "stats": "Damage: 1018 | Làm chậm: 51 | Thời gian: 5.9s | Số bẫy tối đa: 1 | CD: 17s"
+            },
+            {
+                "cost": 4000,
+                "stats": "Damage: 1099 | Làm chậm: 53 | Thời gian: 6.2s | Số bẫy tối đa: 1 | CD: 17s"
+            },
+            {
+                "cost": 7000,
+                "stats": "Damage: 1187 | Làm chậm: 55 | Thời gian: 6.5s | Số bẫy tối đa: 1 | CD: 17s"
+            },
+            {
+                "cost": 10000,
+                "stats": "Damage: 1282 | Làm chậm: 57 | Thời gian: 6.8s | Số bẫy tối đa: 1 | CD: 17s"
+            },
+            {
+                "cost": 13000,
+                "stats": "Damage: 1385 | Làm chậm: 59 | Thời gian: 7.2s | Số bẫy tối đa: 1 | CD: 17s"
+            }
+        ]
+    },
+    "Venom": {
+        "unlock": {
+            "cost": 40,
+            "stats": "Sát thương: 240% | ST/giây: 50% | Thời gian: 7.0s | Hồi chiêu: 35s"
+        },
+        "levels": [
+            {
+                "cost": 100,
+                "stats": "Sát thương: 264% | ST/giây: 54% | Thời gian: 7.0s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 200,
+                "stats": "Sát thương: 290% | ST/giây: 59% | Thời gian: 7.0s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 300,
+                "stats": "Sát thương: 319% | ST/giây: 65% | Thời gian: 7.0s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 400,
+                "stats": "Sát thương: 351% | ST/giây: 71% | Thời gian: 7.0s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 540,
+                "stats": "Sát thương: 387% | ST/giây: 77% | Thời gian: 7.0s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 700,
+                "stats": "Sát thương: 425% | ST/giây: 84% | Thời gian: 7.0s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 1000,
+                "stats": "Sát thương: 468% | ST/giây: 91% | Thời gian: 7.0s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 2000,
+                "stats": "Sát thương: 514% | ST/giây: 99% | Thời gian: 7.0s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 4000,
+                "stats": "Sát thương: 566% | ST/giây: 108% | Thời gian: 7.0s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 7000,
+                "stats": "Sát thương: 622% | ST/giây: 118% | Thời gian: 7.0s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 10000,
+                "stats": "Sát thương: 685% | ST/giây: 129% | Thời gian: 7.0s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 13000,
+                "stats": "Sát thương: 753% | ST/giây: 140% | Thời gian: 7.0s | Hồi chiêu: 35s"
+            }
+        ]
+    },
+    "Flame Spin": {
+        "unlock": {
+            "cost": 40,
+            "stats": "Sát thương: 160%/s | Thời gian: 4s | Hồi chiêu: 27s | Phạm vi: 1.5"
+        },
+        "levels": [
+            {
+                "cost": 100,
+                "stats": "Sát thương: 176%/s | Thời gian: 4s | Hồi chiêu: 27s | Phạm vi: 1.6"
+            },
+            {
+                "cost": 200,
+                "stats": "Sát thương: 194%/s | Thời gian: 4s | Hồi chiêu: 27s | Phạm vi: 1.7"
+            },
+            {
+                "cost": 300,
+                "stats": "Sát thương: 213%/s | Thời gian: 4s | Hồi chiêu: 27s | Phạm vi: 1.8"
+            },
+            {
+                "cost": 400,
+                "stats": "Sát thương: 234%/s | Thời gian: 4s | Hồi chiêu: 27s | Phạm vi: 1.9"
+            },
+            {
+                "cost": 540,
+                "stats": "Sát thương: 257%/s | Thời gian: 4s | Hồi chiêu: 27s | Phạm vi: 2.0"
+            },
+            {
+                "cost": 700,
+                "stats": "Sát thương: 283%/s | Thời gian: 4s | Hồi chiêu: 27s | Phạm vi: 2.1"
+            },
+            {
+                "cost": 1000,
+                "stats": "Sát thương: 311%/s | Thời gian: 4s | Hồi chiêu: 27s | Phạm vi: 2.2"
+            },
+            {
+                "cost": 2000,
+                "stats": "Sát thương: 342%/s | Thời gian: 4s | Hồi chiêu: 27s | Phạm vi: 2.3"
+            },
+            {
+                "cost": 4000,
+                "stats": "Sát thương: 377%/s | Thời gian: 4s | Hồi chiêu: 27s | Phạm vi: 2.4"
+            },
+            {
+                "cost": 7000,
+                "stats": "Sát thương: 414%/s | Thời gian: 4s | Hồi chiêu: 27s | Phạm vi: 2.5"
+            },
+            {
+                "cost": 10000,
+                "stats": "Sát thương: 456%/s | Thời gian: 4s | Hồi chiêu: 27s | Phạm vi: 2.6"
+            },
+            {
+                "cost": 13000,
+                "stats": "Sát thương: 501%/s | Thời gian: 4s | Hồi chiêu: 27s | Phạm vi: 2.7"
+            }
+        ]
+    },
+    "Icy Spikes": {
+        "unlock": {
+            "cost": 40,
+            "stats": "Damage: 460% | Làm chậm: 36.0% | Thời gian: 3.0s | Phạm vi: 4.5 | CD: 22s"
+        },
+        "levels": [
+            {
+                "cost": 100,
+                "stats": "Damage: 501% | Làm chậm: 38.0% | Thời gian: 3.2s | Phạm vi: 4.5 | CD: 22s"
+            },
+            {
+                "cost": 200,
+                "stats": "Damage: 546% | Làm chậm: 40.0% | Thời gian: 3.4s | Phạm vi: 4.5 | CD: 22s"
+            },
+            {
+                "cost": 300,
+                "stats": "Damage: 595% | Làm chậm: 42.0% | Thời gian: 3.6s | Phạm vi: 4.5 | CD: 22s"
+            },
+            {
+                "cost": 400,
+                "stats": "Damage: 649% | Làm chậm: 44.0% | Thời gian: 3.8s | Phạm vi: 4.5 | CD: 22s"
+            },
+            {
+                "cost": 540,
+                "stats": "Damage: 707% | Làm chậm: 46.0% | Thời gian: 4.0s | Phạm vi: 4.5 | CD: 22s"
+            },
+            {
+                "cost": 700,
+                "stats": "Damage: 771% | Làm chậm: 48.0% | Thời gian: 4.3s | Phạm vi: 4.5 | CD: 22s"
+            },
+            {
+                "cost": 1000,
+                "stats": "Damage: 840% | Làm chậm: 50.0% | Thời gian: 4.5s | Phạm vi: 4.5 | CD: 22s"
+            },
+            {
+                "cost": 2000,
+                "stats": "Damage: 915% | Làm chậm: 52.0% | Thời gian: 4.8s | Phạm vi: 4.5 | CD: 22s"
+            },
+            {
+                "cost": 4000,
+                "stats": "Damage: 997% | Làm chậm: 54.0% | Thời gian: 5.1s | Phạm vi: 4.5 | CD: 22s"
+            },
+            {
+                "cost": 7000,
+                "stats": "Damage: 1087% | Làm chậm: 56.0% | Thời gian: 5.4s | Phạm vi: 4.5 | CD: 22s"
+            },
+            {
+                "cost": 10000,
+                "stats": "Damage: 1185% | Làm chậm: 58.0% | Thời gian: 5.7s | Phạm vi: 4.5 | CD: 22s"
+            },
+            {
+                "cost": 13000,
+                "stats": "Damage: 1291% | Làm chậm: 60.0% | Thời gian: 6.0s | Phạm vi: 4.5 | CD: 22s"
+            }
+        ]
+    },
+    "Area Life Regeneration": {
+        "unlock": {
+            "cost": 40,
+            "stats": "Hồi máu/s: 2.0% | Thời gian: 7.0s | Phạm vi: 8.5 | CD: 45s"
+        },
+        "levels": [
+            {
+                "cost": 100,
+                "stats": "Hồi máu/s: 2.1% | Thời gian: 7.4s | Phạm vi: 9.0 | CD: 45s"
+            },
+            {
+                "cost": 200,
+                "stats": "Hồi máu/s: 2.2% | Thời gian: 7.8s | Phạm vi: 9.5 | CD: 45s"
+            },
+            {
+                "cost": 300,
+                "stats": "Hồi máu/s: 2.3% | Thời gian: 8.2s | Phạm vi: 10.0 | CD: 45s"
+            },
+            {
+                "cost": 400,
+                "stats": "Hồi máu/s: 2.5% | Thời gian: 8.7s | Phạm vi: 10.5 | CD: 45s"
+            },
+            {
+                "cost": 540,
+                "stats": "Hồi máu/s: 2.6% | Thời gian: 9.1s | Phạm vi: 11.0 | CD: 45s"
+            },
+            {
+                "cost": 700,
+                "stats": "Hồi máu/s: 2.8% | Thời gian: 9.7s | Phạm vi: 11.5 | CD: 45s"
+            },
+            {
+                "cost": 1000,
+                "stats": "Hồi máu/s: 2.9% | Thời gian: 10.2s | Phạm vi: 12.0 | CD: 45s"
+            },
+            {
+                "cost": 2000,
+                "stats": "Hồi máu/s: 3.1% | Thời gian: 10.7s | Phạm vi: 12.5 | CD: 45s"
+            },
+            {
+                "cost": 4000,
+                "stats": "Hồi máu/s: 3.2% | Thời gian: 11.3s | Phạm vi: 13.0 | CD: 45s"
+            },
+            {
+                "cost": 7000,
+                "stats": "Hồi máu/s: 3.4% | Thời gian: 12.0s | Phạm vi: 13.5 | CD: 45s"
+            },
+            {
+                "cost": 10000,
+                "stats": "Hồi máu/s: 3.6% | Thời gian: 12.6s | Phạm vi: 14.0 | CD: 45s"
+            },
+            {
+                "cost": 13000,
+                "stats": "Hồi máu/s: 3.8% | Thời gian: 13.3s | Phạm vi: 14.5 | CD: 45s"
+            }
+        ]
+    },
+    "Frost Nova": {
+        "unlock": {
+            "cost": 50,
+            "stats": "Damage: 460% | Làm chậm: 30 | Thời gian: 4.7s | Phạm vi: 8.0 | CD: 40s"
+        },
+        "levels": [
+            {
+                "cost": 125,
+                "stats": "Damage: 506% | Làm chậm: 30 | Thời gian: 5.1s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 250,
+                "stats": "Damage: 556% | Làm chậm: 30 | Thời gian: 5.5s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 375,
+                "stats": "Damage: 612% | Làm chậm: 30 | Thời gian: 5.9s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 500,
+                "stats": "Damage: 673% | Làm chậm: 30 | Thời gian: 6.4s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 675,
+                "stats": "Damage: 740% | Làm chậm: 30 | Thời gian: 6.9s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 875,
+                "stats": "Damage: 814% | Làm chậm: 30 | Thời gian: 7.5s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 1250,
+                "stats": "Damage: 895% | Làm chậm: 30 | Thời gian: 8.0s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 2500,
+                "stats": "Damage: 985% | Làm chậm: 30 | Thời gian: 8.7s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 5000,
+                "stats": "Damage: 1083% | Làm chậm: 30 | Thời gian: 9.4s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 8750,
+                "stats": "Damage: 1191% | Làm chậm: 30 | Thời gian: 10.1s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 12500,
+                "stats": "Damage: 1310% | Làm chậm: 30 | Thời gian: 10.9s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 16250,
+                "stats": "Damage: 1441% | Làm chậm: 30 | Thời gian: 11.8s | Phạm vi: 8.0 | CD: 40s"
+            }
+        ]
+    },
+    "Meteors": {
+        "unlock": {
+            "cost": 50,
+            "stats": "Damage: 504% | Phạm vi: 5.4 | CD: 23s"
+        },
+        "levels": [
+            {
+                "cost": 125,
+                "stats": "Damage: 549% | Phạm vi: 5.4 | CD: 23s"
+            },
+            {
+                "cost": 250,
+                "stats": "Damage: 599% | Phạm vi: 5.4 | CD: 23s"
+            },
+            {
+                "cost": 375,
+                "stats": "Damage: 652% | Phạm vi: 5.4 | CD: 23s"
+            },
+            {
+                "cost": 500,
+                "stats": "Damage: 711% | Phạm vi: 5.4 | CD: 23s"
+            },
+            {
+                "cost": 675,
+                "stats": "Damage: 775% | Phạm vi: 5.4 | CD: 23s"
+            },
+            {
+                "cost": 875,
+                "stats": "Damage: 844% | Phạm vi: 5.4 | CD: 23s"
+            },
+            {
+                "cost": 1250,
+                "stats": "Damage: 920% | Phạm vi: 5.4 | CD: 23s"
+            },
+            {
+                "cost": 2500,
+                "stats": "Damage: 1003% | Phạm vi: 5.4 | CD: 23s"
+            },
+            {
+                "cost": 5000,
+                "stats": "Damage: 1093% | Phạm vi: 5.4 | CD: 23s"
+            },
+            {
+                "cost": 8750,
+                "stats": "Damage: 1191% | Phạm vi: 5.4 | CD: 23s"
+            },
+            {
+                "cost": 12500,
+                "stats": "Damage: 1298% | Phạm vi: 5.4 | CD: 23s"
+            },
+            {
+                "cost": 16250,
+                "stats": "Damage: 1414% | Phạm vi: 5.4 | CD: 23s"
+            }
+        ]
+    },
+    "Instant Life Regeneration": {
+        "unlock": {
+            "cost": 50,
+            "stats": "Hồi tức thì: 30.0% | Thời gian niệm: 0.3s | CD: 35s"
+        },
+        "levels": [
+            {
+                "cost": 125,
+                "stats": "Hồi tức thì: 32.4% | Thời gian : 0.3s | CD: 35s"
+            },
+            {
+                "cost": 250,
+                "stats": "Hồi tức thì: 35.0% | Thời gian : 0.3s | CD: 35s"
+            },
+            {
+                "cost": 375,
+                "stats": "Hồi tức thì: 37.8% | Thời gian : 0.3s | CD: 35s"
+            },
+            {
+                "cost": 500,
+                "stats": "Hồi tức thì: 40.8% | Thời gian : 0.3s | CD: 35s"
+            },
+            {
+                "cost": 675,
+                "stats": "Hồi tức thì: 44.1% | Thời gian : 0.3s | CD: 35s"
+            },
+            {
+                "cost": 875,
+                "stats": "Hồi tức thì: 47.6% | Thời gian : 0.3s | CD: 35s"
+            },
+            {
+                "cost": 1250,
+                "stats": "Hồi tức thì: 51.4% | Thời gian : 0.3s | CD: 35s"
+            },
+            {
+                "cost": 2500,
+                "stats": "Hồi tức thì: 55.5% | Thời gian : 0.3s | CD: 35s"
+            },
+            {
+                "cost": 5000,
+                "stats": "Hồi tức thì: 59.9% | Thời gian : 0.3s | CD: 35s"
+            },
+            {
+                "cost": 8750,
+                "stats": "Hồi tức thì: 64.7% | Thời gian : 0.3s | CD: 35s"
+            },
+            {
+                "cost": 12500,
+                "stats": "Hồi tức thì: 69.9% | Thời gian : 0.3s | CD: 35s"
+            },
+            {
+                "cost": 16250,
+                "stats": "Hồi tức thì: 75.5% | Thời gian : 0.3s | CD: 35s"
+            }
+        ]
+    },
+    "Damage Boost": {
+        "unlock": {
+            "cost": 50,
+            "stats": "Boost: 41.0% | Thời gian: 10.5s | CD: 40s"
+        },
+        "levels": [
+            {
+                "cost": 125,
+                "stats": "Boost: 45.1% | Thời gian: 11.3s | CD: 40s"
+            },
+            {
+                "cost": 250,
+                "stats": "Boost: 49.6% | Thời gian: 12.2s | CD: 40s"
+            },
+            {
+                "cost": 375,
+                "stats": "Boost: 54.6% | Thời gian: 13.2s | CD: 40s"
+            },
+            {
+                "cost": 500,
+                "stats": "Boost: 60.0% | Thời gian: 14.3s | CD: 40s"
+            },
+            {
+                "cost": 675,
+                "stats": "Boost: 66.0% | Thời gian: 15.4s | CD: 40s"
+            },
+            {
+                "cost": 875,
+                "stats": "Boost: 72.6% | Thời gian: 16.7s | CD: 40s"
+            },
+            {
+                "cost": 1250,
+                "stats": "Boost: 79.9% | Thời gian: 18.0s | CD: 40s"
+            },
+            {
+                "cost": 2500,
+                "stats": "Boost: 87.9% | Thời gian: 19.4s | CD: 40s"
+            },
+            {
+                "cost": 5000,
+                "stats": "Boost: 96.7% | Thời gian: 21.0s | CD: 40s"
+            },
+            {
+                "cost": 8750,
+                "stats": "Boost: 106.3% | Thời gian: 22.7s | CD: 40s"
+            },
+            {
+                "cost": 12500,
+                "stats": "Boost: 117.0% | Thời gian: 24.5s | CD: 40s"
+            },
+            {
+                "cost": 16250,
+                "stats": "Boost: 128.7% | Thời gian: 26.4s | CD: 40s"
+            }
+        ]
+    },
+    "Swamp": {
+        "unlock": {
+            "cost": 50,
+            "stats": "Làm chậm: 35.0% | Thời gian: 7.7s | CD: 35s"
+        },
+        "levels": [
+            {
+                "cost": 125,
+                "stats": "Làm chậm: 36.7% | Thời gian: 8.2s | CD: 35s"
+            },
+            {
+                "cost": 250,
+                "stats": "Làm chậm: 38.6% | Thời gian: 8.8s | CD: 35s"
+            },
+            {
+                "cost": 375,
+                "stats": "Làm chậm: 40.5% | Thời gian: 9.4s | CD: 35s"
+            },
+            {
+                "cost": 500,
+                "stats": "Làm chậm: 42.5% | Thời gian: 10.1s | CD: 35s"
+            },
+            {
+                "cost": 675,
+                "stats": "Làm chậm: 44.7% | Thời gian: 10.8s | CD: 35s"
+            },
+            {
+                "cost": 875,
+                "stats": "Làm chậm: 46.9% | Thời gian: 11.6s | CD: 35s"
+            },
+            {
+                "cost": 1250,
+                "stats": "Làm chậm: 49.2% | Thời gian: 12.4s | CD: 35s"
+            },
+            {
+                "cost": 2500,
+                "stats": "Làm chậm: 51.7% | Thời gian: 13.2s | CD: 35s"
+            },
+            {
+                "cost": 5000,
+                "stats": "Làm chậm: 54.3% | Thời gian: 14.2s | CD: 35s"
+            },
+            {
+                "cost": 8750,
+                "stats": "Làm chậm: 57.0% | Thời gian: 15.1s | CD: 35s"
+            },
+            {
+                "cost": 12500,
+                "stats": "Làm chậm: 59.9% | Thời gian: 16.2s | CD: 35s"
+            },
+            {
+                "cost": 16250,
+                "stats": "Làm chậm: 62.9% | Thời gian: 17.3s | CD: 35s"
+            }
+        ]
+    },
+    "Life Steal": {
+        "unlock": {
+            "cost": 60,
+            "stats": "Sát thương: 430% | Hút máu: 50% | Hồi chiêu: 40s"
+        },
+        "levels": [
+            {
+                "cost": 150,
+                "stats": "Sát thương: 473% | Hút máu: 50% | Hồi chiêu: 40s"
+            },
+            {
+                "cost": 300,
+                "stats": "Sát thương: 520% | Hút máu: 50% | Hồi chiêu: 40s"
+            },
+            {
+                "cost": 450,
+                "stats": "Sát thương: 572% | Hút máu: 50% | Hồi chiêu: 40s"
+            },
+            {
+                "cost": 600,
+                "stats": "Sát thương: 629% | Hút máu: 50% | Hồi chiêu: 40s"
+            },
+            {
+                "cost": 810,
+                "stats": "Sát thương: 692% | Hút máu: 50% | Hồi chiêu: 40s"
+            },
+            {
+                "cost": 1050,
+                "stats": "Sát thương: 761% | Hút máu: 50% | Hồi chiêu: 40s"
+            },
+            {
+                "cost": 1500,
+                "stats": "Sát thương: 837% | Hút máu: 50% | Hồi chiêu: 40s"
+            },
+            {
+                "cost": 3000,
+                "stats": "Sát thương: 920% | Hút máu: 50% | Hồi chiêu: 40s"
+            },
+            {
+                "cost": 6000,
+                "stats": "Sát thương: 1012% | Hút máu: 50% | Hồi chiêu: 40s"
+            },
+            {
+                "cost": 10500,
+                "stats": "Sát thương: 1113% | Hút máu: 50% | Hồi chiêu: 40s"
+            },
+            {
+                "cost": 15000,
+                "stats": "Sát thương: 1224% | Hút máu: 50% | Hồi chiêu: 40s"
+            },
+            {
+                "cost": 19500,
+                "stats": "Sát thương: 1347% | Hút máu: 50% | Hồi chiêu: 40s"
+            }
+        ]
+    },
+    "Firewall": {
+        "unlock": {
+            "cost": 60,
+            "stats": "Sát thương: 170%/s | Thời gian: 6.5s | Hồi chiêu: 35s"
+        },
+        "levels": [
+            {
+                "cost": 150,
+                "stats": "Sát thương: 184%/s | Thời gian: 7.0s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 300,
+                "stats": "Sát thương: 198%/s | Thời gian: 7.4s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 450,
+                "stats": "Sát thương: 214%/s | Thời gian: 8.0s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 600,
+                "stats": "Sát thương: 231%/s | Thời gian: 8.5s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 810,
+                "stats": "Sát thương: 250%/s | Thời gian: 9.1s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 1050,
+                "stats": "Sát thương: 270%/s | Thời gian: 9.8s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 1500,
+                "stats": "Sát thương: 291%/s | Thời gian: 10.4s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 3000,
+                "stats": "Sát thương: 315%/s | Thời gian: 11.2s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 6000,
+                "stats": "Sát thương: 340%/s | Thời gian: 11.9s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 10500,
+                "stats": "Sát thương: 367%/s | Thời gian: 12.8s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 15000,
+                "stats": "Sát thương: 396%/s | Thời gian: 13.7s | Hồi chiêu: 35s"
+            },
+            {
+                "cost": 19500,
+                "stats": "Sát thương: 428%/s | Thời gian: 14.6s | Hồi chiêu: 35s"
+            }
+        ]
+    },
+    "Shock Nova": {
+        "unlock": {
+            "cost": 60,
+            "stats": "Damage: 565% | Tỷ lệ choáng: 22.0% | Phạm vi: 8.0 | CD: 25s"
+        },
+        "levels": [
+            {
+                "cost": 150,
+                "stats": "Damage: 607% | Tỷ lệ choáng: 23.5% | Phạm vi: 8.0 | CD: 25s"
+            },
+            {
+                "cost": 300,
+                "stats": "Damage: 653% | Tỷ lệ choáng: 25.0% | Phạm vi: 8.0 | CD: 25s"
+            },
+            {
+                "cost": 450,
+                "stats": "Damage: 702% | Tỷ lệ choáng: 26.5% | Phạm vi: 8.0 | CD: 25s"
+            },
+            {
+                "cost": 600,
+                "stats": "Damage: 755% | Tỷ lệ choáng: 28.0% | Phạm vi: 8.0 | CD: 25s"
+            },
+            {
+                "cost": 810,
+                "stats": "Damage: 811% | Tỷ lệ choáng: 29.5% | Phạm vi: 8.0 | CD: 25s"
+            },
+            {
+                "cost": 1050,
+                "stats": "Damage: 872% | Tỷ lệ choáng: 31.0% | Phạm vi: 8.0 | CD: 25s"
+            },
+            {
+                "cost": 1500,
+                "stats": "Damage: 937% | Tỷ lệ choáng: 32.5% | Phạm vi: 8.0 | CD: 25s"
+            },
+            {
+                "cost": 3000,
+                "stats": "Damage: 1008% | Tỷ lệ choáng: 34.0% | Phạm vi: 8.0 | CD: 25s"
+            },
+            {
+                "cost": 6000,
+                "stats": "Damage: 1083% | Tỷ lệ choáng: 35.5% | Phạm vi: 8.0 | CD: 25s"
+            },
+            {
+                "cost": 10500,
+                "stats": "Damage: 1164% | Tỷ lệ choáng: 37.0% | Phạm vi: 8.0 | CD: 25s"
+            },
+            {
+                "cost": 15000,
+                "stats": "Damage: 1252% | Tỷ lệ choáng: 38.5% | Phạm vi: 8.0 | CD: 25s"
+            },
+            {
+                "cost": 19500,
+                "stats": "Damage: 1346% | Tỷ lệ choáng: 40.0% | Phạm vi: 8.0 | CD: 25s"
+            }
+        ]
+    },
+    "Venomous Skin": {
+        "unlock": {
+            "cost": 70,
+            "stats": "Damage: 60%/s | Tồn tại: 8.0s | Hiệu ứng: 3.2s | Phạm vi: 2.5 | CD: 35s"
+        },
+        "levels": [
+            {
+                "cost": 175,
+                "stats": "Damage: 65%/s | Tồn tại: 8.5s | Hiệu ứng: 3.4s | Phạm vi: 2.5 | CD: 35s"
+            },
+            {
+                "cost": 350,
+                "stats": "Damage: 71%/s | Tồn tại: 9.0s | Hiệu ứng: 3.6s | Phạm vi: 2.5 | CD: 35s"
+            },
+            {
+                "cost": 525,
+                "stats": "Damage: 78%/s | Tồn tại: 9.5s | Hiệu ứng: 3.8s | Phạm vi: 2.5 | CD: 35s"
+            },
+            {
+                "cost": 700,
+                "stats": "Damage: 85%/s | Tồn tại: 10.1s | Hiệu ứng: 4.0s | Phạm vi: 2.5 | CD: 35s"
+            },
+            {
+                "cost": 945,
+                "stats": "Damage: 92%/s | Tồn tại: 10.7s | Hiệu ứng: 4.3s | Phạm vi: 2.5 | CD: 35s"
+            },
+            {
+                "cost": 1225,
+                "stats": "Damage: 100%/s | Tồn tại: 11.3s | Hiệu ứng: 4.5s | Phạm vi: 2.5 | CD: 35s"
+            },
+            {
+                "cost": 1750,
+                "stats": "Damage: 110%/s | Tồn tại: 12.0s | Hiệu ứng: 4.8s | Phạm vi: 2.5 | CD: 35s"
+            },
+            {
+                "cost": 3500,
+                "stats": "Damage: 119%/s | Tồn tại: 12.8s | Hiệu ứng: 5.1s | Phạm vi: 2.5 | CD: 35s"
+            },
+            {
+                "cost": 7000,
+                "stats": "Damage: 130%/s | Tồn tại: 13.5s | Hiệu ứng: 5.4s | Phạm vi: 2.5 | CD: 35s"
+            },
+            {
+                "cost": 12250,
+                "stats": "Damage: 142%/s | Tồn tại: 14.3s | Hiệu ứng: 5.7s | Phạm vi: 2.5 | CD: 35s"
+            },
+            {
+                "cost": 17500,
+                "stats": "Damage: 154%/s | Tồn tại: 15.2s | Hiệu ứng: 6.1s | Phạm vi: 2.5 | CD: 35s"
+            },
+            {
+                "cost": 22750,
+                "stats": "Damage: 168%/s | Tồn tại: 16.1s | Hiệu ứng: 6.4s | Phạm vi: 2.5 | CD: 35s"
+            }
+        ]
+    },
+    "Poisonous Jump": {
+        "unlock": {
+            "cost": 80,
+            "stats": "Sát thương: 420% | Thời gian: 3.5s | ST/giây: 110% | Hồi chiêu: 30s"
+        },
+        "levels": [
+            {
+                "cost": 200,
+                "stats": "Sát thương: 447% | Thời gian: 3.7s | ST/giây: 117% | Hồi chiêu: 30s"
+            },
+            {
+                "cost": 400,
+                "stats": "Sát thương: 476% | Thời gian: 3.9s | ST/giây: 125% | Hồi chiêu: 30s"
+            },
+            {
+                "cost": 600,
+                "stats": "Sát thương: 507% | Thời gian: 4.1s | ST/giây: 133% | Hồi chiêu: 30s"
+            },
+            {
+                "cost": 800,
+                "stats": "Sát thương: 540% | Thời gian: 4.3s | ST/giây: 142% | Hồi chiêu: 30s"
+            },
+            {
+                "cost": 1080,
+                "stats": "Sát thương: 575% | Thời gian: 4.5s | ST/giây: 151% | Hồi chiêu: 30s"
+            },
+            {
+                "cost": 1400,
+                "stats": "Sát thương: 613% | Thời gian: 4.7s | ST/giây: 161% | Hồi chiêu: 30s"
+            },
+            {
+                "cost": 2000,
+                "stats": "Sát thương: 653% | Thời gian: 4.9s | ST/giây: 171% | Hồi chiêu: 30s"
+            },
+            {
+                "cost": 4000,
+                "stats": "Sát thương: 695% | Thời gian: 5.1s | ST/giây: 182% | Hồi chiêu: 30s"
+            },
+            {
+                "cost": 8000,
+                "stats": "Sát thương: 740% | Thời gian: 5.4s | ST/giây: 194% | Hồi chiêu: 30s"
+            },
+            {
+                "cost": 14000,
+                "stats": "Sát thương: 788% | Thời gian: 5.7s | ST/giây: 206% | Hồi chiêu: 30s"
+            },
+            {
+                "cost": 20000,
+                "stats": "Sát thương: 840% | Thời gian: 6.0s | ST/giây: 220% | Hồi chiêu: 30s"
+            },
+            {
+                "cost": 26000,
+                "stats": "Sát thương: 894% | Thời gian: 6.3s | ST/giây: 234% | Hồi chiêu: 30s"
+            }
+        ]
+    },
+    "Poison Nova": {
+        "unlock": {
+            "cost": 80,
+            "stats": "Damage: 320% | ST/giây: 77 | Thời gian: 4.0s | Phạm vi: 8.0 | CD: 40s"
+        },
+        "levels": [
+            {
+                "cost": 200,
+                "stats": "Damage: 342% | ST/giây: 82 | Thời gian: 4.2s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 400,
+                "stats": "Damage: 366% | ST/giây: 87 | Thời gian: 4.5s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 600,
+                "stats": "Damage: 392% | ST/giây: 92 | Thời gian: 4.8s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 800,
+                "stats": "Damage: 419% | ST/giây: 97 | Thời gian: 5.0s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 1080,
+                "stats": "Damage: 449% | ST/giây: 103 | Thời gian: 5.4s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 1400,
+                "stats": "Damage: 480% | ST/giây: 109 | Thời gian: 5.7s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 2000,
+                "stats": "Damage: 514% | ST/giây: 116 | Thời gian: 6.0s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 4000,
+                "stats": "Damage: 550% | ST/giây: 123 | Thời gian: 6.4s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 8000,
+                "stats": "Damage: 588% | ST/giây: 130 | Thời gian: 6.8s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 14000,
+                "stats": "Damage: 629% | ST/giây: 138 | Thời gian: 7.2s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 20000,
+                "stats": "Damage: 674% | ST/giây: 146 | Thời gian: 7.6s | Phạm vi: 8.0 | CD: 40s"
+            },
+            {
+                "cost": 26000,
+                "stats": "Damage: 721% | ST/giây: 155 | Thời gian: 8.0s | Phạm vi: 8.0 | CD: 40s"
+            }
+        ]
+    },
+    "Hurricane": {
+        "unlock": {
+            "cost": 80,
+            "stats": "Damage: 118%/s | Thời gian: 7.0s | Làm chậm: 20.0% | Phạm vi: 4.5 | CD: 40s"
+        },
+        "levels": [
+            {
+                "cost": 200,
+                "stats": "Damage: 130%/s | Thời gian: 7.0s | Làm chậm: 21.8% | Phạm vi: 4.5 | CD: 40s"
+            },
+            {
+                "cost": 400,
+                "stats": "Damage: 143%/s | Thời gian: 7.0s | Làm chậm: 23.7% | Phạm vi: 4.5 | CD: 40s"
+            },
+            {
+                "cost": 600,
+                "stats": "Damage: 157%/s | Thời gian: 7.0s | Làm chậm: 25.9% | Phạm vi: 4.5 | CD: 40s"
+            },
+            {
+                "cost": 800,
+                "stats": "Damage: 173%/s | Thời gian: 7.0s | Làm chậm: 28.2% | Phạm vi: 4.5 | CD: 40s"
+            },
+            {
+                "cost": 1080,
+                "stats": "Damage: 190%/s | Thời gian: 7.0s | Làm chậm: 30.7% | Phạm vi: 4.5 | CD: 40s"
+            },
+            {
+                "cost": 1400,
+                "stats": "Damage: 209%/s | Thời gian: 7.0s | Làm chậm: 33.5% | Phạm vi: 4.5 | CD: 40s"
+            },
+            {
+                "cost": 2000,
+                "stats": "Damage: 230%/s | Thời gian: 7.0s | Làm chậm: 36.5% | Phạm vi: 4.5 | CD: 40s"
+            },
+            {
+                "cost": 4000,
+                "stats": "Damage: 253%/s | Thời gian: 7.0s | Làm chậm: 39.8% | Phạm vi: 4.5 | CD: 40s"
+            },
+            {
+                "cost": 8000,
+                "stats": "Damage: 278%/s | Thời gian: 7.0s | Làm chậm: 43.3% | Phạm vi: 4.5 | CD: 40s"
+            },
+            {
+                "cost": 14000,
+                "stats": "Damage: 306%/s | Thời gian: 7.0s | Làm chậm: 47.2% | Phạm vi: 4.5 | CD: 40s"
+            },
+            {
+                "cost": 20000,
+                "stats": "Damage: 336%/s | Thời gian: 7.0s | Làm chậm: 51.5% | Phạm vi: 4.5 | CD: 40s"
+            },
+            {
+                "cost": 26000,
+                "stats": "Damage: 370%/s | Thời gian: 7.0s | Làm chậm: 56.1% | Phạm vi: 4.5 | CD: 40s"
+            }
+        ]
+    },
+    "Root Prison": {
+        "unlock": {
+            "cost": 80,
+            "stats": "Thời gian trói: 2.0s | Phạm vi: 10 | CD: 55s"
+        },
+        "levels": [
+            {
+                "cost": 200,
+                "stats": "Thời gian trói: 2.1s | Phạm vi: 10 | CD: 55s"
+            },
+            {
+                "cost": 400,
+                "stats": "Thời gian trói: 2.3s | Phạm vi: 10 | CD: 55s"
+            },
+            {
+                "cost": 600,
+                "stats": "Thời gian trói: 2.5s | Phạm vi: 10 | CD: 55s"
+            },
+            {
+                "cost": 800,
+                "stats": "Thời gian trói: 2.6s | Phạm vi: 10 | CD: 55s"
+            },
+            {
+                "cost": 1080,
+                "stats": "Thời gian trói: 2.8s | Phạm vi: 10 | CD: 55s"
+            },
+            {
+                "cost": 1400,
+                "stats": "Thời gian trói: 3.0s | Phạm vi: 10 | CD: 55s"
+            },
+            {
+                "cost": 2000,
+                "stats": "Thời gian trói: 3.2s | Phạm vi: 10 | CD: 55s"
+            },
+            {
+                "cost": 4000,
+                "stats": "Thời gian trói: 3.4s | Phạm vi: 10 | CD: 55s"
+            },
+            {
+                "cost": 8000,
+                "stats": "Thời gian trói: 3.7s | Phạm vi: 10 | CD: 55s"
+            },
+            {
+                "cost": 14000,
+                "stats": "Thời gian trói: 3.9s | Phạm vi: 10 | CD: 55s"
+            },
+            {
+                "cost": 20000,
+                "stats": "Thời gian trói: 4.2s | Phạm vi: 10 | CD: 55s"
+            },
+            {
+                "cost": 26000,
+                "stats": "Thời gian trói: 4.5s | Phạm vi: 10 | CD: 55s"
+            }
+        ]
+    },
+    "Vampiric Overhead Claw": {
+        "unlock": {
+            "cost": 90,
+            "stats": "Damage: 440% | Phạm vi: 5.0 | Hút máu: 50% | CD: 35s"
+        },
+        "levels": [
+            {
+                "cost": 225,
+                "stats": "Damage: 484% | Phạm vi: 5.0 | Hút máu: 50% | CD: 35s"
+            },
+            {
+                "cost": 450,
+                "stats": "Damage: 532% | Phạm vi: 5.0 | Hút máu: 50% | CD: 35s"
+            },
+            {
+                "cost": 675,
+                "stats": "Damage: 585% | Phạm vi: 5.0 | Hút máu: 50% | CD: 35s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage: 644% | Phạm vi: 5.0 | Hút máu: 50% | CD: 35s"
+            },
+            {
+                "cost": 1215,
+                "stats": "Damage: 708% | Phạm vi: 5.0 | Hút máu: 50% | CD: 35s"
+            },
+            {
+                "cost": 1575,
+                "stats": "Damage: 779% | Phạm vi: 5.0 | Hút máu: 50% | CD: 35s"
+            },
+            {
+                "cost": 2250,
+                "stats": "Damage: 856% | Phạm vi: 5.0 | Hút máu: 50% | CD: 35s"
+            },
+            {
+                "cost": 4500,
+                "stats": "Damage: 942% | Phạm vi: 5.0 | Hút máu: 50% | CD: 35s"
+            },
+            {
+                "cost": 9000,
+                "stats": "Damage: 1036% | Phạm vi: 5.0 | Hút máu: 50% | CD: 35s"
+            },
+            {
+                "cost": 15750,
+                "stats": "Damage: 1139% | Phạm vi: 5.0 | Hút máu: 50% | CD: 35s"
+            },
+            {
+                "cost": 22500,
+                "stats": "Damage: 1253% | Phạm vi: 5.0 | Hút máu: 50% | CD: 35s"
+            },
+            {
+                "cost": 29250,
+                "stats": "Damage: 1378% | Phạm vi: 5.0 | Hút máu: 50% | CD: 35s"
+            }
+        ]
+    },
+    "Shock Jump": {
+        "unlock": {
+            "cost": 90,
+            "stats": "Damage: 570% | Tỷ lệ choáng: 24.0% | Phạm vi: 5.0 | CD: 35s"
+        },
+        "levels": [
+            {
+                "cost": 225,
+                "stats": "Damage: 627% | Tỷ lệ choáng: 27.0% | Phạm vi: 5.0 | CD: 35s"
+            },
+            {
+                "cost": 450,
+                "stats": "Damage: 690% | Tỷ lệ choáng: 30.0% | Phạm vi: 5.0 | CD: 35s"
+            },
+            {
+                "cost": 675,
+                "stats": "Damage: 759% | Tỷ lệ choáng: 33.0% | Phạm vi: 5.0 | CD: 35s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage: 835% | Tỷ lệ choáng: 36.0% | Phạm vi: 5.0 | CD: 35s"
+            },
+            {
+                "cost": 1215,
+                "stats": "Damage: 918% | Tỷ lệ choáng: 39.0% | Phạm vi: 5.0 | CD: 35s"
+            },
+            {
+                "cost": 1575,
+                "stats": "Damage: 1010% | Tỷ lệ choáng: 42.0% | Phạm vi: 5.0 | CD: 35s"
+            },
+            {
+                "cost": 2250,
+                "stats": "Damage: 1111% | Tỷ lệ choáng: 45.0% | Phạm vi: 5.0 | CD: 35s"
+            },
+            {
+                "cost": 4500,
+                "stats": "Damage: 1222% | Tỷ lệ choáng: 48.0% | Phạm vi: 5.0 | CD: 35s"
+            },
+            {
+                "cost": 9000,
+                "stats": "Damage: 1344% | Tỷ lệ choáng: 51.0% | Phạm vi: 5.0 | CD: 35s"
+            },
+            {
+                "cost": 15750,
+                "stats": "Damage: 1478% | Tỷ lệ choáng: 54.0% | Phạm vi: 5.0 | CD: 35s"
+            },
+            {
+                "cost": 22500,
+                "stats": "Damage: 1626% | Tỷ lệ choáng: 57.0% | Phạm vi: 5.0 | CD: 35s"
+            },
+            {
+                "cost": 29250,
+                "stats": "Damage: 1789% | Tỷ lệ choáng: 60.0% | Phạm vi: 5.0 | CD: 35s"
+            }
+        ]
+    },
+    "Frozen Claw Jump": {
+        "unlock": {
+            "cost": 90,
+            "stats": "Damage: 500% | Làm chậm: 25.0% | Thời gian: 4.0s | CD: 40s"
+        },
+        "levels": [
+            {
+                "cost": 225,
+                "stats": "Damage: 550% | Làm chậm: 26.5% | Thời gian: 4.2s | CD: 40s"
+            },
+            {
+                "cost": 450,
+                "stats": "Damage: 605% | Làm chậm: 28.1% | Thời gian: 4.5s | CD: 40s"
+            },
+            {
+                "cost": 675,
+                "stats": "Damage: 665% | Làm chậm: 29.8% | Thời gian: 4.8s | CD: 40s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage: 732% | Làm chậm: 31.6% | Thời gian: 5.0s | CD: 40s"
+            },
+            {
+                "cost": 1215,
+                "stats": "Damage: 805% | Làm chậm: 33.5% | Thời gian: 5.4s | CD: 40s"
+            },
+            {
+                "cost": 1575,
+                "stats": "Damage: 885% | Làm chậm: 35.5% | Thời gian: 5.7s | CD: 40s"
+            },
+            {
+                "cost": 2250,
+                "stats": "Damage: 973% | Làm chậm: 37.6% | Thời gian: 6.0s | CD: 40s"
+            },
+            {
+                "cost": 4500,
+                "stats": "Damage: 1070% | Làm chậm: 39.8% | Thời gian: 6.4s | CD: 40s"
+            },
+            {
+                "cost": 9000,
+                "stats": "Damage: 1177% | Làm chậm: 42.2% | Thời gian: 6.8s | CD: 40s"
+            },
+            {
+                "cost": 15750,
+                "stats": "Damage: 1295% | Làm chậm: 44.8% | Thời gian: 7.2s | CD: 40s"
+            },
+            {
+                "cost": 19250,
+                "stats": "Damage: 1424% | Làm chậm: 47.5% | Thời gian: 7.6s | CD: 40s"
+            },
+            {
+                "cost": 22500,
+                "stats": "Damage: 1566% | Làm chậm: 50.3% | Thời gian: 8.0s | CD: 40s"
+            }
+        ]
+    },
+    "Freezing Wall": {
+        "unlock": {
+            "cost": 90,
+            "stats": "Damage: 153%/s | Tồn tại: 6.5s | Làm chậm: 40% | Hiệu ứng: 3.0s | CD: 35s"
+        },
+        "levels": [
+            {
+                "cost": 225,
+                "stats": "Damage: 165%/s | Tồn tại: 7.0s | Làm chậm: 42% | Hiệu ứng: 3.2s | CD: 35s"
+            },
+            {
+                "cost": 450,
+                "stats": "Damage: 178%/s | Tồn tại: 7.4s | Làm chậm: 44% | Hiệu ứng: 3.4s | CD: 35s"
+            },
+            {
+                "cost": 675,
+                "stats": "Damage: 193%/s | Tồn tại: 8.0s | Làm chậm: 46% | Hiệu ứng: 3.7s | CD: 35s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage: 208%/s | Tồn tại: 8.5s | Làm chậm: 48% | Hiệu ứng: 3.9s | CD: 35s"
+            },
+            {
+                "cost": 1215,
+                "stats": "Damage: 225%/s | Tồn tại: 9.1s | Làm chậm: 50% | Hiệu ứng: 4.2s | CD: 35s"
+            },
+            {
+                "cost": 1575,
+                "stats": "Damage: 243%/s | Tồn tại: 9.8s | Làm chậm: 52% | Hiệu ứng: 4.5s | CD: 35s"
+            },
+            {
+                "cost": 2250,
+                "stats": "Damage: 262%/s | Tồn tại: 10.4s | Làm chậm: 54% | Hiệu ứng: 4.8s | CD: 35s"
+            },
+            {
+                "cost": 4500,
+                "stats": "Damage: 283%/s | Tồn tại: 11.2s | Làm chậm: 56% | Hiệu ứng: 5.2s | CD: 35s"
+            },
+            {
+                "cost": 9000,
+                "stats": "Damage: 306%/s | Tồn tại: 11.9s | Làm chậm: 58% | Hiệu ứng: 5.5s | CD: 35s"
+            },
+            {
+                "cost": 15750,
+                "stats": "Damage: 330%/s | Tồn tại: 12.8s | Làm chậm: 60% | Hiệu ứng: 5.9s | CD: 35s"
+            },
+            {
+                "cost": 22500,
+                "stats": "Damage: 357%/s | Tồn tại: 13.7s | Làm chậm: 62% | Hiệu ứng: 6.3s | CD: 35s"
+            },
+            {
+                "cost": 29250,
+                "stats": "Damage: 385%/s | Tồn tại: 14.6s | Làm chậm: 64% | Hiệu ứng: 6.8s | CD: 35s"
+            }
+        ]
+    },
+    "Fire Breath": {
+        "unlock": {
+            "cost": 90,
+            "stats": "Damage: 200%/s | Thời gian: 4.2s | CD: 25s"
+        },
+        "levels": [
+            {
+                "cost": 225,
+                "stats": "Damage: 216%/s | Thời gian: 4.4s | CD: 25s"
+            },
+            {
+                "cost": 450,
+                "stats": "Damage: 233%/s | Thời gian: 4.6s | CD: 25s"
+            },
+            {
+                "cost": 675,
+                "stats": "Damage: 252%/s | Thời gian: 4.9s | CD: 25s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage: 272%/s | Thời gian: 5.1s | CD: 25s"
+            },
+            {
+                "cost": 1215,
+                "stats": "Damage: 294%/s | Thời gian: 5.4s | CD: 25s"
+            },
+            {
+                "cost": 1575,
+                "stats": "Damage: 317%/s | Thời gian: 5.6s | CD: 25s"
+            },
+            {
+                "cost": 2250,
+                "stats": "Damage: 343%/s | Thời gian: 5.9s | CD: 25s"
+            },
+            {
+                "cost": 4500,
+                "stats": "Damage: 370%/s | Thời gian: 6.2s | CD: 25s"
+            },
+            {
+                "cost": 9000,
+                "stats": "Damage: 400%/s | Thời gian: 6.5s | CD: 25s"
+            },
+            {
+                "cost": 15750,
+                "stats": "Damage: 432%/s | Thời gian: 6.8s | CD: 25s"
+            },
+            {
+                "cost": 22500,
+                "stats": "Damage: 466%/s | Thời gian: 7.2s | CD: 25s"
+            },
+            {
+                "cost": 29250,
+                "stats": "Damage: 504%/s | Thời gian: 7.5s | CD: 25s"
+            }
+        ]
+    },
+    "Electrified": {
+        "unlock": {
+            "cost": 90,
+            "stats": "Damage: 95% | Số đòn: 12 | Tỷ lệ choáng: 9.0% | Phạm vi: 7.5 | CD: 28s"
+        },
+        "levels": [
+            {
+                "cost": 225,
+                "stats": "Damage: 106% | Số đòn: 12 | Tỷ lệ choáng: 9.5% | Phạm vi: 7.5 | CD: 28s"
+            },
+            {
+                "cost": 450,
+                "stats": "Damage: 119% | Số đòn: 12 | Tỷ lệ choáng: 10.0% | Phạm vi: 7.5 | CD: 28s"
+            },
+            {
+                "cost": 675,
+                "stats": "Damage: 133% | Số đòn: 12 | Tỷ lệ choáng: 10.5% | Phạm vi: 7.5 | CD: 28s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage: 149% | Số đòn: 12 | Tỷ lệ choáng: 11.0% | Phạm vi: 7.5 | CD: 28s"
+            },
+            {
+                "cost": 1215,
+                "stats": "Damage: 167% | Số đòn: 12 | Tỷ lệ choáng: 11.5% | Phạm vi: 7.5 | CD: 28s"
+            },
+            {
+                "cost": 1575,
+                "stats": "Damage: 188% | Số đòn: 12 | Tỷ lệ choáng: 12.0% | Phạm vi: 7.5 | CD: 28s"
+            },
+            {
+                "cost": 2250,
+                "stats": "Damage: 210% | Số đòn: 12 | Tỷ lệ choáng: 12.5% | Phạm vi: 7.5 | CD: 28s"
+            },
+            {
+                "cost": 4500,
+                "stats": "Damage: 235% | Số đòn: 12 | Tỷ lệ choáng: 13.0% | Phạm vi: 7.5 | CD: 28s"
+            },
+            {
+                "cost": 9000,
+                "stats": "Damage: 263% | Số đòn: 12 | Tỷ lệ choáng: 13.5% | Phạm vi: 7.5 | CD: 28s"
+            },
+            {
+                "cost": 15750,
+                "stats": "Damage: 295% | Số đòn: 12 | Tỷ lệ choáng: 14.0% | Phạm vi: 7.5 | CD: 28s"
+            },
+            {
+                "cost": 22500,
+                "stats": "Damage: 330% | Số đòn: 12 | Tỷ lệ choáng: 14.5% | Phạm vi: 7.5 | CD: 28s"
+            },
+            {
+                "cost": 29250,
+                "stats": "Damage: 370% | Số đòn: 12 | Tỷ lệ choáng: 15.0% | Phạm vi: 7.5 | CD: 28s"
+            }
+        ]
+    },
+    "Explosion Trap": {
+        "unlock": {
+            "cost": 90,
+            "stats": "Damage: 790 | Số bẫy tối đa: 1 | CD: 20s"
+        },
+        "levels": [
+            {
+                "cost": 225,
+                "stats": "Damage: 849 | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 450,
+                "stats": "Damage: 913 | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 675,
+                "stats": "Damage: 981 | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage: 1,055 | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 1215,
+                "stats": "Damage: 1,134 | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 1575,
+                "stats": "Damage: 1,219 | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 2250,
+                "stats": "Damage: 1,311 | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 4500,
+                "stats": "Damage: 1,409 | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 9000,
+                "stats": "Damage: 1,515 | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 15750,
+                "stats": "Damage: 1,628 | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 22500,
+                "stats": "Damage: 1,750 | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 29250,
+                "stats": "Damage: 1,882 | Số bẫy tối đa: 1 | CD: 20s"
+            }
+        ]
+    },
+    "Poisonous Cloud": {
+        "unlock": {
+            "cost": 100,
+            "stats": "Damage: 162%/s | Hiệu ứng: 5.2s | Tồn tại: 6.0s | Phạm vi: 4.5 | CD: 45s"
+        },
+        "levels": [
+            {
+                "cost": 250,
+                "stats": "Damage: 172%/s | Hiệu ứng: 5.5s | Tồn tại: 6.0s | Phạm vi: 4.5 | CD: 45s"
+            },
+            {
+                "cost": 500,
+                "stats": "Damage: 182%/s | Hiệu ứng: 5.7s | Tồn tại: 6.0s | Phạm vi: 4.5 | CD: 45s"
+            },
+            {
+                "cost": 750,
+                "stats": "Damage: 193%/s | Hiệu ứng: 6.0s | Tồn tại: 6.0s | Phạm vi: 4.5 | CD: 45s"
+            },
+            {
+                "cost": 1000,
+                "stats": "Damage: 205%/s | Hiệu ứng: 6.3s | Tồn tại: 6.0s | Phạm vi: 4.5 | CD: 45s"
+            },
+            {
+                "cost": 1350,
+                "stats": "Damage: 217%/s | Hiệu ứng: 6.5s | Tồn tại: 6.0s | Phạm vi: 4.5 | CD: 45s"
+            },
+            {
+                "cost": 1750,
+                "stats": "Damage: 230%/s | Hiệu ứng: 6.8s | Tồn tại: 6.0s | Phạm vi: 4.5 | CD: 45s"
+            },
+            {
+                "cost": 2500,
+                "stats": "Damage: 244%/s | Hiệu ứng: 7.1s | Tồn tại: 6.0s | Phạm vi: 4.5 | CD: 45s"
+            },
+            {
+                "cost": 5000,
+                "stats": "Damage: 258%/s | Hiệu ứng: 7.5s | Tồn tại: 6.0s | Phạm vi: 4.5 | CD: 45s"
+            },
+            {
+                "cost": 10000,
+                "stats": "Damage: 274%/s | Hiệu ứng: 7.8s | Tồn tại: 6.0s | Phạm vi: 4.5 | CD: 45s"
+            },
+            {
+                "cost": 17500,
+                "stats": "Damage: 292%/s | Hiệu ứng: 8.1s | Tồn tại: 6.0s | Phạm vi: 4.5 | CD: 45s"
+            },
+            {
+                "cost": 25000,
+                "stats": "Damage: 308%/s | Hiệu ứng: 8.5s | Tồn tại: 6.0s | Phạm vi: 4.5 | CD: 45s"
+            },
+            {
+                "cost": 32500,
+                "stats": "Damage: 326%/s | Hiệu ứng: 8.9s | Tồn tại: 6.0s | Phạm vi: 4.5 | CD: 45s"
+            }
+        ]
+    },
+    "Electroshock": {
+        "unlock": {
+            "cost": 100,
+            "stats": "Damage: 720% | Tỷ lệ choáng: 50.0% | CD: 27s"
+        },
+        "levels": [
+            {
+                "cost": 250,
+                "stats": "Damage: 799% | Tỷ lệ choáng: 53.0% | CD: 27s"
+            },
+            {
+                "cost": 500,
+                "stats": "Damage: 887% | Tỷ lệ choáng: 56.0% | CD: 27s"
+            },
+            {
+                "cost": 750,
+                "stats": "Damage: 985% | Tỷ lệ choáng: 59.0% | CD: 27s"
+            },
+            {
+                "cost": 1000,
+                "stats": "Damage: 1093% | Tỷ lệ choáng: 62.0% | CD: 27s"
+            },
+            {
+                "cost": 1350,
+                "stats": "Damage: 1213% | Tỷ lệ choáng: 65.0% | CD: 27s"
+            },
+            {
+                "cost": 1750,
+                "stats": "Damage: 1347% | Tỷ lệ choáng: 68.0% | CD: 27s"
+            },
+            {
+                "cost": 2500,
+                "stats": "Damage: 1495% | Tỷ lệ choáng: 71.0% | CD: 27s"
+            },
+            {
+                "cost": 5000,
+                "stats": "Damage: 1659% | Tỷ lệ choáng: 74.0% | CD: 27s"
+            },
+            {
+                "cost": 10000,
+                "stats": "Damage: 1842% | Tỷ lệ choáng: 77.0% | CD: 27s"
+            },
+            {
+                "cost": 17500,
+                "stats": "Damage: 2044% | Tỷ lệ choáng: 80.0% | CD: 27s"
+            },
+            {
+                "cost": 25000,
+                "stats": "Damage: 2269% | Tỷ lệ choáng: 83.0% | CD: 27s"
+            },
+            {
+                "cost": 32500,
+                "stats": "Damage: 2400% | Tỷ lệ choáng: 86.0% | CD: 27s"
+            }
+        ]
+    },
+    "Accursing Bite": {
+        "unlock": {
+            "cost": 90,
+            "stats": "Damage: 180% | Làm chậm: 25.0% | Thời gian: 8.0s | CD: 40s"
+        },
+        "levels": [
+            {
+                "cost": 225,
+                "stats": "Damage: 194% | Làm chậm: 26.5% | Thời gian: 8.6s | CD: 40s"
+            },
+            {
+                "cost": 450,
+                "stats": "Damage: 210% | Làm chậm: 28.1% | Thời gian: 9.3s | CD: 40s"
+            },
+            {
+                "cost": 675,
+                "stats": "Damage: 227% | Làm chậm: 29.8% | Thời gian: 10.1s | CD: 40s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage: 245% | Làm chậm: 31.6% | Thời gian: 10.9s | CD: 40s"
+            },
+            {
+                "cost": 1215,
+                "stats": "Damage: 264% | Làm chậm: 33.5% | Thời gian: 11.8s | CD: 40s"
+            },
+            {
+                "cost": 1575,
+                "stats": "Damage: 286% | Làm chậm: 35.5% | Thời gian: 12.7s | CD: 40s"
+            },
+            {
+                "cost": 2250,
+                "stats": "Damage: 308% | Làm chậm: 37.6% | Thời gian: 13.7s | CD: 40s"
+            },
+            {
+                "cost": 4500,
+                "stats": "Damage: 333% | Làm chậm: 39.8% | Thời gian: 14.8s | CD: 40s"
+            },
+            {
+                "cost": 9000,
+                "stats": "Damage: 360% | Làm chậm: 42.2% | Thời gian: 16.0s | CD: 40s"
+            },
+            {
+                "cost": 15750,
+                "stats": "Damage: 389% | Làm chậm: 44.8% | Thời gian: 17.3s | CD: 40s"
+            },
+            {
+                "cost": 22500,
+                "stats": "Damage: 420% | Làm chậm: 47.5% | Thời gian: 18.7s | CD: 40s"
+            },
+            {
+                "cost": 29250,
+                "stats": "Damage: 453% | Làm chậm: 50.3% | Thời gian: 20.1s | CD: 40s"
+            }
+        ]
+    },
+    "Battle Orders": {
+        "unlock": {
+            "cost": 100,
+            "stats": "Boost: 36.0% | Thời gian: 22.0s | Phạm vi: 10.0 | CD: 90s"
+        },
+        "levels": [
+            {
+                "cost": 250,
+                "stats": "Boost: 38.9% | Thời gian: 23.2s | Phạm vi: 10.0 | CD: 90s"
+            },
+            {
+                "cost": 500,
+                "stats": "Boost: 42.0% | Thời gian: 24.4s | Phạm vi: 10.0 | CD: 90s"
+            },
+            {
+                "cost": 750,
+                "stats": "Boost: 45.3% | Thời gian: 25.6s | Phạm vi: 10.0 | CD: 90s"
+            },
+            {
+                "cost": 1000,
+                "stats": "Boost: 49.0% | Thời gian: 26.8s | Phạm vi: 10.0 | CD: 90s"
+            },
+            {
+                "cost": 1350,
+                "stats": "Boost: 52.9% | Thời gian: 28.0s | Phạm vi: 10.0 | CD: 90s"
+            },
+            {
+                "cost": 1750,
+                "stats": "Boost: 57.1% | Thời gian: 29.2s | Phạm vi: 10.0 | CD: 90s"
+            },
+            {
+                "cost": 2500,
+                "stats": "Boost: 61.7% | Thời gian: 30.4s | Phạm vi: 10.0 | CD: 90s"
+            },
+            {
+                "cost": 5000,
+                "stats": "Boost: 66.6% | Thời gian: 31.6s | Phạm vi: 10.0 | CD: 90s"
+            },
+            {
+                "cost": 10000,
+                "stats": "Boost: 72.0% | Thời gian: 32.8s | Phạm vi: 10.0 | CD: 90s"
+            },
+            {
+                "cost": 17500,
+                "stats": "Boost: 77.7% | Thời gian: 34.0s | Phạm vi: 10.0 | CD: 90s"
+            },
+            {
+                "cost": 25000,
+                "stats": "Boost: 83.9% | Thời gian: 35.2s | Phạm vi: 10.0 | CD: 90s"
+            },
+            {
+                "cost": 32500,
+                "stats": "Boost: 90.7% | Thời gian: 36.4s | Phạm vi: 10.0 | CD: 90s"
+            }
+        ]
+    },
+    "Rage": {
+        "unlock": {
+            "cost": 100,
+            "stats": "Damage Boost: 31.0% | Health Boost: 18.0% | Speed Boost: 15.0% | Thời gian: 14.0s | CD: 45s"
+        },
+        "levels": [
+            {
+                "cost": 250,
+                "stats": "Damage Boost: 33.5% | Health Boost: 19.2% | Speed Boost: 16.1% | Thời gian: 14.8s | CD: 45s"
+            },
+            {
+                "cost": 500,
+                "stats": "Damage Boost: 36.2% | Health Boost: 20.4% | Speed Boost: 17.2% | Thời gian: 15.7s | CD: 45s"
+            },
+            {
+                "cost": 750,
+                "stats": "Damage Boost: 39.1% | Health Boost: 21.7% | Speed Boost: 18.4% | Thời gian: 16.7s | CD: 45s"
+            },
+            {
+                "cost": 1000,
+                "stats": "Damage Boost: 42.2% | Health Boost: 23.2% | Speed Boost: 19.7% | Thời gian: 17.7s | CD: 45s"
+            },
+            {
+                "cost": 1350,
+                "stats": "Damage Boost: 45.5% | Health Boost: 24.7% | Speed Boost: 21.0% | Thời gian: 18.7s | CD: 45s"
+            },
+            {
+                "cost": 1750,
+                "stats": "Damage Boost: 49.2% | Health Boost: 26.3% | Speed Boost: 22.5% | Thời gian: 19.9s | CD: 45s"
+            },
+            {
+                "cost": 2500,
+                "stats": "Damage Boost: 53.1% | Health Boost: 28.0% | Speed Boost: 24.1% | Thời gian: 21.1s | CD: 45s"
+            },
+            {
+                "cost": 5000,
+                "stats": "Damage Boost: 57.4% | Health Boost: 29.8% | Speed Boost: 25.8% | Thời gian: 22.3s | CD: 45s"
+            },
+            {
+                "cost": 10000,
+                "stats": "Damage Boost: 62.0% | Health Boost: 31.7% | Speed Boost: 27.6% | Thời gian: 23.7s | CD: 45s"
+            },
+            {
+                "cost": 17500,
+                "stats": "Damage Boost: 66.9% | Health Boost: 33.8% | Speed Boost: 29.5% | Thời gian: 25.1s | CD: 45s"
+            },
+            {
+                "cost": 25000,
+                "stats": "Damage Boost: 72.3% | Health Boost: 36.0% | Speed Boost: 31.6% | Thời gian: 26.6s | CD: 45s"
+            },
+            {
+                "cost": 32500,
+                "stats": "Damage Boost: 78.1% | Health Boost: 38.3% | Speed Boost: 33.8% | Thời gian: 28.2s | CD: 45s"
+            }
+        ]
+    },
+    "Life Regeneration Totem": {
+        "unlock": {
+            "cost": 100,
+            "stats": "Hồi máu/s: 2.1% | Thời gian: 10.0s | CD: 80s"
+        },
+        "levels": [
+            {
+                "cost": 250,
+                "stats": "Hồi máu/s: 2.2% | Thời gian: 10.4s | CD: 80s"
+            },
+            {
+                "cost": 500,
+                "stats": "Hồi máu/s: 2.3% | Thời gian: 10.8s | CD: 80s"
+            },
+            {
+                "cost": 750,
+                "stats": "Hồi máu/s: 2.4% | Thời gian: 11.2s | CD: 80s"
+            },
+            {
+                "cost": 1000,
+                "stats": "Hồi máu/s: 2.6% | Thời gian: 11.7s | CD: 80s"
+            },
+            {
+                "cost": 1350,
+                "stats": "Hồi máu/s: 2.7% | Thời gian: 12.2s | CD: 80s"
+            },
+            {
+                "cost": 1750,
+                "stats": "Hồi máu/s: 2.8% | Thời gian: 12.7s | CD: 80s"
+            },
+            {
+                "cost": 2500,
+                "stats": "Hồi máu/s: 3.0% | Thời gian: 13.2s | CD: 80s"
+            },
+            {
+                "cost": 5000,
+                "stats": "Hồi máu/s: 3.1% | Thời gian: 13.7s | CD: 80s"
+            },
+            {
+                "cost": 10000,
+                "stats": "Hồi máu/s: 3.3% | Thời gian: 14.2s | CD: 80s"
+            },
+            {
+                "cost": 17500,
+                "stats": "Hồi máu/s: 3.4% | Thời gian: 14.8s | CD: 80s"
+            },
+            {
+                "cost": 25000,
+                "stats": "Hồi máu/s: 3.6% | Thời gian: 15.4s | CD: 80s"
+            },
+            {
+                "cost": 32500,
+                "stats": "Hồi máu/s: 3.8% | Thời gian: 16.0s | CD: 80s"
+            }
+        ]
+    },
+    "Thunder": {
+        "unlock": {
+            "cost": 120,
+            "stats": "Damage: 640% | Tỷ lệ choáng: 50.0% | Phạm vi: 7.0 | CD: 42s"
+        },
+        "levels": [
+            {
+                "cost": 300,
+                "stats": "Damage: 710% | Tỷ lệ choáng: 52.5% | Phạm vi: 7.0 | CD: 42s"
+            },
+            {
+                "cost": 600,
+                "stats": "Damage: 788% | Tỷ lệ choáng: 55.0% | Phạm vi: 7.0 | CD: 42s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage: 875% | Tỷ lệ choáng: 57.5% | Phạm vi: 7.0 | CD: 42s"
+            },
+            {
+                "cost": 1200,
+                "stats": "Damage: 972% | Tỷ lệ choáng: 60.0% | Phạm vi: 7.0 | CD: 42s"
+            },
+            {
+                "cost": 1620,
+                "stats": "Damage: 1078% | Tỷ lệ choáng: 62.5% | Phạm vi: 7.0 | CD: 42s"
+            },
+            {
+                "cost": 2100,
+                "stats": "Damage: 1197% | Tỷ lệ choáng: 65.0% | Phạm vi: 7.0 | CD: 42s"
+            },
+            {
+                "cost": 3000,
+                "stats": "Damage: 1329% | Tỷ lệ choáng: 67.5% | Phạm vi: 7.0 | CD: 42s"
+            },
+            {
+                "cost": 6000,
+                "stats": "Damage: 1475% | Tỷ lệ choáng: 70.0% | Phạm vi: 7.0 | CD: 42s"
+            },
+            {
+                "cost": 12000,
+                "stats": "Damage: 1637% | Tỷ lệ choáng: 72.5% | Phạm vi: 7.0 | CD: 42s"
+            },
+            {
+                "cost": 21000,
+                "stats": "Damage: 1817% | Tỷ lệ choáng: 75.0% | Phạm vi: 7.0 | CD: 42s"
+            },
+            {
+                "cost": 30000,
+                "stats": "Damage: 2017% | Tỷ lệ choáng: 77.5% | Phạm vi: 7.0 | CD: 42s"
+            },
+            {
+                "cost": 39000,
+                "stats": "Damage: 2239% | Tỷ lệ choáng: 80.0% | Phạm vi: 7.0 | CD: 42s"
+            }
+        ]
+    },
+    "Freezing Breath": {
+        "unlock": {
+            "cost": 120,
+            "stats": "Damage: 250%/s | Thời gian: 4.0s | Làm chậm: 25.0% | CD: 35s"
+        },
+        "levels": [
+            {
+                "cost": 300,
+                "stats": "Damage: 271%/s | Thời gian: 4.2s | Làm chậm: 26.2% | CD: 35s"
+            },
+            {
+                "cost": 600,
+                "stats": "Damage: 294%/s | Thời gian: 4.4s | Làm chậm: 27.6% | CD: 35s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage: 319%/s | Thời gian: 4.6s | Làm chậm: 28.9% | CD: 35s"
+            },
+            {
+                "cost": 1200,
+                "stats": "Damage: 346%/s | Thời gian: 4.9s | Làm chậm: 30.4% | CD: 35s"
+            },
+            {
+                "cost": 1620,
+                "stats": "Damage: 376%/s | Thời gian: 5.1s | Làm chậm: 31.9% | CD: 35s"
+            },
+            {
+                "cost": 2100,
+                "stats": "Damage: 408%/s | Thời gian: 5.4s | Làm chậm: 33.5% | CD: 35s"
+            },
+            {
+                "cost": 3000,
+                "stats": "Damage: 442%/s | Thời gian: 5.6s | Làm chậm: 35.2% | CD: 35s"
+            },
+            {
+                "cost": 6000,
+                "stats": "Damage: 480%/s | Thời gian: 5.9s | Làm chậm: 36.9% | CD: 35s"
+            },
+            {
+                "cost": 12000,
+                "stats": "Damage: 521%/s | Thời gian: 6.2s | Làm chậm: 38.8% | CD: 35s"
+            },
+            {
+                "cost": 21000,
+                "stats": "Damage: 565%/s | Thời gian: 6.5s | Làm chậm: 40.7% | CD: 35s"
+            },
+            {
+                "cost": 30000,
+                "stats": "Damage: 613%/s | Thời gian: 6.8s | Làm chậm: 42.8% | CD: 35s"
+            },
+            {
+                "cost": 39000,
+                "stats": "Damage: 665%/s | Thời gian: 7.2s | Làm chậm: 44.9% | CD: 35s"
+            }
+        ]
+    },
+    "Hail": {
+        "unlock": {
+            "cost": 120,
+            "stats": "Damage mỗi đòn: 232 | Làm chậm: 25.0% | Hiệu ứng: 3.2s | Phạm vi: 10 | Số đòn: 12 | CD: 50s"
+        },
+        "levels": [
+            {
+                "cost": 300,
+                "stats": "Damage mỗi đòn: 253 | Làm chậm: 26.2% | Hiệu ứng: 3.4s | Phạm vi: 10 | Số đòn: 12 | CD: 50s"
+            },
+            {
+                "cost": 600,
+                "stats": "Damage mỗi đòn: 276 | Làm chậm: 27.6% | Hiệu ứng: 3.7s | Phạm vi: 10 | Số đòn: 12 | CD: 50s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage mỗi đòn: 300 | Làm chậm: 28.9% | Hiệu ứng: 3.9s | Phạm vi: 10 | Số đòn: 12 | CD: 50s"
+            },
+            {
+                "cost": 1200,
+                "stats": "Damage mỗi đòn: 327 | Làm chậm: 30.4% | Hiệu ứng: 4.2s | Phạm vi: 10 | Số đòn: 12 | CD: 50s"
+            },
+            {
+                "cost": 1620,
+                "stats": "Damage mỗi đòn: 357 | Làm chậm: 31.9% | Hiệu ứng: 4.5s | Phạm vi: 10 | Số đòn: 12 | CD: 50s"
+            },
+            {
+                "cost": 2100,
+                "stats": "Damage mỗi đòn: 389 | Làm chậm: 33.5% | Hiệu ứng: 4.8s | Phạm vi: 10 | Số đòn: 12 | CD: 50s"
+            },
+            {
+                "cost": 3000,
+                "stats": "Damage mỗi đòn: 424 | Làm chậm: 35.2% | Hiệu ứng: 5.1s | Phạm vi: 10 | Số đòn: 12 | CD: 50s"
+            },
+            {
+                "cost": 6000,
+                "stats": "Damage mỗi đòn: 462 | Làm chậm: 36.9% | Hiệu ứng: 5.5s | Phạm vi: 10 | Số đòn: 12 | CD: 50s"
+            },
+            {
+                "cost": 12000,
+                "stats": "Damage mỗi đòn: 504 | Làm chậm: 38.8% | Hiệu ứng: 5.9s | Phạm vi: 10 | Số đòn: 12 | CD: 50s"
+            },
+            {
+                "cost": 21000,
+                "stats": "Damage mỗi đòn: 549 | Làm chậm: 40.7% | Hiệu ứng: 6.3s | Phạm vi: 10 | Số đòn: 12 | CD: 50s"
+            },
+            {
+                "cost": 30000,
+                "stats": "Damage mỗi đòn: 599 | Làm chậm: 42.8% | Hiệu ứng: 6.7s | Phạm vi: 10 | Số đòn: 12 | CD: 50s"
+            },
+            {
+                "cost": 39000,
+                "stats": "Damage mỗi đòn: 653 | Làm chậm: 44.9% | Hiệu ứng: 7.2s | Phạm vi: 10 | Số đòn: 12 | CD: 50s"
+            }
+        ]
+    },
+    "Fiery Ring": {
+        "unlock": {
+            "cost": 120,
+            "stats": "Damage: 300%/s | Thời gian: 4.0s | Phạm vi: 9.0 | CD: 40s"
+        },
+        "levels": [
+            {
+                "cost": 300,
+                "stats": "Damage: 322%/s | Thời gian: 4.2s | Phạm vi: 9.0 | CD: 40s"
+            },
+            {
+                "cost": 600,
+                "stats": "Damage: 346%/s | Thời gian: 4.5s | Phạm vi: 9.0 | CD: 40s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage: 372%/s | Thời gian: 4.8s | Phạm vi: 9.0 | CD: 40s"
+            },
+            {
+                "cost": 1200,
+                "stats": "Damage: 399%/s | Thời gian: 5.0s | Phạm vi: 9.0 | CD: 40s"
+            },
+            {
+                "cost": 1620,
+                "stats": "Damage: 429%/s | Thời gian: 5.4s | Phạm vi: 9.0 | CD: 40s"
+            },
+            {
+                "cost": 2100,
+                "stats": "Damage: 460%/s | Thời gian: 5.7s | Phạm vi: 9.0 | CD: 40s"
+            },
+            {
+                "cost": 3000,
+                "stats": "Damage: 494%/s | Thời gian: 6.0s | Phạm vi: 9.0 | CD: 40s"
+            },
+            {
+                "cost": 6000,
+                "stats": "Damage: 531%/s | Thời gian: 6.4s | Phạm vi: 9.0 | CD: 40s"
+            },
+            {
+                "cost": 12000,
+                "stats": "Damage: 570%/s | Thời gian: 6.8s | Phạm vi: 9.0 | CD: 40s"
+            },
+            {
+                "cost": 21000,
+                "stats": "Damage: 613%/s | Thời gian: 7.2s | Phạm vi: 9.0 | CD: 40s"
+            },
+            {
+                "cost": 30000,
+                "stats": "Damage: 658%/s | Thời gian: 7.6s | Phạm vi: 9.0 | CD: 40s"
+            },
+            {
+                "cost": 39000,
+                "stats": "Damage: 707%/s | Thời gian: 8.0s | Phạm vi: 9.0 | CD: 40s"
+            }
+        ]
+    },
+    "Thunderstorm": {
+        "unlock": {
+            "cost": 120,
+            "stats": "Damage mỗi đòn: 360 | Số đòn: 8 | Phạm vi: 10 | Tỷ lệ choáng: 3 | CD: 55s"
+        },
+        "levels": [
+            {
+                "cost": 300,
+                "stats": "Damage mỗi đòn: 392 | Số đòn: 8 | Phạm vi: 10 | Tỷ lệ choáng: 3 | CD: 55s"
+            },
+            {
+                "cost": 600,
+                "stats": "Damage mỗi đòn: 428 | Số đòn: 8 | Phạm vi: 10 | Tỷ lệ choáng: 3 | CD: 55s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage mỗi đòn: 466 | Số đòn: 8 | Phạm vi: 10 | Tỷ lệ choáng: 3 | CD: 55s"
+            },
+            {
+                "cost": 1200,
+                "stats": "Damage mỗi đòn: 508 | Số đòn: 8 | Phạm vi: 10 | Tỷ lệ choáng: 3 | CD: 55s"
+            },
+            {
+                "cost": 1620,
+                "stats": "Damage mỗi đòn: 553 | Số đòn: 8 | Phạm vi: 10 | Tỷ lệ choáng: 3 | CD: 55s"
+            },
+            {
+                "cost": 2100,
+                "stats": "Damage mỗi đòn: 603 | Số đòn: 8 | Phạm vi: 10 | Tỷ lệ choáng: 3 | CD: 55s"
+            },
+            {
+                "cost": 3000,
+                "stats": "Damage mỗi đòn: 657 | Số đòn: 8 | Phạm vi: 10 | Tỷ lệ choáng: 3 | CD: 55s"
+            },
+            {
+                "cost": 6000,
+                "stats": "Damage mỗi đòn: 716 | Số đòn: 8 | Phạm vi: 10 | Tỷ lệ choáng: 3 | CD: 55s"
+            },
+            {
+                "cost": 12000,
+                "stats": "Damage mỗi đòn: 781 | Số đòn: 8 | Phạm vi: 10 | Tỷ lệ choáng: 3 | CD: 55s"
+            },
+            {
+                "cost": 21000,
+                "stats": "Damage mỗi đòn: 851 | Số đòn: 8 | Phạm vi: 10 | Tỷ lệ choáng: 3 | CD: 55s"
+            },
+            {
+                "cost": 30000,
+                "stats": "Damage mỗi đòn: 927 | Số đòn: 8 | Phạm vi: 10 | Tỷ lệ choáng: 3 | CD: 55s"
+            },
+            {
+                "cost": 39000,
+                "stats": "Damage mỗi đòn: 1010 | Số đòn: 8 | Phạm vi: 10 | Tỷ lệ choáng: 3 | CD: 55s"
+            }
+        ]
+    },
+    "Freezing Area Trap": {
+        "unlock": {
+            "cost": 120,
+            "stats": "Damage: 790 | Làm chậm: 30.0% | Thời gian: 4.0s | Số bẫy tối đa: 1 | CD: 20s"
+        },
+        "levels": [
+            {
+                "cost": 300,
+                "stats": "Damage: 849 | Làm chậm: 31.5% | Thời gian: 4.2s | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 600,
+                "stats": "Damage: 913 | Làm chậm: 33.1% | Thời gian: 4.4s | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage: 981 | Làm chậm: 34.7% | Thời gian: 4.6s | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 1200,
+                "stats": "Damage: 1,055 | Làm chậm: 36.5% | Thời gian: 4.9s | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 1620,
+                "stats": "Damage: 1,134 | Làm chậm: 38.3% | Thời gian: 5.1s | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 2100,
+                "stats": "Damage: 1,219 | Làm chậm: 40.2% | Thời gian: 5.4s | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 3000,
+                "stats": "Damage: 1,311 | Làm chậm: 42.2% | Thời gian: 5.6s | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 6000,
+                "stats": "Damage: 1,409 | Làm chậm: 44.3% | Thời gian: 5.9s | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 12000,
+                "stats": "Damage: 1,515 | Làm chậm: 46.5% | Thời gian: 6.2s | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 21000,
+                "stats": "Damage: 1,628 | Làm chậm: 48.9% | Thời gian: 6.5s | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 30000,
+                "stats": "Damage: 1,750 | Làm chậm: 51.3% | Thời gian: 6.8s | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 39000,
+                "stats": "Damage: 1,882 | Làm chậm: 53.9% | Thời gian: 7.2s | Số bẫy tối đa: 1 | CD: 20s"
+            }
+        ]
+    },
+    "Electric Trap": {
+        "unlock": {
+            "cost": 120,
+            "stats": "Damage: 1,000% | Tỷ lệ choáng: 50.0% | Số bẫy tối đa: 1 | CD: 20s"
+        },
+        "levels": [
+            {
+                "cost": 300,
+                "stats": "Damage: 1,065% | Tỷ lệ choáng: 52.5% | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 600,
+                "stats": "Damage: 1,134% | Tỷ lệ choáng: 55.0% | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage: 1,208% | Tỷ lệ choáng: 57.5% | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 1200,
+                "stats": "Damage: 1,286% | Tỷ lệ choáng: 60.0% | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 1620,
+                "stats": "Damage: 1,370% | Tỷ lệ choáng: 62.5% | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 2100,
+                "stats": "Damage: 1,459% | Tỷ lệ choáng: 65.0% | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 3000,
+                "stats": "Damage: 1,554% | Tỷ lệ choáng: 67.5% | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 6000,
+                "stats": "Damage: 1,655% | Tỷ lệ choáng: 70.0% | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 12000,
+                "stats": "Damage: 1,763% | Tỷ lệ choáng: 72.5% | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 21000,
+                "stats": "Damage: 1,877% | Tỷ lệ choáng: 75.0% | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 30000,
+                "stats": "Damage: 1,999% | Tỷ lệ choáng: 77.5% | Số bẫy tối đa: 1 | CD: 20s"
+            },
+            {
+                "cost": 39000,
+                "stats": "Damage: 2,129% | Tỷ lệ choáng: 80.0% | Số bẫy tối đa: 1 | CD: 20s"
+            }
+        ]
+    },
+    "Poison Trap": {
+        "unlock": {
+            "cost": 120,
+            "stats": "Damage: 700% | ST/giây: 150%/s | Hiệu ứng: 4.0s | Số bẫy tối đa: 1 | CD: 22s"
+        },
+        "levels": [
+            {
+                "cost": 300,
+                "stats": "Damage: 742% | ST/giây: 156%/s | Hiệu ứng: 4.2s | Số bẫy tối đa: 1 | CD: 22s"
+            },
+            {
+                "cost": 600,
+                "stats": "Damage: 787% | ST/giây: 162%/s | Hiệu ứng: 4.4s | Số bẫy tối đa: 1 | CD: 22s"
+            },
+            {
+                "cost": 900,
+                "stats": "Damage: 834% | ST/giây: 169%/s | Hiệu ứng: 4.6s | Số bẫy tối đa: 1 | CD: 22s"
+            },
+            {
+                "cost": 1200,
+                "stats": "Damage: 884% | ST/giây: 175%/s | Hiệu ứng: 4.9s | Số bẫy tối đa: 1 | CD: 22s"
+            },
+            {
+                "cost": 1620,
+                "stats": "Damage: 937% | ST/giây: 182%/s | Hiệu ứng: 5.1s | Số bẫy tối đa: 1 | CD: 22s"
+            },
+            {
+                "cost": 2100,
+                "stats": "Damage: 993% | ST/giây: 190%/s | Hiệu ứng: 5.4s | Số bẫy tối đa: 1 | CD: 22s"
+            },
+            {
+                "cost": 3000,
+                "stats": "Damage: 1,053% | ST/giây: 197%/s | Hiệu ứng: 5.6s | Số bẫy tối đa: 1 | CD: 22s"
+            },
+            {
+                "cost": 6000,
+                "stats": "Damage: 1,116% | ST/giây: 205%/s | Hiệu ứng: 5.9s | Số bẫy tối đa: 1 | CD: 22s"
+            },
+            {
+                "cost": 12000,
+                "stats": "Damage: 1,183% | ST/giây: 213%/s | Hiệu ứng: 6.2s | Số bẫy tối đa: 1 | CD: 22s"
+            },
+            {
+                "cost": 21000,
+                "stats": "Damage: 1,254% | ST/giây: 222%/s | Hiệu ứng: 6.5s | Số bẫy tối đa: 1 | CD: 22s"
+            },
+            {
+                "cost": 30000,
+                "stats": "Damage: 1,329% | ST/giây: 231%/s | Hiệu ứng: 6.8s | Số bẫy tối đa: 1 | CD: 22s"
+            },
+            {
+                "cost": 39000,
+                "stats": "Damage: 1,409% | ST/giây: 240%/s | Hiệu ứng: 7.2s | Số bẫy tối đa: 1 | CD: 22s"
+            }
+        ]
+    },
+    "Shield Totem": {
+        "unlock": {
+            "cost": 120,
+            "stats": "Sát thương phải chịu giảm: 40.0% | Thời gian: 5.5s | CD: 80s"
+        },
+        "levels": [
+            {
+                "cost": 300,
+                "stats": "Sát thương phải chịu giảm: 42.0% | Thời gian: 5.8s | CD: 80s"
+            },
+            {
+                "cost": 600,
+                "stats": "Sát thương phải chịu giảm: 44.1% | Thời gian: 6.1s | CD: 80s"
+            },
+            {
+                "cost": 900,
+                "stats": "Sát thương phải chịu giảm: 46.3% | Thời gian: 6.5s | CD: 80s"
+            },
+            {
+                "cost": 1200,
+                "stats": "Sát thương phải chịu giảm: 48.6% | Thời gian: 6.8s | CD: 80s"
+            },
+            {
+                "cost": 1620,
+                "stats": "Sát thương phải chịu giảm: 51.1% | Thời gian: 7.2s | CD: 80s"
+            },
+            {
+                "cost": 2100,
+                "stats": "Sát thương phải chịu giảm: 53.6% | Thời gian: 7.6s | CD: 80s"
+            },
+            {
+                "cost": 3000,
+                "stats": "Sát thương phải chịu giảm: 56.3% | Thời gian: 8.0s | CD: 80s"
+            },
+            {
+                "cost": 6000,
+                "stats": "Sát thương phải chịu giảm: 59.1% | Thời gian: 8.4s | CD: 80s"
+            },
+            {
+                "cost": 12000,
+                "stats": "Sát thương phải chịu giảm: 62.1% | Thời gian: 8.9s | CD: 80s"
+            },
+            {
+                "cost": 21000,
+                "stats": "Sát thương phải chịu giảm: 65.2% | Thời gian: 9.4s | CD: 80s"
+            },
+            {
+                "cost": 30000,
+                "stats": "Sát thương phải chịu giảm: 68.4% | Thời gian: 9.9s | CD: 80s"
+            },
+            {
+                "cost": 39000,
+                "stats": "Sát thương phải chịu giảm: 71.8% | Thời gian: 10.5s | CD: 80s"
+            }
+        ]
+    }
+}
